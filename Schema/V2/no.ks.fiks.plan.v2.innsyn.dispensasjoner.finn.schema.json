@@ -1,0 +1,59 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/FinnDispensasjoner.v2.schema.json",
+    "title": "FinnDispensasjoner",
+    "definitions": {
+    },
+    "type": "object",
+    "properties": {
+        "soekskriterie": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "felt": {
+                        "type": "string",
+                        "enum": [
+                            "identifikasjon",
+                            "dispensasjon.kodeverdi",
+                            "nasjonalArealplanId.kommunenummer",
+                            "nasjonalArealplanId.fylkesnummer",
+                            "nasjonalArealplanId.landkode",
+                            "nasjonalArealplanId.planidentifikasjon",
+                            "begrunnelse",
+                            "vedtaksdato",
+                            "beskrivelse",
+                            "innvilgetDispensasjon",
+                            "saksnummer.saksaar",
+                            "saksnummer.saksekvensnummer"
+                        ]
+                    },
+                    "operator": {
+                        "type": "string",
+                        "enum": [
+                            "equal",
+                            "notequal",
+                            "between",
+                            "lessthan",
+                            "lessequal",
+                            "greaterthan",
+                            "greaterequal",
+                            "inlist"
+                        ]
+                    },
+                    "parameterverdier": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "felt",
+                    "operator",
+                    "parameterverdier"
+                ]
+            }
+        }
+    },
+    "required": [
+        "soekskriterie"
+    ]
+}

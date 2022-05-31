@@ -1,0 +1,139 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/PlanerForAdresse.v2.schema.json",
+    "title": "PlanerForAdresse",
+    "description": "Resultat for alle planer som beroerer en adresse. ",
+    "definitions": {
+        "Arealplan": {
+            "type": "object",
+            "properties": {
+                "nasjonalArealplanId": {
+                    "type": "object",
+                    "properties": {
+                        "administrativEnhet": {
+                            "properties": {
+                                "kommunenummer": {
+                                    "description": "Kommunenummer",
+                                    "type": "string"
+                                },
+                                "fylkesnummer": {
+                                    "description": "Fylkesnummer",
+                                    "type": "string"
+                                },
+                                "landskode": {
+                                    "description": "Landskode",
+                                    "type": "string"
+                                }
+                            },
+                            "oneOf": [
+                                { "required": [ "kommunenummer" ] },
+                                { "required": [ "fylkesnummer" ] },
+                                { "required": [ "landskode" ] }
+                            ]
+                        },
+                        "planidentifikasjon": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "administrativEnhet",
+                        "planidentifikasjon"
+                    ]
+                },
+                "plantype": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "plannavn": {
+                    "type": "string"
+                },
+                "planstatus": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "plandokumentasjonOppdatert": {
+                    "type": "boolean"
+                },
+                "ubehandletKlage": {
+                    "type": "boolean"
+                },
+                "ubehandletInnsigelse": {
+                    "type": "boolean"
+                },
+                "vedtakEndeligPlanDato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "forslagstillerType": {
+                    "type": "string",
+                    "enum": [
+                        "offentlig",
+                        "privat"
+                    ]
+                },
+                "alternativFinnes": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "nasjonalArealplanId",
+                "plantype",
+                "plannavn",
+                "planstatus",
+                "plandokumentasjonOppdatert",
+                "ubehandletKlage",
+                "ubehandletInnsigelse"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "adresse": {
+            "type": "object",
+            "properties": {
+                "adressekode": {
+                    "type": "string"
+                },
+                "adressenavn": {
+                    "type": "string"
+                },
+                "adressenummer": {
+                    "type": "integer"
+                },
+                "adressebokstav": {
+                    "type": "string"
+                },
+                "seksjonsnummer": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "adressenavn",
+                "adressenummer"
+            ]
+        },
+        "plan": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Arealplan"
+            }
+        }
+    },
+    "required": [
+        "adresse"
+    ]
+}

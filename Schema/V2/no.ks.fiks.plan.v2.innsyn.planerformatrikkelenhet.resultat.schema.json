@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://no.ks.fiks.gi.plan.innsyn/PlanerForMatrikkelenhet.v2.schema.json",
+  "title": "PlanerForMatrikkelenhet",
+  "description": "Finner alle planer som beroerer en eiendom. ",
+  "definitions": {
+    "Arealplan": {
+      "type": "object",
+        "properties": {
+            "nasjonalArealplanId": {
+                "type": "object",
+                "properties": {
+                    "administrativEnhet": {
+                        "properties": {
+                            "kommunenummer": {
+                                "description": "Kommunenummer",
+                                "type": "string"
+                            },
+                            "fylkesnummer": {
+                                "description": "Fylkesnummer",
+                                "type": "string"
+                            },
+                            "landskode": {
+                                "description": "Landskode",
+                                "type": "string"
+                            }
+                        },
+                        "oneOf": [
+                            { "required": [ "kommunenummer" ] },
+                            { "required": [ "fylkesnummer" ] },
+                            { "required": [ "landskode" ] }
+                        ]
+                    },
+                    "planidentifikasjon": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "administrativEnhet",
+                    "planidentifikasjon"
+                ]
+            },
+            "plantype": {
+                "type": "object",
+                "properties": {
+                    "kodeverdi": {
+                        "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                        "type": "string"
+                    }
+                }
+            },
+            "plannavn": {
+                "type": "string"
+            },
+            "planstatus": {
+                "type": "object",
+                "properties": {
+                    "kodeverdi": {
+                        "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                        "type": "string"
+                    }
+                }
+            },
+            "plandokumentasjonOppdatert": {
+                "type": "boolean"
+            },
+            "ubehandletKlage": {
+                "type": "boolean"
+            },
+            "ubehandletInnsigelse": {
+                "type": "boolean"
+            },
+            "vedtaksdato": {
+                "type": "string",
+                "format": "date"
+            }
+        },
+      "required": [
+        "nasjonalArealplanId",
+        "plantype",
+        "plannavn",
+        "planstatus",
+        "plandokumentasjonOppdatert",
+        "ubehandletKlage",
+        "ubehandletInnsigelse"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "matrikkelnummer": {
+      "type": "object",
+      "properties": {
+        "kommunenummer": {
+          "type": "string"
+        },
+        "gaardsnummer": {
+          "type": "integer"
+        },
+        "bruksnummer": {
+          "type": "integer"
+        },
+        "festenummer": {
+          "type": "integer"
+        },
+        "seksjonsnummer": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kommunenummer",
+        "gaardsnummer",
+        "bruksnummer"
+      ]
+    },
+    "plan": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Arealplan"
+      }
+    }
+  },
+  "required": [
+    "matrikkelnummer"
+  ]
+}

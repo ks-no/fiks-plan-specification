@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.oppdatering/RegistrerDispensasjonResultat.v2.schema.json",
+    "title": "RegistrerDispensasjonResultat",
+    "type": "object",
+    "properties": {
+        "identifikasjon": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "identifikasjon"
+    ]
+}

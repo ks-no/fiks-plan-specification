@@ -1,1 +1,1 @@
-# fiks-plan-specification
+# Kontrakter for Fiks Plan

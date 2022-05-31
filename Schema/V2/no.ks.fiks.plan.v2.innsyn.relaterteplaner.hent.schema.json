@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/HentRelatertePlaner.v2.schema.json",
+    "title": "HentRelatertePlaner",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "nasjonalArealplanId": {
+            "type": "object",
+            "properties": {
+                "administrativEnhet": {
+                    "properties": {
+                        "kommunenummer": {
+                            "description": "Kommunenummer",
+                            "type": "string"
+                        },
+                        "fylkesnummer": {
+                            "description": "Fylkesnummer",
+                            "type": "string"
+                        },
+                        "landskode": {
+                            "description": "Landskode",
+                            "type": "string"
+                        }
+                    },
+                    "oneOf": [
+                        { "required": [ "kommunenummer" ] },
+                        { "required": [ "fylkesnummer" ] },
+                        { "required": [ "landskode" ] }
+                    ]
+                },
+                "planidentifikasjon": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "administrativEnhet",
+                "planidentifikasjon"
+            ]
+        }
+    },
+    "required": [
+        "nasjonalArealplanId"
+    ]
+}

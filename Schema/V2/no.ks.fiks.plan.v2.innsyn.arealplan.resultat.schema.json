@@ -1,0 +1,208 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/HentArealplan.v2.schema.json",
+    "title": "HentArealplan",
+    "definitions": {
+        "Planbehandling": {
+            "type": "object",
+            "properties": {
+                "posisjon": {
+                    "description": "Punkt",
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "Point"
+                            ]
+                        },
+                        "coordinates": {
+                            "type": "array",
+                            "minItems": 2,
+                            "items": {
+                                "type": "number"
+                            }
+                        },
+                        "crs": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "name"
+                                    ]
+                                },
+                                "properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "type",
+                        "coordinates"
+                    ]
+                },
+                "dato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "saksnummer": {
+                    "type": "object",
+                    "properties": {
+                        "saksaar": {
+                            "type": "integer"
+                        },
+                        "sakssekvensnummer": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "saksaar",
+                        "sakssekvensnummer"
+                    ]
+                },
+                "planbehandlingtype": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "navn": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "dato",
+                "saksnummer",
+                "planbehandlingtype",
+                "navn"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "arealplan": {
+            "type": "object",
+            "properties": {
+                "nasjonalArealplanId": {
+                    "type": "object",
+                    "properties": {
+                        "administrativEnhet": {
+                            "properties": {
+                                "kommunenummer": {
+                                    "description": "Kommunenummer",
+                                    "type": "string"
+                                },
+                                "fylkesnummer": {
+                                    "description": "Fylkesnummer",
+                                    "type": "string"
+                                },
+                                "landskode": {
+                                    "description": "Landskode",
+                                    "type": "string"
+                                }
+                            },
+                            "oneOf": [
+                                { "required": [ "kommunenummer" ] },
+                                { "required": [ "fylkesnummer" ] },
+                                { "required": [ "landskode" ] }
+                            ]
+                        },
+                        "planidentifikasjon": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "administrativEnhet",
+                        "planidentifikasjon"
+                    ]
+                },
+                "plantype": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "plannavn": {
+                    "type": "string"
+                },
+                "planstatus": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "plandokumentasjonOppdatert": {
+                    "type": "boolean"
+                },
+                "ubehandletKlage": {
+                    "type": "boolean"
+                },
+                "ubehandletInnsigelse": {
+                    "type": "boolean"
+                },
+                "vedtakEndeligPlandato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "lovreferanse": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "forslagsstillerType": {
+                    "type": "string",
+                    "enum": [
+                        "offentlig",
+                        "privat"
+                    ]
+                },
+                "alternativFinnes": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "nasjonalArealplanId",
+                "plantype",
+                "plannavn",
+                "planstatus",
+                "plandokumentasjonOppdatert",
+                "ubehandletKlage",
+                "ubehandletInnsigelse"
+            ]
+        },
+        "planbehandlinger": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Planbehandling"
+            }
+        }
+    }
+}

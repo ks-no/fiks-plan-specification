@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.oppdatering/RegistrerMidlertidigForbudMotTiltak.v2.schema.json",
+    "description": "Forvaltning av «midlertidig forbud mot tiltak» i planregister ”Midlertidig forbud mot tiltak” er ikke en plantype, og dermed heller ikke arealplandata, men gyldighetsområdet skal likevel inngå i kommunalt planregister, og forvaltes som et eget datalag. Dette fordi slike midlertidige forbud mot tiltak utgjør en kraftig restriksjon i videre bruk av arealer inntil det er gjennomført ny planprosess. ",
+    "title": "RegistrerMidlertidigForbudMotTiltak",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "forbudOmraade": {
+            "description": "PblMidlForbudMotTiltakOmraade",
+            "type": "object",
+            "properties": {
+                "omraade": {
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "Polygon"
+                            ]
+                        },
+                        "coordinates": {
+                            "type": "array",
+                            "items": {
+                                "type": "array",
+                                "minItems": 4,
+                                "items": {
+                                    "type": "array",
+                                    "minItems": 2,
+                                    "items": {
+                                        "type": "number"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "type",
+                        "coordinates"
+                    ]
+                },
+                "saksnummer": {
+                    "type": "object",
+                    "properties": {
+                        "saksaar": {
+                            "type": "integer"
+                        },
+                        "sakssekvensnummer": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "saksaar",
+                        "sakssekvensnummer"
+                    ]
+                },
+                "avgjoerelsedato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "pblTiltakForbudtype": {
+                    "kodeverdi": {
+                        "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                        "type": "string"
+                    }
+                },
+                "gyldigTilDato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "omraadenavn": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "omraade",
+                "avgjoerelsedato",
+                "pblTiltakForbudtype",
+                "gyldigTilDato"
+            ]
+        }
+    },
+    "required": [
+        "forbudOmraade"
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.oppdatering/OppdaterArealplan.v2.schema.json",
+    "title": "OppdaterArealplan",
+    "definitions": {
+        "Plandokument": {
+            "type": "object",
+            "properties": {
+                "tittel": {
+                    "type": "string"
+                },
+                "dokumenttype": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "referanseDokumentfil": {
+                    "type": "string"
+                },
+                "mimetype": {
+                    "type": "string"
+                },
+                "dokumentsdato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "arkivnavn": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "tittel",
+                "referanseDokumentfil"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "arealplanId": {
+            "type": "object",
+            "properties": {
+                "administrativEnhet": {
+                    "type": "object",
+                    "properties": {
+                        "kommunenummer": {
+                            "description": "Kommunenummer",
+                            "type": "string"
+                        },
+                        "fylkesnummer": {
+                            "description": "Fylkesnummer",
+                            "type": "string"
+                        },
+                        "landskode": {
+                            "description": "Landskode",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "kommunenummer",
+                        "fylkesnummer",
+                        "landskode"
+                    ]
+                },
+                "planidentifikasjon": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "administrativEnhet",
+                "planidentifikasjon"
+            ]
+        },
+        "plannavn": {
+            "type": "string"
+        },
+        "plantype": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "planstatus": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "lovreferanse": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "saksnummer": {
+            "type": "object",
+            "properties": {
+                "saksaar": {
+                    "type": "integer"
+                },
+                "sakssekvensnummer": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "saksaar",
+                "sakssekvensnummer"
+            ]
+        },
+        "forslagstillerType": {
+            "type": "string",
+            "enum": [
+                "offentlig",
+                "privat"
+            ]
+        },
+        "vedlegg": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Plandokument"
+            }
+        }
+    },
+    "required": [
+        "arealplanId"
+    ]
+}

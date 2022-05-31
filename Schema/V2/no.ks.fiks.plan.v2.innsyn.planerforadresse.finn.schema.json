@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/FinnPlanerForAdresse.v2.schema.json",
+    "title": "FinnPlanerForAdresse",
+    "description": "Finner alle planer som beroerer en adresse. ",
+    "definitions": {
+    },
+    "type": "object",
+    "properties": {
+        "adresse": {
+            "type": "object",
+            "properties": {
+                "adressekode": {
+                    "type": "string"
+                },
+                "adressenavn": {
+                    "type": "string"
+                },
+                "adressenummer": {
+                    "type": "integer"
+                },
+                "adressebokstav": {
+                    "type": "string"
+                },
+                "seksjonsnummer": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "adressenavn",
+                "adressenummer"
+            ]
+        }
+    },
+    "required": [
+        "adresse"
+    ]
+}

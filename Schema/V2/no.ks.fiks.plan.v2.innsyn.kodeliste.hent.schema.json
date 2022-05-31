@@ -1,0 +1,15 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/HentKodeliste.v2.schema.json",
+    "title": "HentKodeliste",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "kodelistenavn": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "kodelistenavn"
+    ]
+}

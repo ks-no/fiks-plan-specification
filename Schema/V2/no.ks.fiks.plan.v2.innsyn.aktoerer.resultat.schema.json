@@ -1,0 +1,20 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/Aktorer.v2.schema.json",
+    "title": "Aktoerer",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "aktoer": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "rolle": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/HentPlanfil.v2.schema.json",
+    "title": "HentPlanfil",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "referanseDokumentfil": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "referanseDokumentfil"
+    ]
+}

@@ -1,0 +1,207 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.oppdatering/RegistrerDispensasjonPlan.v2.schema.json",
+    "title": "RegistrerDispensasjonPlan",
+    "definitions": {
+        "Plandokument": {
+            "type": "object",
+            "properties": {
+                "tittel": {
+                    "type": "string"
+                },
+                "dokumenttype": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "referanseDokumentfil": {
+                    "type": "string"
+                },
+                "mimetype": {
+                    "type": "string"
+                },
+                "dokumentsdato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "arkivnavn": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "tittel",
+                "referanseDokumentfil",
+                "arkivnavn"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "dispensasjon": {
+            "type": "object",
+            "properties": {
+                "identifikasjon": {
+                    "type": "string"
+                },
+                "dispensasjon": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "nasjonalArealplanId": {
+                    "type": "object",
+                    "properties": {
+                        "administrativEnhet": {
+                            "properties": {
+                                "kommunenummer": {
+                                    "description": "Kommunenummer",
+                                    "type": "string"
+                                },
+                                "fylkesnummer": {
+                                    "description": "Fylkesnummer",
+                                    "type": "string"
+                                },
+                                "landskode": {
+                                    "description": "Landskode",
+                                    "type": "string"
+                                }
+                            },
+                            "oneOf": [
+                                { "required": [ "kommunenummer" ] },
+                                { "required": [ "fylkesnummer" ] },
+                                { "required": [ "landskode" ] }
+                            ]
+                        },
+                        "planidentifikasjon": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "administrativEnhet",
+                        "planidentifikasjon"
+                    ]
+                },
+                "begrunnelse": {
+                    "type": "string"
+                },
+                "vedtaksdato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "posisjon": {
+                    "description": "Punkt",
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "Point"
+                            ]
+                        },
+                        "coordinates": {
+                            "type": "array",
+                            "minItems": 2,
+                            "items": {
+                                "type": "number"
+                            }
+                        },
+                        "crs": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "name"
+                                    ]
+                                },
+                                "properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "type",
+                        "coordinates"
+                    ]
+                },
+                "vertikalnivaa": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "beskrivelse": {
+                    "type": "string"
+                },
+                "innvilgetDispensasjon": {
+                    "type": "boolean"
+                },
+                "saksnummer": {
+                    "type": "object",
+                    "properties": {
+                        "saksaar": {
+                            "type": "integer"
+                        },
+                        "sakssekvensnummer": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "saksaar",
+                        "sakssekvensnummer"
+                    ]
+                },
+                "varigDispensasjon": {
+                    "type": "boolean"
+                },
+                "varighetFra": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "varighetTil": {
+                    "type": "string",
+                    "format": "date"
+                }
+            },
+            "required": [
+                "dispensasjon",
+                "nasjonalArealplanId",
+                "vedtaksdato",
+                "innvilgetDispensasjon",
+                "varigDispensasjon"
+            ]
+        },
+        "plandokument": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Plandokument"
+            }
+        }
+    },
+    "required": [
+        "dispensasjon"
+    ]
+}

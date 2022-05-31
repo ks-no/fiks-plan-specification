@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/FinnPlaner.v2.schema.json",
+    "title": "FinnPlaner",
+    "definitions": {
+    },
+    "type": "object",
+    "properties": {
+        "soekskriterie": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "felt": {
+                        "type": "string",
+                        "enum": [
+                            "nasjonalArealplanId.kommunenummer",
+                            "nasjonalArealplanId.fylkesnummer",
+                            "nasjonalArealplanId.landkode",
+                            "nasjonalArealplanId.planidentifikasjon",
+                            "plantype.kodeverdi",
+                            "plannavn",
+                            "planstatus.kodeverdi",
+                            "plandokumentasjonOppdatert",
+                            "ubehandletKlage",
+                            "ubehandletInnsigelse",
+                            "vedtakEndeligPlandato",
+                            "lovreferanse.kodeverdi",
+                            "forslagstillertype"
+                        ]
+                    },
+                    "operator": {
+                        "type": "string",
+                        "enum": [
+                            "equal",
+                            "notequal",
+                            "between",
+                            "lessthan",
+                            "lessequal",
+                            "greaterthan",
+                            "greaterequal",
+                            "inlist"
+                        ]
+                    },
+                    "parameterverdier": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "felt",
+                    "operator",
+                    "parameterverdier"
+                ]
+            }
+        }
+    },
+    "required": [
+        "soekskriterie"
+    ]
+}

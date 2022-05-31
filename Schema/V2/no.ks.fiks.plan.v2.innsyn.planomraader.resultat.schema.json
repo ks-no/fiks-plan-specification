@@ -1,0 +1,64 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/Planomraader.v2.schema.json",
+    "title": "Planomraader",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "planomraade": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "omraade": {
+                        "type": "object",
+                        "properties": {
+                            "koordinatsystem": {
+                                "type": "string"
+                            },
+                            "ytreAvgrensning": {
+                                "type": "string"
+                            },
+                            "vertikallag": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "koordinatsystem",
+                            "ytreAvgrensning"
+                        ]
+                    },
+                    "vertikalnivaa": {
+                        "type": "string",
+                        "enum": [
+                            "Under grunnen",
+                            "På grunnen/vannoverflate",
+                            "Over grunnen (bru)",
+                            "På bunnen (vann/sjoe)",
+                            "I vannsoeylen"
+                        ]
+                    },
+                    "vertikallag": {
+                        "type": "object",
+                        "properties": {
+                            "lag": {
+                                "type": "string"
+                            },
+                            "referansehoeyde": {
+                                "type": "object",
+                                "properties": {
+                                    "hoeydeverdi": {
+                                        "type": "string"
+                                    },
+                                    "hoeydereferansesystem": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

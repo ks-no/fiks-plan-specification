@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://no.ks.fiks.gi.plan.innsyn/FinnPlandokumenter.v2.schema.json",
+    "title": "FinnPlandokumenter",
+    "definitions": {
+    },
+    "type": "object",
+    "properties": {
+        "saksnummer": {
+            "type": "object",
+            "properties": {
+                "saksaar": {
+                    "type": "integer"
+                },
+                "sakssekvensnummer": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "saksaar",
+                "sakssekvensnummer"
+            ]
+        }
+    }
+}
