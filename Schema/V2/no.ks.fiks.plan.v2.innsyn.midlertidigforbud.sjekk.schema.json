@@ -5,36 +5,59 @@
     "definitions": {},
     "type": "object",
     "properties": {
-        "omraade": {
+      "crs": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "properties": {
+            "type": "object",
             "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "Polygon"
-                    ]
-                },
-                "coordinates": {
-                    "type": "array",
-                    "items": {
-                        "type": "array",
-                        "minItems": 4,
-                        "items": {
-                            "type": "array",
-                            "minItems": 2,
-                            "items": {
-                                "type": "number"
-                            }
-                        }
-                    }
-                }
+              "name": {
+                "type": "string"
+              }
             },
             "required": [
-                "type",
-                "coordinates"
+              "name"
             ]
-        }
+          }
+        },
+        "required": [
+          "type",
+          "properties"
+        ]
+      },
+      "omraade": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "Polygon"
+            ]
+          },
+          "coordinates": {
+            "type": "array",
+            "minItems": 4,            
+              "items": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "number"
+                }
+            }
+          }
+        },
+        "required": [
+          "type",
+          "coordinates"
+        ]
+      }
     },
     "required": [
-        "omraade"
+      "omraade",
+      "crs"
     ]
-}
+  }
+  
