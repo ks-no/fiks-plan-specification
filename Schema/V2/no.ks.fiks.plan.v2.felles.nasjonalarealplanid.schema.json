@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json",
+    "title": "NasjonalArealplanId",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "administrativEnhet": {
+            "properties": {
+                "kommunenummer": {
+                    "description": "Kommunenummer",
+                    "type": "string"
+                },
+                "fylkesnummer": {
+                    "description": "Fylkesnummer",
+                    "type": "string"
+                },
+                "landskode": {
+                    "description": "Landskode",
+                    "type": "string"
+                }
+            },
+            "oneOf": [
+                {
+                    "required": [
+                        "kommunenummer"
+                    ]
+                },
+                {
+                    "required": [
+                        "fylkesnummer"
+                    ]
+                },
+                {
+                    "required": [
+                        "landskode"
+                    ]
+                }
+            ]
+        },
+        "planidentifikasjon": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "administrativEnhet",
+        "planidentifikasjon"
+    ]
+}

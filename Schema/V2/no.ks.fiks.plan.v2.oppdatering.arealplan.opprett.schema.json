@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://no.ks.fiks.gi.plan.oppdatering/OpprettArealplan.v2.schema.json",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.schema.json",
     "title": "OpprettArealplan",
     "definitions": {},
     "type": "object",

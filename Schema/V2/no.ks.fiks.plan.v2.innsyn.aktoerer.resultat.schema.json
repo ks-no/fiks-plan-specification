@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://no.ks.fiks.gi.plan.innsyn/Aktorer.v2.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.aktoerer.resultat.schema.json",
     "title": "Aktoerer",
     "definitions": {},
     "type": "object",
