@@ -5,11 +5,10 @@ pipeline {
             when {
                 anyOf {
                     branch 'main'
-                    branch 'bygg_dotnet_models'
                 }
             }
             steps {
-                build job: '/KS/fiks-plan-models-dotnet/jenkins_pipeline', parameters: [[$class: 'StringParameterValue', name: 'triggerbranch', value: env.BRANCH_NAME]]
+                build job: '/KS/fiks-plan-models-dotnet/main', parameters: [[$class: 'StringParameterValue', name: 'triggerbranch', value: env.BRANCH_NAME]]
             }
         }
     }
