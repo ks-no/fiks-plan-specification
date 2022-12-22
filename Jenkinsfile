@@ -5,6 +5,7 @@ pipeline {
             when {
                 anyOf {
                     branch 'main'
+                    branch 'bygg_dotnet_models'
                 }
             }
             steps {
