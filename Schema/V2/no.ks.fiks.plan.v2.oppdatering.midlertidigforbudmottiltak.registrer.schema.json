@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://no.ks.fiks.gi.plan.oppdatering/RegistrerMidlertidigForbudMotTiltak.v2.schema.json",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.midlertidigforbudmottiltak.registrer.schema.json",
     "description": "Forvaltning av «midlertidig forbud mot tiltak» i planregister ”Midlertidig forbud mot tiltak” er ikke en plantype, og dermed heller ikke arealplandata, men gyldighetsområdet skal likevel inngå i kommunalt planregister, og forvaltes som et eget datalag. Dette fordi slike midlertidige forbud mot tiltak utgjør en kraftig restriksjon i videre bruk av arealer inntil det er gjennomført ny planprosess. ",
     "title": "RegistrerMidlertidigForbudMotTiltak",
     "definitions": {},

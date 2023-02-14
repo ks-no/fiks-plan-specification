@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://no.ks.fiks.gi.plan.innsyn/HentPlanfil.v2.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.planfil.hent.schema.json",
     "title": "HentPlanfil",
     "definitions": {},
     "type": "object",
