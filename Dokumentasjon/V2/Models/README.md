@@ -14,5 +14,5 @@ Vi ønsker å skrive de om til PlantUML slik at de lettere kan oppdateres underv
 
 ## Oppdatering
 
-### [Registrer planbehandling](oppdatering/planbehandling-registrer)
+### [Registrer planbehandling](Oppdatering/planbehandling-registrer)
 
