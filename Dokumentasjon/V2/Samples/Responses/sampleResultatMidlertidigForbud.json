@@ -1,0 +1,28 @@
+﻿{
+    "midlertidigForbud": {
+        "omraade": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [ -109, 41 ],
+                    [ -102, 41 ],
+                    [ -102, 37 ],
+                    [ -109, 37 ],
+                    [ -109, 41 ]
+                ]
+            ],
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "EPSG:3857"
+                }
+            }
+        },
+        "avgjoerelsedato": "2020-01-01",
+        "pblTiltakForbudtype": {
+            "kodeverdi": "kodeverdi",
+            "kodebeskrivelse": "kodebeskrivelse"
+        },
+        "gyldigTilDato": "2020-12-01"
+    }
+}

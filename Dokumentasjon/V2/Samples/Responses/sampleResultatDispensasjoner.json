@@ -1,0 +1,19 @@
+﻿{
+    "dispensasjoner": [
+        {
+            "dispensasjon": {
+                "kodeverdi": "141",
+                "kodebeskrivelse": "KpArealformål grønnstruktur § 11-7 nr. 3"
+            },
+            "nasjonalArealplanID": {
+                "administrativEnhet": {
+                    "kommunenummer": "4203"
+                },
+                "planidentifikasjon": "01_27_1988"
+            },
+            "vedtaksdato": "2020-06-13",
+            "innvilgetDispensasjon": true,
+            "varigDispensasjon": true
+        }
+    ]
+}

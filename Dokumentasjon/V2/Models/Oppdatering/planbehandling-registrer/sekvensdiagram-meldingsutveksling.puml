@@ -1,0 +1,21 @@
+@startuml
+skinparam sequenceMessageAlign center 
+
+participant Fagsystem as "Fagsystem"
+participant Plangregister as "Planregister"
+
+Fagsystem -> Plangregister : no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer
+Fagsystem <- Plangregister : no.ks.fiks.plan.v2.mottatt
+
+
+note left of Fagsystem
+Dette viser meldingsutveksling
+ved "Registrer planbehandling" hvor 
+mottat-melding skal sendes tilbake.
+Mottatt-melding har ikke payload.
+**Merk:** diagram er forenklet uten
+Fiks-Protokoll som meldingskø
+mellom Fagsystem og Plangregister
+end note
+
+@enduml

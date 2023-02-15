@@ -1,4 +1,4 @@
-# Meldingsutveksling
+# Modeller
 
 Alle sekvensdiagrammer er forenklet med at man har utelatt Fiks-Protokoll som meldingssystem mellom avsender og mottakende system.
 Alle meldinger går via Fiks-Protokoll.
