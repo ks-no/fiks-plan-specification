@@ -1,0 +1,25 @@
+﻿{
+    "plan": [
+        {
+            "nasjonalArealplanId": {
+                "administrativEnhet": {
+                    "kommunenummer": "0821"
+                },
+                "planidentifikasjon": "09062018-2"
+            },
+            "plannavn": "plannavn",
+            "plantype": {
+                "kodeverdi": "1",
+                "kodebeskrivelse": "plantype"
+            },
+            "planstatus": {
+                "kodeverdi": "1",
+                "kodebeskrivelse": "planstatus"
+            },
+            "plandokumentasjonOppdatert": true,
+            "ubehandletKlage": false,
+            "ubehandletInnsigelse": false,
+            "forslagstillerType": "offentlig"
+        }
+    ]
+}

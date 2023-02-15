@@ -1,0 +1,31 @@
+﻿{
+    "adresse": {
+        "adressekode": "adressekode",
+        "adressenavn": "adressenavn",
+        "adressenummer": 1,
+        "adressebokstav": "A",
+        "seksjonsnummer": 3
+    },
+    "plan": [
+        {
+            "nasjonalArealplanId": {
+                "administrativEnhet": {
+                    "kommunenummer": "4203"
+                },
+                "planidentifikasjon": "09062018-2"
+            },
+            "plannavn": "OMRÅDEPLAN FOR HIS ALLÉ",
+            "plantype": {
+                "kodeverdi": "35",
+                "kodebeskrivelse": "Detaljregulering"
+            },
+            "planstatus": {
+                "kodeverdi": "1",
+                "kodebeskrivelse": "planstatus"
+            },
+            "plandokumentasjonOppdatert": true,
+            "ubehandletKlage": false,
+            "ubehandletInnsigelse": false
+        }
+    ]
+}

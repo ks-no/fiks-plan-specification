@@ -1,0 +1,35 @@
+﻿{
+    "nasjonalArealplanId": {
+        "administrativEnhet": {
+            "kommunenummer": "0821"
+        },
+        "planidentifikasjon": "01_27_1988"
+    },
+    "planrelasjon": {
+        "planforhold": {
+            "kodeverdi": "1",
+            "kodebeskrivelse": "endrer / blir endret av"
+        },
+        "arealplan": {
+            "nasjonalArealplanId": {
+                "administrativEnhet": {
+                    "kommunenummer": "0821"
+                },
+                "planidentifikasjon": "planidentifikasjon"
+            },
+            "plannavn": "plannavn",
+            "plantype": {
+                "kodeverdi": "1",
+                "kodebeskrivelse": "plantype"
+            },
+            "planstatus": {
+                "kodeverdi": "1",
+                "kodebeskrivelse": "planstatus"
+            },
+            "plandokumentasjonOppdatert": true,
+            "ubehandletKlage": false,
+            "ubehandletInnsigelse": false,
+            "forslagstillerType": "offentlig"
+        }
+    }
+}

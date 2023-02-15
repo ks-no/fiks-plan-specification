@@ -1,0 +1,50 @@
+﻿{
+    "arealplan": {
+        "nasjonalArealplanId": {
+            "administrativEnhet": {
+                "kommunenummer": "0821"
+            },
+            "planidentifikasjon": "09062018-2"
+        },
+        "plantype": {
+            "kodeverdi": "1",
+            "kodebeskrivelse": "plantype"
+        },
+        "plannavn": "plannavn",
+        "planstatus": {
+            "kodeverdi": "1",
+            "kodebeskrivelse": "planstatus"
+        },
+        "plandokumentasjonOppdatert": true,
+        "ubehandletKlage": false,
+        "ubehandletInnsigelse": false,
+        "forslagsstillerType": "offentlig"
+    },
+    "planbehandlinger": [
+        {
+            "posisjon": {
+                "type": "Point",
+                "coordinates": [
+                    1.02345,
+                    2.33333
+                ],
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG:3857"
+                    }
+                }
+            },
+            "dato": "2020-06-13",
+            "saksnummer": {
+                "saksaar": 2019,
+                "sakssekvensnummer": 1234465
+            },
+            "planbehandlingtype": {
+                "kodeverdi": "1",
+                "kodebeskrivelse": "planstatus"
+            },
+            "navn": "planbehandlingsnavn"
+        }
+    ]
+}

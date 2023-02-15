@@ -1,0 +1,12 @@
+﻿{
+    "plandokument": [
+        {
+            "tittel": "planbestemmelse",
+            "referanseDokumentfil": "nasjonal_mal_reguleringsplanbestemmelserbokmaal.docx",
+            "dokumenttype": {
+                "kodeverdi": "kodeverdi",
+                "kodebeskrivelse": "kodebeskrivelse"
+            }
+        }
+    ]
+}
