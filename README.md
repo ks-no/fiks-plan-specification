@@ -15,3 +15,5 @@ Modeller ligger i dette repositoriet mens dokumentasjonen ligger i wiki for dett
 
 Når man gjør endringer i PlantUML koden kan man kjøre `generate-png-from-puml.sh` scriptet for å generere png filer ut av PlantUML koden. Dette forutsetter at man har installert PlantUML og graphviz.
 
+Modeller
+
