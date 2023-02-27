@@ -1,0 +1,44 @@
+@startuml
+
+class FinnPlaner {
+    {field} Soekskriterie :  soekskriterie[]
+}
+
+class soekskriterie {
+    {field} Felt : soekskriterieFelt
+    {field} Operator : soekskriterieOperator
+    {field} Parameterverdier : String
+}
+
+enum soekskriterieFelt {
+    nasjonalArealplanId.kommunenummer
+    nasjonalArealplanId.fylkesnummer
+    nasjonalArealplanId.landkode
+    nasjonalArealplanId.planidentifikasjon
+    plantype.kodeverdi
+    plannavn
+    planstatus.kodeverdi
+    plandokumentasjonOppdatert
+    ubehandletKlage
+    ubehandletInnsigelse
+    vedtakEndeligPlandato
+    lovreferanse.kodeverdi
+    forslagstillertype
+}
+
+enum soekskriterieOperator {
+     equal
+     notequal
+     between
+     lessthan
+     lessequal
+     greaterthan
+     greaterequal
+     inlist
+}
+
+FinnPlaner *-- soekskriterie
+soekskriterie *-- soekskriterieFelt
+soekskriterie *-- soekskriterieOperator
+
+@enduml

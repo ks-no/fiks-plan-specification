@@ -12,6 +12,10 @@ Les mer om PlantUML her: https://plantuml.com/
 Klassediagrammene er generert i et verktøy tidligere i prosjektet og kan være utdatert. 
 Vi ønsker å skrive de om til PlantUML slik at de lettere kan oppdateres underveis.
 
+## Innsyn
+
+### [Finn plan](Innsyn/planer-finn)
+
 ## Oppdatering
 
 ### [Registrer planbehandling](Oppdatering/planbehandling-registrer)
