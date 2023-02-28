@@ -1,0 +1,19 @@
+@startuml
+skinparam sequenceMessageAlign center 
+
+participant Fagsystem as "Fagsystem"
+participant Plangregister as "Planregister"
+
+Fagsystem -> Plangregister : no.ks.fiks.plan.v2.innsyn.planer.finn
+Fagsystem <- Plangregister : no.ks.fiks.plan.v2.innsyn.planer.resultat
+
+
+note left of Fagsystem
+Dette viser meldingsutveksling
+ved "Finn planer".
+**Merk:** diagram er forenklet uten
+Fiks-Protokoll som meldingskø
+mellom Fagsystem og Plangregister
+end note
+
+@enduml

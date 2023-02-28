@@ -1,0 +1,69 @@
+@startuml
+
+interface Basis::PlanBasis {
+    {method} **FinnPlaner**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planer.finn
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planer
+    ..
+    {method} **FinnPlanerForMatrikkelenhet**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planerformatrikkelenhet.finn
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planerformatrikkelenhet.resultat.schema.json
+}
+
+interface Utvidet::PlanUtvidet {
+    {method} **FinnDispensasjoner**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn 
+    {method} retur-melding :  no.ks.fiks.plan.v2.innsyn.dispensasjoner.resultat
+    ..
+    {method} **FinnPlanbehandlinger**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planbehandlinger.resultat
+    ..
+    {method} **HentArealplan**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.arealplan.hent
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.arealplan.resultat
+    ..
+    {method} **HentGjeldendePlanbestemmelser**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.resultat
+    ..
+    {method} **HentAktører**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.aktoerer.hent
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.aktoerer.resultat
+    ..
+    {method} **HentRelatertePlaner** 
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.relaterteplaner.hent
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.relaterteplaner.resultat
+    ..
+    {method} **HentKodelister**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.kodeliste.hent
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.kodeliste.resultat
+    ..
+    {method} **FinnPlandokumenter**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.plandokumenter.finn
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.plandokumenter.resultat
+    ..
+    {method} **HentPlanfil**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planfil.hent
+    {method} retur-melding: Ingen melding. 
+}
+
+interface Kart::PlanKart {
+    {method} **FinnPlanerForOmråde**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planerforomraade.finn
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planerforomraade.resultat
+    ..
+    {method} **HentBboxForPlan**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.bboxforplan.hent
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.bboxforplan.resultat
+    ..
+    {method} **HentPlanområder**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planomraader.hent
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planomraader.resultat
+    ..
+    {method} **SjekkMidlertidigForbud**
+    {method} inn-melding: no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.midlertidigforbud.resultat
+}
+
+@enduml
