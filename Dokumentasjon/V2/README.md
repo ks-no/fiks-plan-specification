@@ -60,4 +60,4 @@ Hver meldingstype har et tilhørende skjema, med samme navn, som følger med i d
 
 ## Diagrammer og modeller
 
-### [Meldingsutveksling](meldingsutveksling/README.md)
+### [Meldingsutveksling](Models/README.md)
