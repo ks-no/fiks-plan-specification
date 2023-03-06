@@ -1,7 +1,7 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.resultat.schema.json",
-    "title": "MidlertidigForbud",
+    "title": "SjekkMidlertidigForbudResultat",
     "definitions": {},
     "type": "object",
     "properties": {

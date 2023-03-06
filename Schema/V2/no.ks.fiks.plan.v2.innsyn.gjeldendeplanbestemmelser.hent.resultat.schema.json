@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.plandokumenter.resultat.schema.json",
-    "title": "Plandokumenter",
+    "$id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.resultat.schema.json",
+    "title": "HentGjeldendePlanbestemmelserResultat",
     "definitions": {
         "Plandokument": {
             "type": "object",
@@ -10,19 +10,34 @@
                 "tittel": {
                     "type": "string"
                 },
-
                 "dokumenttype": {
-                    "type": "string"
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
                 },
                 "referanseDokumentfil": {
                     "type": "string"
                 },
                 "mimetype": {
                     "type": "string"
-                } 
+                },
+                "dokumentsdato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "arkivnavn": {
+                    "type": "string"
+                }
             },
             "required": [
                 "tittel",
+                "dokumenttype",
                 "referanseDokumentfil"
             ]
         }

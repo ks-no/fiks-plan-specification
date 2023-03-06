@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planbehandlinger.resultat.schema.json",
-    "title": "Planbehandlinger",
+    "$id": "no.ks.fiks.plan.v2.innsyn.arealplan.resultat.schema.json",
+    "title": "HentArealplanResultat",
     "definitions": {
         "Planbehandling": {
             "type": "object",
@@ -92,6 +92,82 @@
     },
     "type": "object",
     "properties": {
+        "arealplan": {
+            "type": "object",
+            "properties": {
+                "nasjonalArealplanId": {
+                    "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+                },
+                "plantype": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "plannavn": {
+                    "type": "string"
+                },
+                "planstatus": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "plandokumentasjonOppdatert": {
+                    "type": "boolean"
+                },
+                "ubehandletKlage": {
+                    "type": "boolean"
+                },
+                "ubehandletInnsigelse": {
+                    "type": "boolean"
+                },
+                "vedtakEndeligPlandato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "lovreferanse": {
+                    "type": "object",
+                    "properties": {
+                        "kodeverdi": {
+                            "type": "string"
+                        },
+                        "kodebeskrivelse": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "forslagsstillerType": {
+                    "type": "string",
+                    "enum": [
+                        "offentlig",
+                        "privat"
+                    ]
+                },
+                "alternativFinnes": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "nasjonalArealplanId",
+                "plantype",
+                "plannavn",
+                "planstatus",
+                "plandokumentasjonOppdatert",
+                "ubehandletKlage",
+                "ubehandletInnsigelse"
+            ]
+        },
         "planbehandlinger": {
             "type": "array",
             "items": {

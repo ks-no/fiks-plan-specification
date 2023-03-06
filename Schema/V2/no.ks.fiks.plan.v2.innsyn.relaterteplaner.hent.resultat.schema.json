@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "no.ks.fiks.plan.v2.innsyn.relaterteplaner.resultat.schema.json",
-    "title": "RelatertePlaner",
+    "title": "HentRelatertePlanerResultat",
     "definitions": {},
     "type": "object",
     "properties": {

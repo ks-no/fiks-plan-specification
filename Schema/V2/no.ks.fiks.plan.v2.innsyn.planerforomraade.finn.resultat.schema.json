@@ -1,8 +1,7 @@
-{
+﻿{
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planerforadresse.resultat.schema.json",
-    "title": "PlanerForAdresse",
-    "description": "Resultat for alle planer som beroerer en adresse. ",
+    "$id": "no.ks.fiks.plan.v2.innsyn.planerforomraade.resultat.schema.json",
+    "title": "FinnPlanerForOmraadeResultat",
     "definitions": {
         "Arealplan": {
             "type": "object",
@@ -54,9 +53,6 @@
                         "offentlig",
                         "privat"
                     ]
-                },
-                "alternativFinnes": {
-                    "type": "boolean"
                 }
             },
             "required": [
@@ -66,44 +62,18 @@
                 "planstatus",
                 "plandokumentasjonOppdatert",
                 "ubehandletKlage",
-                "ubehandletInnsigelse"
+                "ubehandletInnsigelse",
+                "forslagstillerType"
             ]
         }
     },
     "type": "object",
     "properties": {
-        "adresse": {
-            "type": "object",
-            "properties": {
-                "adressekode": {
-                    "type": "string"
-                },
-                "adressenavn": {
-                    "type": "string"
-                },
-                "adressenummer": {
-                    "type": "integer"
-                },
-                "adressebokstav": {
-                    "type": "string"
-                },
-                "seksjonsnummer": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "adressenavn",
-                "adressenummer"
-            ]
-        },
         "plan": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/Arealplan"
             }
         }
-    },
-    "required": [
-        "adresse"
-    ]
+    }
 }
