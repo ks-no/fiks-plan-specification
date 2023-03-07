@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "no.ks.fiks.plan.v2.innsyn.planerformatrikkelenhet.resultat.schema.json",
+  "$id": "no.ks.fiks.plan.v2.innsyn.planerformatrikkelenhet.finn.resultat.schema.json",
   "title": "FinnPlanerForMatrikkelenhetResultat",
   "description": "Finner alle planer som beroerer en eiendom. ",
   "definitions": {

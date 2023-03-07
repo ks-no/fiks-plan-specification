@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planerforadresse.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.planerforadresse.finn.resultat.schema.json",
     "title": "FinnPlanerForAdresseResultat",
     "description": "Resultat for alle planer som beroerer en adresse. ",
     "definitions": {

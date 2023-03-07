@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.oppdatering.dispensasjonplan.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.dispensasjonplan.registrer.resultat.schema.json",
     "title": "RegistrerDispensasjonplanResultat",
     "type": "object",
     "properties": {

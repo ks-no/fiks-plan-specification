@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.aktoerer.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.aktoerer.hent.resultat.schema.json",
     "title": "HentAktoererResultat",
     "definitions": {},
     "type": "object",
