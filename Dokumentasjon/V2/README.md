@@ -56,8 +56,3 @@ Hver meldingstype har et tilhørende skjema, med samme navn, som følger med i d
 - `no.ks.fiks.plan.v2.feilmelding.ikkefunnet.schema.json`
 - `no.ks.fiks.plan.v2.feilmelding.serverfeil.schema.json`
 - `no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel.schema.json`
-
-
-## Diagrammer og modeller
-
-### [Meldingsutveksling](Models/README.md)

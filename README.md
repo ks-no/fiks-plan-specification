@@ -19,6 +19,8 @@ Når man gjør endringer i PlantUML koden kan man kjøre `generate-png-from-puml
 
 ### [Meldinger i protokollen](Dokumentasjon/V2)
 
+### [Dokumentasjon for meldingsutvekslinger](Dokumentasjon/V2/Models)
+
 ### [GI til Fiks-Plan forklaring](Dokumentasjon/V2/GI/Innsyn)
 
 
