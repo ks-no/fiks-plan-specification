@@ -1,95 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.arealplan.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.arealplan.hent.resultat.schema.json",
     "title": "HentArealplanResultat",
-    "definitions": {
-        "Planbehandling": {
-            "type": "object",
-            "properties": {
-                "posisjon": {
-                    "description": "Punkt",
-                    "type": "object",
-                    "properties": {
-                        "type": {
-                            "type": "string",
-                            "enum": [
-                                "Point"
-                            ]
-                        },
-                        "coordinates": {
-                            "type": "array",
-                            "minItems": 2,
-                            "items": {
-                                "type": "number"
-                            }
-                        },
-                        "crs": {
-                            "type": "object",
-                            "properties": {
-                                "type": {
-                                    "type": "string",
-                                    "enum": [
-                                        "name"
-                                    ]
-                                },
-                                "properties": {
-                                    "type": "object",
-                                    "properties": {
-                                        "name": {
-                                            "type": "string"
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "type",
-                        "coordinates"
-                    ]
-                },
-                "dato": {
-                    "type": "string",
-                    "format": "date"
-                },
-                "saksnummer": {
-                    "type": "object",
-                    "properties": {
-                        "saksaar": {
-                            "type": "integer"
-                        },
-                        "sakssekvensnummer": {
-                            "type": "integer"
-                        }
-                    },
-                    "required": [
-                        "saksaar",
-                        "sakssekvensnummer"
-                    ]
-                },
-                "planbehandlingtype": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "navn": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "dato",
-                "saksnummer",
-                "planbehandlingtype",
-                "navn"
-            ]
-        }
-    },
     "type": "object",
     "properties": {
         "arealplan": {
@@ -171,7 +83,7 @@
         "planbehandlinger": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/Planbehandling"
+                "$ref": "no.ks.fiks.plan.v2.felles.planbehandling.schema.json"
             }
         }
     }
