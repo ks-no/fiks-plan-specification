@@ -1,16 +1,16 @@
 @startuml
 
-class FinnPlaner {
-    {field} Soekskriterie :  Soekskriterie[]
+class FinnPlanerResultat {
+    {field} Plan :  Plan[]
 }
 
-class Soekskriterie {
-    {field} Felt : SoekskriterieFelt
-    {field} Operator : SoekskriterieOperator
+class soekskriterie {
+    {field} Felt : soekskriterieFelt
+    {field} Operator : soekskriterieOperator
     {field} Parameterverdier : String
 }
 
-enum SoekskriterieFelt {
+enum soekskriterieFelt {
     nasjonalArealplanId.kommunenummer
     nasjonalArealplanId.fylkesnummer
     nasjonalArealplanId.landkode
@@ -26,7 +26,7 @@ enum SoekskriterieFelt {
     forslagstillertype
 }
 
-enum SoekskriterieOperator {
+enum soekskriterieOperator {
      equal
      notequal
      between
@@ -37,8 +37,8 @@ enum SoekskriterieOperator {
      inlist
 }
 
-FinnPlaner *-- Soekskriterie
-Soekskriterie *-- SoekskriterieFelt
-Soekskriterie *-- SoekskriterieOperator
+FinnPlaner *-- soekskriterie
+soekskriterie *-- soekskriterieFelt
+soekskriterie *-- soekskriterieOperator
 
 @enduml

@@ -5,12 +5,13 @@ participant Fagsystem as "Fagsystem"
 participant Plangregister as "Planregister"
 
 Fagsystem -> Plangregister : no.ks.fiks.plan.v2.innsyn.planer.finn
-Fagsystem <- Plangregister : no.ks.fiks.plan.v2.innsyn.planer.finn.resultat
+Fagsystem <- Plangregister : no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel
 
 
 note left of Fagsystem
 Dette viser meldingsutveksling
-ved "Finn planer".
+ved "Finn planer" hvor det er en 
+ugyldig forespørsel fra Fagsystem.
 **Merk:** diagram er forenklet uten
 Fiks-Protokoll som meldingskø
 mellom Fagsystem og Plangregister
