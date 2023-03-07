@@ -1,4 +1,4 @@
-# Modeller for finn planer
+# Finn planer
 
 **Meldinger**: 
 - `no.ks.fiks.plan.v2.innsyn.planer.finn`
