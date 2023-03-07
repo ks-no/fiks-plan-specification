@@ -1,0 +1,85 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.arealplan.schema.json",
+    "title": "Arealplan",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "nasjonalArealplanId": {
+            "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        },
+        "plantype": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "plannavn": {
+            "type": "string"
+        },
+        "planstatus": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "plandokumentasjonOppdatert": {
+            "type": "boolean"
+        },
+        "ubehandletKlage": {
+            "type": "boolean"
+        },
+        "ubehandletInnsigelse": {
+            "type": "boolean"
+        },
+        "vedtaksdato": {
+            "type": "string",
+            "format": "date"
+        },
+        "vedtakEndeligPlanDato": {
+            "type": "string",
+            "format": "date"
+        },
+        "lovreferanse": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "forslagstillerType": {
+            "type": "string",
+            "enum": [
+                "offentlig",
+                "privat"
+            ]
+        },
+        "alternativFinnes": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "nasjonalArealplanId",
+        "plantype",
+        "plannavn",
+        "planstatus",
+        "plandokumentasjonOppdatert",
+        "ubehandletKlage",
+        "ubehandletInnsigelse",
+        "forslagstillerType" 
+    ]
+}
