@@ -29,7 +29,7 @@
     },
     "type": "object",
     "properties": {
-        "plandokument": {
+        "plandokumenter": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/Plandokument"

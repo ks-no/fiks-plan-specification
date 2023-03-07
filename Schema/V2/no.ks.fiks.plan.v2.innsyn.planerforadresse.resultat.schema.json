@@ -96,7 +96,7 @@
                 "adressenummer"
             ]
         },
-        "plan": {
+        "planer": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/Arealplan"

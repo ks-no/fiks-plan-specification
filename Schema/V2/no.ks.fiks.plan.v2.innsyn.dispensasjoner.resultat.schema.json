@@ -38,7 +38,7 @@
                             "Point"
                         ]
                     },
-                    "coordinates": {
+                    "koordinater": {
                         "type": "array",
                         "minItems": 2,
                         "items": {
@@ -67,7 +67,7 @@
                 },
                 "required": [
                     "type",
-                    "coordinates"
+                    "koordinater"
                 ]
             },
             "vertikalnivaa": {
