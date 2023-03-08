@@ -3,75 +3,38 @@
     "$id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater.schema.json",
     "title": "OppdaterDispensasjon",
     "definitions": {
-        "Plandokument": {
-            "type": "object",
-            "properties": {
-                "tittel": {
-                    "type": "string"
-                },
-                "dokumenttype": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "referanseDokumentfil": {
-                    "type": "string"
-                },
-                "mimetype": {
-                    "type": "string"
-                },
-                "dokumentsdato": {
-                    "type": "string",
-                    "format": "date"
-                },
-                "arkivnavn": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "tittel",
-                "referanseDokumentfil",
-                "arkivnavn"
-            ]
-        }
     },
     "type": "object",
     "properties": {
         "dispensasjon": {
             "$ref": "no.ks.fiks.plan.v2.felles.dispensasjon.schema.json"
-        }
-    },
-    "opphevIdentifikasjon": {
-        "type": "string"
-    },
-    "begrunnelse": {
-        "type": "string"
-    },
-    "referanseKlageSaksnummer": {
-        "type": "object",
-        "properties": {
-            "saksaar": {
-                "type": "integer"
-            },
-            "sakssekvensnummer": {
-                "type": "integer"
-            }
         },
-        "required": [
-            "saksaar",
-            "sakssekvensnummer"
-        ]
-    },
-    "plandokument": {
-        "type": "array",
-        "items": {
-            "$ref": "#/definitions/Plandokument"
+        "opphevIdentifikasjon": {
+            "type": "string"
+        },
+        "begrunnelse": {
+            "type": "string"
+        },
+        "referanseKlageSaksnummer": {
+            "type": "object",
+            "properties": {
+                "saksaar": {
+                    "type": "integer"
+                },
+                "sakssekvensnummer": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "saksaar",
+                "sakssekvensnummer"
+            ]
+        },
+        "plandokument": {
+            "type": "array",
+            "items": {
+                "$ref": "no.ks.fiks.plan.v2.felles.plandokument.schema.json"
+            }
         }
     }
 }

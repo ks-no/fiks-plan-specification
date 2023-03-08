@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json",
+    "title": "Plandokument",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "tittel": {
+            "type": "string"
+        },
+        "dokumenttype": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "referanseDokumentfil": {
+            "type": "string"
+        },
+        "mimetype": {
+            "type": "string"
+        },
+        "dokumentsdato": {
+            "type": "string",
+            "format": "date"
+        },
+        "arkivnavn": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "tittel",
+        "referanseDokumentfil",
+        "arkivnavn",
+        "dokumenttype"
+    ]
+}

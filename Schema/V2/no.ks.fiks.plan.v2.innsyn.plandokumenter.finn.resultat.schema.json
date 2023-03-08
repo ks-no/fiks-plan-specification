@@ -3,36 +3,13 @@
     "$id": "no.ks.fiks.plan.v2.innsyn.plandokumenter.finn.resultat.schema.json",
     "title": "FinnPlandokumenterResultat",
     "definitions": {
-        "Plandokument": {
-            "type": "object",
-            "properties": {
-
-                "tittel": {
-                    "type": "string"
-                },
-
-                "dokumenttype": {
-                    "type": "string"
-                },
-                "referanseDokumentfil": {
-                    "type": "string"
-                },
-                "mimetype": {
-                    "type": "string"
-                } 
-            },
-            "required": [
-                "tittel",
-                "referanseDokumentfil"
-            ]
-        }
     },
     "type": "object",
     "properties": {
         "plandokument": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/Plandokument"
+                "$ref": "no.ks.fiks.plan.v2.felles.plandokument.schema.json"
             }
         }
     }

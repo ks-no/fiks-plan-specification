@@ -3,51 +3,13 @@
     "$id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent.resultat.schema.json",
     "title": "HentGjeldendePlanbestemmelserResultat",
     "definitions": {
-        "Plandokument": {
-            "type": "object",
-            "properties": {
-
-                "tittel": {
-                    "type": "string"
-                },
-                "dokumenttype": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "referanseDokumentfil": {
-                    "type": "string"
-                },
-                "mimetype": {
-                    "type": "string"
-                },
-                "dokumentsdato": {
-                    "type": "string",
-                    "format": "date"
-                },
-                "arkivnavn": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "tittel",
-                "dokumenttype",
-                "referanseDokumentfil"
-            ]
-        }
     },
     "type": "object",
     "properties": {
         "plandokument": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/Plandokument"
+                "$ref": "no.ks.fiks.plan.v2.felles.plandokument.schema.json"
             }
         }
     }
