@@ -1,9 +1,9 @@
-{
+﻿{
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planer.resultat.schema.json",
-    "title": "PlanerForSoek",
+    "$id": "no.ks.fiks.plan.v2.innsyn.planerforomraade.resultat.schema.json",
+    "title": "FinnPlanerForOmraadeResultat",
     "definitions": {
-        "plan": {
+        "Arealplan": {
             "type": "object",
             "properties": {
                 "nasjonalArealplanId": {
@@ -72,7 +72,7 @@
         "planer": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/plan"
+                "$ref": "#/definitions/Arealplan"
             }
         }
     }

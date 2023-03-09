@@ -1,26 +1,34 @@
-{
+﻿{
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planbehandlinger.resultat.schema.json",
-    "title": "Planbehandlinger",
-    "definitions": {
-        "Planbehandling": {
+    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.resultat.schema.json",
+    "title": "SjekkMidlertidigForbudResultat",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "midlertidigForbud": {
+            "description": "PblMidlForbudMotTiltakOmraade",
             "type": "object",
             "properties": {
-                "posisjon": {
-                    "description": "Punkt",
-                    "type": "object",
+                "omraade": {
                     "properties": {
                         "type": {
                             "type": "string",
                             "enum": [
-                                "Point"
+                                "Polygon"
                             ]
                         },
                         "koordinater": {
                             "type": "array",
-                            "minItems": 2,
                             "items": {
-                                "type": "number"
+                                "type": "array",
+                                "minItems": 4,
+                                "items": {
+                                    "type": "array",
+                                    "minItems": 2,
+                                    "items": {
+                                        "type": "number"
+                                    }
+                                }
                             }
                         },
                         "crs": {
@@ -48,10 +56,6 @@
                         "koordinater"
                     ]
                 },
-                "dato": {
-                    "type": "string",
-                    "format": "date"
-                },
                 "saksnummer": {
                     "type": "object",
                     "properties": {
@@ -67,7 +71,11 @@
                         "sakssekvensnummer"
                     ]
                 },
-                "planbehandlingtype": {
+                "avgjoerelsedato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "pblTiltakForbudtype": {
                     "type": "object",
                     "properties": {
                         "kodeverdi": {
@@ -78,25 +86,20 @@
                         }
                     }
                 },
-                "navn": {
+                "gyldigTilDato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "omraadenavn": {
                     "type": "string"
                 }
             },
             "required": [
-                "dato",
-                "saksnummer",
-                "planbehandlingtype",
-                "navn"
+                "omraade",
+                "avgjoerelsedato",
+                "pblTiltakForbudtype",
+                "gyldigTilDato"
             ]
-        }
-    },
-    "type": "object",
-    "properties": {
-        "planbehandlinger": {
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/Planbehandling"
-            }
         }
     }
 }

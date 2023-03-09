@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "no.ks.fiks.plan.v2.innsyn.planerformatrikkelenhet.resultat.schema.json",
-  "title": "PlanerForMatrikkelenhet",
+  "title": "FinnPlanerForMatrikkelenhetResultat",
   "description": "Finner alle planer som beroerer en eiendom. ",
   "definitions": {
     "Arealplan": {

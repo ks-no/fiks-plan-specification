@@ -3,45 +3,45 @@
 interface Basis::PlanBasis {
     {method} **FinnPlaner**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planer.finn
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planer
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planer.finn.resultat
     ..
     {method} **FinnPlanerForMatrikkelenhet**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planerformatrikkelenhet.finn
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planerformatrikkelenhet.resultat.schema.json
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planerformatrikkelenhet.finn.resultat.schema.json
 }
 
 interface Utvidet::PlanUtvidet {
     {method} **FinnDispensasjoner**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn 
-    {method} retur-melding :  no.ks.fiks.plan.v2.innsyn.dispensasjoner.resultat
+    {method} retur-melding :  no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn.resultat
     ..
     {method} **FinnPlanbehandlinger**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planbehandlinger.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn.resultat
     ..
     {method} **HentArealplan**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.arealplan.hent
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.arealplan.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.arealplan.hent.resultat
     ..
     {method} **HentGjeldendePlanbestemmelser**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent.resultat
     ..
     {method} **HentAktører**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.aktoerer.hent
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.aktoerer.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.aktoerer.hent.resultat
     ..
     {method} **HentRelatertePlaner** 
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.relaterteplaner.hent
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.relaterteplaner.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.relaterteplaner.hent.resultat
     ..
     {method} **HentKodelister**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.kodeliste.hent
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.kodeliste.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.kodeliste.hent.resultat
     ..
     {method} **FinnPlandokumenter**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.plandokumenter.finn
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.plandokumenter.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.plandokumenter.finn.resultat
     ..
     {method} **HentPlanfil**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planfil.hent
@@ -51,19 +51,19 @@ interface Utvidet::PlanUtvidet {
 interface Kart::PlanKart {
     {method} **FinnPlanerForOmråde**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planerforomraade.finn
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planerforomraade.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planerforomraade.finn.resultat
     ..
     {method} **HentBboxForPlan**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.bboxforplan.hent
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.bboxforplan.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.bboxforplan.hent.resultat
     ..
     {method} **HentPlanområder**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.planomraader.hent
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planomraader.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.planomraader.hent.resultat
     ..
     {method} **SjekkMidlertidigForbud**
     {method} inn-melding: no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk
-    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.midlertidigforbud.resultat
+    {method} retur-melding: no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.resultat
 }
 
 @enduml
