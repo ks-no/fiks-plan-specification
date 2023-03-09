@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.kodeliste.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.kodeliste.hent.resultat.schema.json",
     "title": "HentKodelisteResultat",
     "definitions": {},
     "type": "object",
