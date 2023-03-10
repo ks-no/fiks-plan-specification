@@ -8,7 +8,7 @@
         "identifikasjon": {
             "type": "string"
         },
-        "dispensasjon": {
+        "dispensasjonType": {
             "type": "object",
             "properties": {
                 "kodeverdi": {
@@ -116,7 +116,7 @@
         }
     },
     "required": [
-        "dispensasjon",
+        "dispensasjonType",
         "nasjonalArealplanId",
         "vedtaksdato",
         "innvilgetDispensasjon",
