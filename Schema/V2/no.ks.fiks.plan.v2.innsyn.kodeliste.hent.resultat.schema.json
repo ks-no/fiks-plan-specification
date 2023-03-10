@@ -8,7 +8,7 @@
         "navn": {
             "type": "string"
         },
-        "kode": {
+        "koder": {
             "type": "array",
             "items": {
                 "type": "object",

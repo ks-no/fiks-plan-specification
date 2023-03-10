@@ -69,7 +69,7 @@
     },
     "type": "object",
     "properties": {
-        "plan": {
+        "planer": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/plan"

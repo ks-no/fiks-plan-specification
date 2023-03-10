@@ -5,7 +5,7 @@
     "definitions": {},
     "type": "object",
     "properties": {
-        "planomraade": {
+        "planomraader": {
             "type": "array",
             "items": {
                 "type": "object",

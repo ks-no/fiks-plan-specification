@@ -17,7 +17,7 @@
                                 "Polygon"
                             ]
                         },
-                        "coordinates": {
+                        "koordinater": {
                             "type": "array",
                             "items": {
                                 "type": "array",
@@ -53,7 +53,7 @@
                     },
                     "required": [
                         "type",
-                        "coordinates"
+                        "koordinater"
                     ]
                 },
                 "saksnummer": {

@@ -8,7 +8,7 @@
       "nasjonalArealplanId": {
         "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
       },
-      "planrelasjon": {
+      "planrelasjoner": {
         "type": "array",
         "items": {
           "properties": {

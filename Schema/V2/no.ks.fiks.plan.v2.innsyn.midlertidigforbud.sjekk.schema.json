@@ -37,7 +37,7 @@
                         "Polygon"
                     ]
                 },
-                "coordinates": {
+                "koordinater": {
                     "type": "array",
                         "minItems": 4,
                         "items": {
@@ -51,7 +51,7 @@
             },
             "required": [
                 "type",
-                "coordinates"
+                "koordinater"
             ]
         }
     },

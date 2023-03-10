@@ -9,7 +9,7 @@
         "dispensasjon": {
             "$ref": "no.ks.fiks.plan.v2.felles.dispensasjon.schema.json"
         },
-        "plandokument": {
+        "plandokumenter": {
             "type": "array",
             "items": {
                 "$ref": "no.ks.fiks.plan.v2.felles.plandokument.schema.json"

@@ -6,7 +6,7 @@
     },
     "type": "object",
     "properties": {
-        "plandokument": {
+        "plandokumenter": {
             "type": "array",
             "items": {
                 "$ref": "no.ks.fiks.plan.v2.felles.plandokument.schema.json"
