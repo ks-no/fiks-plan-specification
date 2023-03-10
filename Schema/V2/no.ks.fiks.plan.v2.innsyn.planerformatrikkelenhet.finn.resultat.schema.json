@@ -4,61 +4,6 @@
   "title": "FinnPlanerForMatrikkelenhetResultat",
   "description": "Finner alle planer som beroerer en eiendom. ",
   "definitions": {
-    "Arealplan": {
-      "type": "object",
-      "properties": {
-        "nasjonalArealplanId": {
-          "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
-        },
-        "plantype": {
-          "type": "object",
-          "properties": {
-            "kodeverdi": {
-              "type": "string"
-            },
-            "kodebeskrivelse": {
-              "type": "string"
-            }
-          }
-        },
-        "plannavn": {
-          "type": "string"
-        },
-        "planstatus": {
-          "type": "object",
-          "properties": {
-            "kodeverdi": {
-              "type": "string"
-            },
-            "kodebeskrivelse": {
-              "type": "string"
-            }
-          }
-        },
-        "plandokumentasjonOppdatert": {
-          "type": "boolean"
-        },
-        "ubehandletKlage": {
-          "type": "boolean"
-        },
-        "ubehandletInnsigelse": {
-          "type": "boolean"
-        },
-        "vedtaksdato": {
-          "type": "string",
-          "format": "date"
-        }
-      },
-      "required": [
-        "nasjonalArealplanId",
-        "plantype",
-        "plannavn",
-        "planstatus",
-        "plandokumentasjonOppdatert",
-        "ubehandletKlage",
-        "ubehandletInnsigelse"
-      ]
-    }
   },
   "type": "object",
   "properties": {
@@ -90,7 +35,7 @@
     "planer": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/Arealplan"
+        "$ref": "no.ks.fiks.plan.v2.felles.arealplan.schema.json"
       }
     }
   },
