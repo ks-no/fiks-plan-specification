@@ -36,7 +36,6 @@
     "required": [
         "tittel",
         "referanseDokumentfil",
-        "arkivnavn",
         "dokumenttype"
     ]
 }
