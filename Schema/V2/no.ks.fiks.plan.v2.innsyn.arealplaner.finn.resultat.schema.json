@@ -1,12 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planer.finn.resultat.schema.json",
-    "title": "FinnPlanerResultat",
+    "$id": "no.ks.fiks.plan.v2.innsyn.arealplan.finn.resultat.schema.json",
+    "title": "FinnArealplanerResultat",
     "definitions": {
     },
     "type": "object",
     "properties": {
-        "planer": {
+        "arealplaner": {
             "type": "array",
             "items": {
                 "$ref": "no.ks.fiks.plan.v2.felles.arealplan.schema.json"

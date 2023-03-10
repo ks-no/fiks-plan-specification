@@ -32,7 +32,7 @@
         "bruksnummer"
       ]
     },
-    "planer": {
+    "arealplaner": {
       "type": "array",
       "items": {
         "$ref": "no.ks.fiks.plan.v2.felles.arealplan.schema.json"

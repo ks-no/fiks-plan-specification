@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planer.finn.schema.json",
-    "title": "FinnPlaner",
+    "$id": "no.ks.fiks.plan.v2.innsyn.arealplan.finn.schema.json",
+    "title": "FinnArealplaner",
     "definitions": {
     },
     "type": "object",
