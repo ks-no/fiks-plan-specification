@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planerforomraade.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.planerforomraade.finn.resultat.schema.json",
     "title": "FinnPlanerForOmraadeResultat",
     "definitions": {
         "Arealplan": {
@@ -69,7 +69,7 @@
     },
     "type": "object",
     "properties": {
-        "plan": {
+        "planer": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/Arealplan"

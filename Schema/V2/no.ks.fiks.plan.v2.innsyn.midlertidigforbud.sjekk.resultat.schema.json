@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.resultat.schema.json",
     "title": "SjekkMidlertidigForbudResultat",
     "definitions": {},
     "type": "object",
@@ -17,7 +17,7 @@
                                 "Polygon"
                             ]
                         },
-                        "coordinates": {
+                        "koordinater": {
                             "type": "array",
                             "items": {
                                 "type": "array",
@@ -53,7 +53,7 @@
                     },
                     "required": [
                         "type",
-                        "coordinates"
+                        "koordinater"
                     ]
                 },
                 "saksnummer": {

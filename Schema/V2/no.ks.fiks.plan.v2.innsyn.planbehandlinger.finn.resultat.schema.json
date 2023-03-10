@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planbehandlinger.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn.resultat.schema.json",
     "title": "FinnPlanbehandlingerResultat",
     "definitions": {
         "Planbehandling": {
@@ -16,7 +16,7 @@
                                 "Point"
                             ]
                         },
-                        "coordinates": {
+                        "koordinater": {
                             "type": "array",
                             "minItems": 2,
                             "items": {
@@ -45,7 +45,7 @@
                     },
                     "required": [
                         "type",
-                        "coordinates"
+                        "koordinater"
                     ]
                 },
                 "dato": {

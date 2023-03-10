@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.relaterteplaner.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.relaterteplaner.hent.resultat.schema.json",
     "title": "HentRelatertePlanerResultat",
     "definitions": {},
     "type": "object",
@@ -8,7 +8,7 @@
       "nasjonalArealplanId": {
         "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
       },
-      "planrelasjon": {
+      "planrelasjoner": {
         "type": "array",
         "items": {
           "properties": {

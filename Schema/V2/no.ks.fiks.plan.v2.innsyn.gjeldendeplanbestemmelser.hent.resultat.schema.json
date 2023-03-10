@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent.resultat.schema.json",
     "title": "HentGjeldendePlanbestemmelserResultat",
     "definitions": {
         "Plandokument": {
@@ -44,7 +44,7 @@
     },
     "type": "object",
     "properties": {
-        "plandokument": {
+        "plandokumenter": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/Plandokument"

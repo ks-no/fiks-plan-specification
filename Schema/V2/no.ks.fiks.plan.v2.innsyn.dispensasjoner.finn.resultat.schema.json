@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.dispensasjoner.resultat.schema.json",
+    "$id": "no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn.resultat.schema.json",
     "title": "FinnDispensasjonerResultat",
     "definitions": {
         "dispensasjon": {
@@ -38,7 +38,7 @@
                             "Point"
                         ]
                     },
-                    "coordinates": {
+                    "koordinater": {
                         "type": "array",
                         "minItems": 2,
                         "items": {
@@ -67,7 +67,7 @@
                 },
                 "required": [
                     "type",
-                    "coordinates"
+                    "koordinater"
                 ]
             },
             "vertikalnivaa": {
