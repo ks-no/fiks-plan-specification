@@ -46,19 +46,7 @@
             }
         },
         "saksnummer": {
-            "type": "object",
-            "properties": {
-                "saksaar": {
-                    "type": "integer"
-                },
-                "sakssekvensnummer": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "saksaar",
-                "sakssekvensnummer"
-            ]
+            "$ref": "no.ks.fiks.plan.v2.felles.saksnummer.schema.json"
         },
         "forslagstillerType": {
             "type": "string",
