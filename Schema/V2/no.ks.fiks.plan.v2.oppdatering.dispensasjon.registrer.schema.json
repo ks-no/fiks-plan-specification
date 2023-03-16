@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.schema.json",
+    "title": "RegistrerDispensasjon",
+    "definitions": {
+    },
+    "type": "object",
+    "properties": {
+        "dispensasjon": {
+            "$ref": "no.ks.fiks.plan.v2.felles.dispensasjon.schema.json"
+        },
+        "plandokumenter": {
+            "type": "array",
+            "items": {
+                "$ref": "no.ks.fiks.plan.v2.felles.plandokument.schema.json"
+            }
+        }
+    },
+    "required": [
+        "dispensasjon"
+    ]
+}
