@@ -73,13 +73,6 @@
         }
     },
     "required": [
-        "nasjonalArealplanId",
-        "plantype",
         "plannavn",
-        "planstatus",
-        "plandokumentasjonOppdatert",
-        "ubehandletKlage",
-        "ubehandletInnsigelse",
-        "forslagstillerType" 
     ]
 }
