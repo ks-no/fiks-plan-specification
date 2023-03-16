@@ -28,78 +28,7 @@
               ]
             },
             "arealplan": {
-              "type": "object",
-              "properties": {
-                "nasjonalArealplanId": {
-                  "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
-                },
-                "plantype": {
-                  "type": "object",
-                  "properties": {
-                    "kodeverdi": {
-                      "type": "string"
-                    },
-                    "kodebeskrivelse": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "plannavn": {
-                  "type": "string"
-                },
-                "planstatus": {
-                  "type": "object",
-                  "properties": {
-                    "kodeverdi": {
-                      "type": "string"
-                    },
-                    "kodebeskrivelse": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "plandokumentasjonOppdatert": {
-                  "type": "boolean"
-                },
-                "ubehandletKlage": {
-                  "type": "boolean"
-                },
-                "ubehandletInnsigelse": {
-                  "type": "boolean"
-                },
-                "vedtakEndeligPlanDato": {
-                  "type": "string",
-                  "format": "date"
-                },
-                "lovreferanse": {
-                  "type": "object",
-                  "properties": {
-                    "kodeverdi": {
-                      "type": "string"
-                    },
-                    "kodebeskrivelse": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "forslagstillerType": {
-                  "type": "string",
-                  "enum": [
-                    "offentlig",
-                    "privat"
-                  ]
-                }
-              },
-              "required": [
-                "nasjonalArealplanId",
-                "plantype",
-                "plannavn",
-                "planstatus",
-                "plandokumentasjonOppdatert",
-                "ubehandletKlage",
-                "ubehandletInnsigelse",
-                "forslagstillerType"
-              ]
+              "$ref": "no.ks.fiks.plan.v2.felles.arealplan.schema.json"
             }
           }
         },

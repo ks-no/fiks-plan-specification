@@ -1,0 +1,74 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json",
+    "title": "Dispensasjon",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "identifikasjon": {
+            "type": "string"
+        },
+        "dispensasjonType": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "nasjonalArealplanId": {
+            "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        },
+        "begrunnelse": {
+            "type": "string"
+        },
+        "vedtaksdato": {
+            "type": "string",
+            "format": "date"
+        },
+        "posisjon": {
+            "$ref": "no.ks.fiks.plan.v2.felles.posisjon.schema.json"
+        },
+        "vertikalnivaa": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "beskrivelse": {
+            "type": "string"
+        },
+        "innvilgetDispensasjon": {
+            "type": "boolean"
+        },
+        "saksnummer": {
+            "$ref": "no.ks.fiks.plan.v2.felles.saksnummer.schema.json"
+        },
+        "varigDispensasjon": {
+            "type": "boolean"
+        },
+        "varighetFra": {
+            "type": "string",
+            "format": "date"
+        },
+        "varighetTil": {
+            "type": "string",
+            "format": "date"
+        }
+    },
+    "required": [
+        "dispensasjonType",
+        "nasjonalArealplanId",
+        "vedtaksdato",
+        "innvilgetDispensasjon",
+        "varigDispensasjon"
+    ]
+}

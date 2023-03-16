@@ -3,124 +3,13 @@
     "$id": "no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn.resultat.schema.json",
     "title": "FinnDispensasjonerResultat",
     "definitions": {
-        "dispensasjon": {
-            "identifikasjon": {
-                "type": "string"
-            },
-            "dispensasjon": {
-                "type": "object",
-                "properties": {
-                    "kodeverdi": {
-                        "type": "string"
-                    },
-                    "kodebeskrivelse": {
-                        "type": "string"
-                    }
-                }
-            },
-            "nasjonalArealplanId": {
-                "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
-            },
-            "begrunnelse": {
-                "type": "string"
-            },
-            "vedtaksdato": {
-                "type": "string",
-                "format": "date"
-            },
-            "posisjon": {
-                "description": "Punkt",
-                "type": "object",
-                "properties": {
-                    "type": {
-                        "type": "string",
-                        "enum": [
-                            "Point"
-                        ]
-                    },
-                    "koordinater": {
-                        "type": "array",
-                        "minItems": 2,
-                        "items": {
-                            "type": "number"
-                        }
-                    },
-                    "crs": {
-                        "type": "object",
-                        "properties": {
-                            "type": {
-                                "type": "string",
-                                "enum": [
-                                    "name"
-                                ]
-                            },
-                            "properties": {
-                                "type": "object",
-                                "properties": {
-                                    "name": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "required": [
-                    "type",
-                    "koordinater"
-                ]
-            },
-            "vertikalnivaa": {
-                "type": "object",
-                "properties": {
-                    "kodeverdi": {
-                        "type": "string"
-                    },
-                    "kodebeskrivelse": {
-                        "type": "string"
-                    }
-                }
-            },
-            "beskrivelse": {
-                "type": "string"
-            },
-            "innvilgetDispensasjon": {
-                "type": "boolean"
-            },
-            "saksnummer": {
-                "type": "object",
-                "properties": {
-                    "saksaar": {
-                        "type": "integer"
-                    },
-                    "sakssekvensnummer": {
-                        "type": "integer"
-                    }
-                },
-                "required": [
-                    "saksaar",
-                    "sakssekvensnummer"
-                ]
-            },
-            "varigDispensasjon": {
-                "type": "boolean"
-            },
-            "varighetFra": {
-                "type": "string",
-                "format": "date"
-            },
-            "varighetTil": {
-                "type": "string",
-                "format": "date"
-            }
-        }
     },
     "type": "object",
     "properties": {
         "dispensasjoner": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/dispensasjon"
+                "$ref": "no.ks.fiks.plan.v2.felles.dispensasjon.schema.json"
             }
         }
     }

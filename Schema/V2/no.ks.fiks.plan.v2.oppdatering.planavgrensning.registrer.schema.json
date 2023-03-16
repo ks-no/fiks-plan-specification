@@ -3,43 +3,6 @@
     "$id": "no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer.schema.json",
     "title": "RegistrerPlanavgrensning",
     "definitions": {
-        "Plandokument": {
-            "type": "object",
-            "properties": {
-                "tittel": {
-                    "type": "string"
-                },
-                "dokumenttype": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "referanseDokumentfil": {
-                    "type": "string"
-                },
-                "mimetype": {
-                    "type": "string"
-                },
-                "dokumentsdato": {
-                    "type": "string",
-                    "format": "date"
-                },
-                "arkivnavn": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "tittel",
-                "referanseDokumentfil",
-                "arkivnavn"
-            ]
-        }
     },
     "type": "object",
     "properties": {
@@ -47,24 +10,12 @@
             "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
         },
         "saksnummer": {
-            "type": "object",
-            "properties": {
-                "saksaar": {
-                    "type": "integer"
-                },
-                "sakssekvensnummer": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "saksaar",
-                "sakssekvensnummer"
-            ]
+            "$ref": "no.ks.fiks.plan.v2.felles.saksnummer.schema.json"
         },
         "vedlegg": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/Plandokument"
+                "$ref": "no.ks.fiks.plan.v2.felles.plandokument.schema.json"
             }
         }
     }

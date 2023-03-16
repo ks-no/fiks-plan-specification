@@ -3,193 +3,38 @@
     "$id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater.schema.json",
     "title": "OppdaterDispensasjon",
     "definitions": {
-        "Plandokument": {
-            "type": "object",
-            "properties": {
-                "tittel": {
-                    "type": "string"
-                },
-                "dokumenttype": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "referanseDokumentfil": {
-                    "type": "string"
-                },
-                "mimetype": {
-                    "type": "string"
-                },
-                "dokumentsdato": {
-                    "type": "string",
-                    "format": "date"
-                },
-                "arkivnavn": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "tittel",
-                "referanseDokumentfil",
-                "arkivnavn"
-            ]
-        }
     },
     "type": "object",
     "properties": {
-        "oppdater": {
+        "dispensasjon": {
+            "$ref": "no.ks.fiks.plan.v2.felles.dispensasjon.schema.json"
+        },
+        "opphevIdentifikasjon": {
+            "type": "string"
+        },
+        "begrunnelse": {
+            "type": "string"
+        },
+        "referanseKlageSaksnummer": {
             "type": "object",
             "properties": {
-                "identifikasjon": {
-                    "type": "string"
+                "saksaar": {
+                    "type": "integer"
                 },
-                "dispensasjon": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "nasjonalArealplanId": {
-                    "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
-                },
-                "begrunnelse": {
-                    "type": "string"
-                },
-                "vedtaksdato": {
-                    "type": "string",
-                    "format": "date"
-                },
-                "posisjon": {
-                    "description": "Punkt",
-                    "type": "object",
-                    "properties": {
-                        "type": {
-                            "type": "string",
-                            "enum": [
-                                "Point"
-                            ]
-                        },
-                        "koordinater": {
-                            "type": "array",
-                            "minItems": 2,
-                            "items": {
-                                "type": "number"
-                            }
-                        },
-                        "crs": {
-                            "type": "object",
-                            "properties": {
-                                "type": {
-                                    "type": "string",
-                                    "enum": [
-                                        "name"
-                                    ]
-                                },
-                                "properties": {
-                                    "type": "object",
-                                    "properties": {
-                                        "name": {
-                                            "type": "string"
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": [
-                        "type",
-                        "koordinater"
-                    ]
-                },
-                "vertikalnivaa": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "beskrivelse": {
-                    "type": "string"
-                },
-                "innvilgetDispensasjon": {
-                    "type": "boolean"
-                },
-                "saksnummer": {
-                    "type": "object",
-                    "properties": {
-                        "saksaar": {
-                            "type": "integer"
-                        },
-                        "sakssekvensnummer": {
-                            "type": "integer"
-                        }
-                    },
-                    "required": [
-                        "saksaar",
-                        "sakssekvensnummer"
-                    ]
-                },
-                "varigDispensasjon": {
-                    "type": "boolean"
-                },
-                "varighetFra": {
-                    "type": "string",
-                    "format": "date"
-                },
-                "varighetTil": {
-                    "type": "string",
-                    "format": "date"
+                "sakssekvensnummer": {
+                    "type": "integer"
                 }
             },
             "required": [
-                "dispensasjon",
-                "nasjonalArealplanId",
-                "vedtaksdato",
-                "innvilgetDispensasjon",
-                "varigDispensasjon"
+                "saksaar",
+                "sakssekvensnummer"
             ]
-        }
-    },
-    "opphevIdentifikasjon": {
-        "type": "string"
-    },
-    "begrunnelse": {
-        "type": "string"
-    },
-    "referanseKlageSaksnummer": {
-        "type": "object",
-        "properties": {
-            "saksaar": {
-                "type": "integer"
-            },
-            "sakssekvensnummer": {
-                "type": "integer"
-            }
         },
-        "required": [
-            "saksaar",
-            "sakssekvensnummer"
-        ]
-    },
-    "plandokumenter": {
-        "type": "array",
-        "items": {
-            "$ref": "#/definitions/Plandokument"
+        "plandokumenter": {
+            "type": "array",
+            "items": {
+                "$ref": "no.ks.fiks.plan.v2.felles.plandokument.schema.json"
+            }
         }
     }
 }

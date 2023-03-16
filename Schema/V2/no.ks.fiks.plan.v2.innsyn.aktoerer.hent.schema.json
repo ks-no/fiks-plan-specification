@@ -6,19 +6,7 @@
     "type": "object",
     "properties": {
         "saksnummer": {
-            "type": "object",
-            "properties": {
-                "saksaar": {
-                    "type": "integer"
-                },
-                "sakssekvensnummer": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "saksaar",
-                "sakssekvensnummer"
-            ]
+            "$ref": "no.ks.fiks.plan.v2.felles.saksnummer.schema.json"
         },
         "nasjonalArealplanId": {
             "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
