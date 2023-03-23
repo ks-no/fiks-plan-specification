@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planerforadresse.finn.schema.json",
-    "title": "FinnPlanerForAdresse",
-    "description": "Finner alle planer som beroerer en adresse. ",
+    "$id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.adresse.resultat.schema.json",
+    "title": "FinnArealplanerForAdresseResultat",
+    "description": "Resultat for alle arealplaner som beroerer en adresse. ",
     "definitions": {
     },
     "type": "object",
@@ -30,6 +30,12 @@
                 "adressenavn",
                 "adressenummer"
             ]
+        },
+        "arealplaner": {
+            "type": "array",
+            "items": {
+                "$ref": "no.ks.fiks.plan.v2.felles.arealplan.schema.json"
+            }
         }
     },
     "required": [
