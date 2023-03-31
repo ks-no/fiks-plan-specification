@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "no.ks.fiks.plan.v2.innsyn.planerformatrikkelenhet.finn.schema.json",
-  "title": "FinnPlanerForMatrikkelenhet",
-  "description": "Finner alle planer som beroerer en eiendom. ",
+  "$id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet.schema.json",
+  "title": "FinnArealplanerForMatrikkelenhet",
+  "description": "Finner alle arealplaner som beroerer en eiendom. ",
   "definitions": {
   },
   "type": "object",
