@@ -5,7 +5,7 @@
     "definitions": {},
     "type": "object",
     "properties": {
-        "aktoer": {
+        "aktoerer": {
             "type": "array",
             "items": {
                 "type": "object",
