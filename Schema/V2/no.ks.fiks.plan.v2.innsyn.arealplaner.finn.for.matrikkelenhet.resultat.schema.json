@@ -13,5 +13,8 @@
         "$ref": "no.ks.fiks.plan.v2.felles.arealplan.schema.json"
       }
     }
-  }
+  },
+  "required": [
+    "arealplaner"
+  ]
 }
