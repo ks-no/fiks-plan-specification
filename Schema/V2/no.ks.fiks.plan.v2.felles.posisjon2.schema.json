@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.posisjon.schema.json",
+    "title": "Posisjon",
+    "description": "Punkt",
+    "type": "object",
+    "properties": {
+        "standard": {
+            "type": "string",
+            "enum": [
+                "SRS-WGS84"
+            ]
+        },
+        "geoJson": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "standard",
+        "geoJson"
+    ]
+}

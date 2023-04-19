@@ -1,63 +1,63 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.arealplan.finn.for.omraade.schema.json",
-    "title": "FinnArealplanerForOmraade",
-    "definitions": {},
-    "type": "object",
-    "properties": {
-      "crs": {
-    "type": "object",
-    "properties": {
-          "type": {
-            "type": "string"
-          },
-          "properties": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "name"
-            ]
-          }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "no.ks.fiks.plan.v2.innsyn.arealplan.finn.for.omraade.schema.json",
+  "title": "FinnArealplanerForOmraade",
+  "definitions": {},
+  "type": "object",
+  "properties": {
+    "crs": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
         },
-        "required": [
-          "type",
-          "properties"
-        ]
-      },
-        "omraade": {
-        "type": "object",
         "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "Polygon"
-            ]
-          },
-          "koordinater": {
-            "type": "array",
-            "minItems": 4,
-            "items": {
-              "type": "array",
-              "minItems": 2,
-              "items": {
-                "type": "number"
-              }
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
             }
+          },
+          "required": [
+            "name"
+          ]
         }
+      },
+      "required": [
+        "type",
+        "properties"
+      ]
     },
-    "required": [
-          "type",
-          "koordinater"
-        ]
-      }
-    },
-    "required": [
-      "omraade",
-      "crs"
-    ]
+    "omraade": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Polygon"
+          ]
+        },
+        "koordinater": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "required": [
+        "type",
+        "koordinater"
+      ]
+    }
+  },
+  "required": [
+    "omraade",
+    "crs"
+  ]
 }
   
