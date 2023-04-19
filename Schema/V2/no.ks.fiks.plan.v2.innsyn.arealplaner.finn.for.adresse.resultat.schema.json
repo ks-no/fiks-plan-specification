@@ -7,30 +7,6 @@
     },
     "type": "object",
     "properties": {
-        "adresse": {
-            "type": "object",
-            "properties": {
-                "adressekode": {
-                    "type": "string"
-                },
-                "adressenavn": {
-                    "type": "string"
-                },
-                "adressenummer": {
-                    "type": "integer"
-                },
-                "adressebokstav": {
-                    "type": "string"
-                },
-                "seksjonsnummer": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "adressenavn",
-                "adressenummer"
-            ]
-        },
         "arealplaner": {
             "type": "array",
             "items": {
@@ -39,6 +15,6 @@
         }
     },
     "required": [
-        "adresse"
+        "arealplaner"
     ]
 }

@@ -2,36 +2,11 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet.resultat.schema.json",
   "title": "FinnArealplanerForMatrikkelenhetResultat",
-  "description": "Finner alle arealplaner som beroerer en eiendom. ",
+  "description": "Finner alle arealplaner som beroerer en eiendom.",
   "definitions": {
   },
   "type": "object",
   "properties": {
-    "matrikkelnummer": {
-      "type": "object",
-      "properties": {
-        "kommunenummer": {
-          "type": "string"
-        },
-        "gaardsnummer": {
-          "type": "integer"
-        },
-        "bruksnummer": {
-          "type": "integer"
-        },
-        "festenummer": {
-          "type": "integer"
-        },
-        "seksjonsnummer": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "kommunenummer",
-        "gaardsnummer",
-        "bruksnummer"
-      ]
-    },
     "arealplaner": {
       "type": "array",
       "items": {
@@ -40,6 +15,6 @@
     }
   },
   "required": [
-    "matrikkelnummer"
+    "arealplaner"
   ]
 }
