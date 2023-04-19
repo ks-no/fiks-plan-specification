@@ -58,7 +58,7 @@
         "vedlegg": {
             "type": "array",
             "items": {
-                "$ref": "no.ks.fiks.plan.v2.felles.plandokument.schema.json"
+                "$ref": "no.ks.fiks.plan.v2.felles.dokument.schema.json"
             }
         }
     },
