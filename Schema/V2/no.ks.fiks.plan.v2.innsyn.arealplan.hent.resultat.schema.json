@@ -12,6 +12,12 @@
             "items": {
                 "$ref": "no.ks.fiks.plan.v2.felles.planbehandling.schema.json"
             }
+        },
+        "plandokumenter": {
+            "type": "array",
+            "items": {
+                "$ref": "no.ks.fiks.plan.v2.felles.dokument.schema.json"
+            }
         }
     }
 }
