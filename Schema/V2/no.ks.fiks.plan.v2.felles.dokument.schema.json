@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json",
-    "title": "Plandokument",
+    "$id": "no.ks.fiks.plan.v2.felles.dokument.schema.json",
+    "title": "Dokument",
     "definitions": {},
     "type": "object",
     "properties": {
