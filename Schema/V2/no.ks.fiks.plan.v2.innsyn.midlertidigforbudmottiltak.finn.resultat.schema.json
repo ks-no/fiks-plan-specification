@@ -1,7 +1,7 @@
 ﻿{
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.resultat.schema.json",
-    "title": "SjekkMidlertidigForbudResultat",
+    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.resultat.schema.json",
+    "title": "FinnMidlertidigForbudMotTiltakResultat",
     "definitions": {},
     "type": "object",
     "properties": {
