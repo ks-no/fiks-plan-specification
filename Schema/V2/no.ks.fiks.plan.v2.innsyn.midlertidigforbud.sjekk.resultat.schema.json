@@ -30,25 +30,6 @@
                                     }
                                 }
                             }
-                        },
-                        "crs": {
-                            "type": "object",
-                            "properties": {
-                                "type": {
-                                    "type": "string",
-                                    "enum": [
-                                        "name"
-                                    ]
-                                },
-                                "properties": {
-                                    "type": "object",
-                                    "properties": {
-                                        "name": {
-                                            "type": "string"
-                                        }
-                                    }
-                                }
-                            }
                         }
                     },
                     "required": [
