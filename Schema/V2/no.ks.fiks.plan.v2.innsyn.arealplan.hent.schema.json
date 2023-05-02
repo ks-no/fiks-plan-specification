@@ -11,14 +11,10 @@
         },
         "inkluderPlanbehandlinger": {
             "type": "boolean"
-        },
-        "inkluderPlandokumenter": {
-            "type": "boolean"
         }
     },
     "required": [
         "nasjonalArealplanId",
         "inkluderPlanbehandlinger"
-        "inkluderPlandokumenter"
     ]
 }
