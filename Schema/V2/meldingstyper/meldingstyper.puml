@@ -1,0 +1,367 @@
+@startjson
+{
+  "protokollnavn": "no.ks.fiks.plan",
+  "versjon": "v2",
+  "meldingstyper": [
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.aktoerer.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.aktoerer.innsyn.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.aktoerer.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.aktoerer.hent"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.arealplan.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.arealplan.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.arealplan.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.arealplan.hent"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.adresse",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.omraade",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.arealplaner.finn", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.adresse", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.omraade"]
+    },   
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.bboxforplan.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.bboxforplan.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.bboxforplan.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.bboxforplan.hent"]
+    },    
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.dipsensasjoner.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn.resultat"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.kodeliste.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.kodeliste.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.kodeliste.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.kodeliste.hent"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.plandokumenter.finn",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.plandokumenter.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.plandokumenter.finn.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.plandokumenter.finn"]
+    },    
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.planfil.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.planfil.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.planfil.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.planfil.hent"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.planomraader.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.planomraader.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.planomraader.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.planomraader.hent"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.relaterteplaner.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.relaterteplaner.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.relaterteplaner.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.relaterteplaner.hent"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater.mottatt", "no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt", "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.arealplan.opprett"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.arealplan.opprett"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater.mottatt", "no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.dipsensasjon.registrer",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.midlertidigforbudmottiltak.registrer",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.midlertidigforbudmottiltak.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.midlertidigforbudmottiltak.registrer.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.midlertidigforbudmottiltak.registrer.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.midlertidigforbudmottiltak.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.midlertidigforbudmottiltak.registrer.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.midlertidigforbudmottiltak.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "feilmelding.json",
+      "erSvarPaa": []
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.feilmelding.serverfeil",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "feilmelding.json",
+      "erSvarPaa": []
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.feilmelding.ikkefunnet",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "feilmelding.json",
+      "erSvarPaa": []
+    }
+  ]
+}
+@endjson
