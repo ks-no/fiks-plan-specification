@@ -4,9 +4,9 @@
 
 ## Meldingstyper
 
-Hver meldingstype har et tilhørende skjema, med samme navn, som følger med i denne versjonen av protokollen.
+Protokollen har flere meldingstyper, noen med tilhørende skjema som følger med i denne protokollen og andre uten. 
 
-Meldingstypene og hvordan de henger sammen er definert i json-filen [meldingstyper.json](./../../Schema/V2/meldingstyper/meldingstyper.json)
+Meldingstypene i protokollen og hvordan de henger sammen er definert i json-filen [meldingstyper.json](./../../Schema/V2/meldingstyper/meldingstyper.json)
 
 ## Kart over meldingstypene
 
