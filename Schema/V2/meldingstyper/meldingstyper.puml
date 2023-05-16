@@ -8,7 +8,7 @@
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.aktoerer.innsyn.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.aktoerer.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
     },
     {
       "id": "no.ks.fiks.plan.v2.innsyn.aktoerer.hent.resultat",
