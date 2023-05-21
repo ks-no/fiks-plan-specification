@@ -4,7 +4,7 @@
 
 ## Meldingstyper
 
-Protokollen har flere meldingstyper, noen med tilhørende skjema som følger med i denne protokollen og andre uten. 
+Protokollen har flere meldingstyper, noen med tilhørende skjema som følger med i denne protokollen og andre uten skjema da de ikke har payload. 
 
 Meldingstypene i protokollen og hvordan de henger sammen er definert i json-filen [meldingstyper.json](./../../Schema/V2/meldingstyper/meldingstyper.json)
 
