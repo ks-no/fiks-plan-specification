@@ -1,0 +1,98 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn.resultat.schema.json",
+    "title": "FinnMidlertidigeForbudMotTiltakResultat",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "midlertidigeForbud": {
+            "type": "array",
+            "items": {
+                "midlertidigForbud": {
+                    "description": "PblMidlForbudMotTiltakOmraade",
+                    "type": "object",
+                    "properties": {
+                        "omraade": {
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "Polygon"
+                                    ]
+                                },
+                                "koordinater": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "array",
+                                        "minItems": 4,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 2,
+                                            "items": {
+                                                "type": "number"
+                                            }
+                                        }
+                                    }
+                                },
+                                "crs": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "enum": [
+                                                "name"
+                                            ]
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "required": [
+                                "type",
+                                "koordinater"
+                            ]
+                        },
+                        "saksnummer": {
+                            "$ref": "no.ks.fiks.plan.v2.felles.saksnummer.schema.json"
+                        },
+                        "avgjoerelsedato": {
+                            "type": "string",
+                            "format": "date"
+                        },
+                        "pblTiltakForbudtype": {
+                            "type": "object",
+                            "properties": {
+                                "kodeverdi": {
+                                    "type": "string"
+                                },
+                                "kodebeskrivelse": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "gyldigTilDato": {
+                            "type": "string",
+                            "format": "date"
+                        },
+                        "omraadenavn": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "omraade",
+                        "avgjoerelsedato",
+                        "pblTiltakForbudtype",
+                        "gyldigTilDato"
+                    ]
+                }
+            }
+        }
+    }
+}
