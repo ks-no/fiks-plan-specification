@@ -28,7 +28,10 @@
                 "url": {
                     "type": "string"
                 }
-            }
+            },
+            "required": [
+                "id"
+            ]
         },
         "mimetype": {
             "type": "string"
