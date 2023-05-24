@@ -1,0 +1,68 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.midlertidigforbud.schema.json",
+    "title": "MidlertidigForbud",
+    "description": "PblMidlForbudMotTiltakOmraade",
+    "type": "object",
+    "properties": {
+        "omraade": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Polygon"
+                    ]
+                },
+                "koordinater": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "minItems": 4,
+                        "items": {
+                            "type": "array",
+                            "minItems": 2,
+                            "items": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "type",
+                "koordinater"
+            ]
+        },
+        "saksnummer": {
+            "$ref": "no.ks.fiks.plan.v2.felles.saksnummer.schema.json"
+        },
+        "avgjoerelsedato": {
+            "type": "string",
+            "format": "date"
+        },
+        "pblTiltakForbudtype": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "gyldigTilDato": {
+            "type": "string",
+            "format": "date"
+        },
+        "omraadenavn": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "omraade",
+        "avgjoerelsedato",
+        "pblTiltakForbudtype",
+        "gyldigTilDato"
+    ]
+}
