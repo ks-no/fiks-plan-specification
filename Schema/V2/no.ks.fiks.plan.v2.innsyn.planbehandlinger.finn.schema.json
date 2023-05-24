@@ -7,7 +7,13 @@
     "properties": {
         "nasjonalArealplanId": {
             "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        },
+        "inkluderPlandokumenter": {
+            "type": "boolean"
         }
     },
-    "required": [ "nasjonalArealplanId" ]
+    "required": [
+        "nasjonalArealplanId",
+        "inkluderPlandokumenter"
+    ]
 }

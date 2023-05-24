@@ -51,9 +51,13 @@
                     "parameterverdier"
                 ]
             }
+        },
+        "inkluderPlandokumenter": {
+            "type": "boolean"
         }
     },
     "required": [
-        "soekekriterier"
+        "soekekriterier",
+        "inkluderPlandokumenter"
     ]
 }
