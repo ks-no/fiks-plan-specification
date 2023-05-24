@@ -5,30 +5,7 @@
     "definitions": {},
     "type": "object",
     "properties": {
-      "crs": {
-    "type": "object",
-    "properties": {
-          "type": {
-            "type": "string"
-          },
-          "properties": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "name"
-            ]
-          }
-        },
-        "required": [
-          "type",
-          "properties"
-        ]
-      },
-        "omraade": {
+      "omraade": {
         "type": "object",
         "properties": {
           "type": {
@@ -56,8 +33,7 @@
       }
     },
     "required": [
-      "omraade",
-      "crs"
+      "omraade"
     ]
 }
   
