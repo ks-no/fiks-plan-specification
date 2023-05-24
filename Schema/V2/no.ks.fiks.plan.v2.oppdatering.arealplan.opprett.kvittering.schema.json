@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.resultat.schema.json",
-    "title": "OpprettArealplanResultat",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.kvittering.schema.json",
+    "title": "OpprettArealplanKvittering",
     "definitions": {
     },
     "type": "object",
