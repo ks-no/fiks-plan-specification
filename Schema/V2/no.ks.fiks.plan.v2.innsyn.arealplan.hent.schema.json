@@ -9,12 +9,12 @@
         "nasjonalArealplanId": {
             "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
         },
-        "returnerPlanbehandlinger": {
+        "inkluderPlanbehandlinger": {
             "type": "boolean"
         }
     },
     "required": [
         "nasjonalArealplanId",
-        "returnerPlanbehandlinger"
+        "inkluderPlanbehandlinger"
     ]
 }

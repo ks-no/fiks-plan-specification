@@ -1,7 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.planfil.hent.schema.json",
-    "title": "HentPlanfil",
+    "$id": "no.ks.fiks.plan.v2.innsyn.dokumentfil.hent.schema.json",
+    "description": "Henter en fil basert på referanseDokumentfil. Resultatet vil være en fil.",
+    "title": "HentDokumentfil",
     "definitions": {},
     "type": "object",
     "properties": {
