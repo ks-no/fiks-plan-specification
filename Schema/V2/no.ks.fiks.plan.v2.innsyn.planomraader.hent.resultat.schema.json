@@ -16,8 +16,11 @@
                             "koordinatsystem": {
                                 "type": "string"
                             },
-                            "ytreAvgrensning": {
-                                "type": "string"
+                            "ytreAvgrensninger": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
                             },
                             "vertikallag": {
                                 "type": "string"
