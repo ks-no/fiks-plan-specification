@@ -10,6 +10,7 @@
         },
         "plantype": {
             "type": "object",
+            "description": "Kodeliste: <url til kodeliste for plantyper>",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -24,6 +25,7 @@
         },
         "planstatus": {
             "type": "object",
+            "description": "Kodeliste: <url til kodeliste for planstatuser>",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -52,6 +54,7 @@
         },
         "lovreferanse": {
             "type": "object",
+            "description": "Kodeliste: <url til kodeliste for lovreferanser>",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

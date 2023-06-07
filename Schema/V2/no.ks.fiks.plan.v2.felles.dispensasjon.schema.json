@@ -10,6 +10,7 @@
         },
         "dispensasjonType": {
             "type": "object",
+            "description": "Kodeliste: <url til kodeliste for dispensasjonstyper>",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -34,6 +35,7 @@
         },
         "vertikalnivaa": {
             "type": "object",
+            "description": "Kodeliste: <url til kodeliste for vertikalnivaa>",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

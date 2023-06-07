@@ -10,6 +10,7 @@
         },
         "dokumenttype": {
             "type": "object",
+            "description": "Kodeliste: <url til kodeliste for dokumenttyper>",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
