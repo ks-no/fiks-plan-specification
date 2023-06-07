@@ -13,9 +13,6 @@
                     "omraade": {
                         "type": "object",
                         "properties": {
-                            "koordinatsystem": {
-                                "type": "string"
-                            },
                             "ytreAvgrensninger": {
                                 "type": "array",
                                 "items": {
@@ -27,7 +24,6 @@
                             }
                         },
                         "required": [
-                            "koordinatsystem",
                             "ytreAvgrensning"
                         ]
                     },
