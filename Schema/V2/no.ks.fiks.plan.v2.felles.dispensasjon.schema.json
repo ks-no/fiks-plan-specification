@@ -19,6 +19,17 @@
                 }
             }
         },
+        "dispensasjonFra": {
+            "type": "object",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
         "nasjonalArealplanId": {
             "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
         },
