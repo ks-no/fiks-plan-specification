@@ -66,20 +66,6 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.arealplaner.finn", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.adresse", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.omraade"]
     },   
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.bboxforplan.hent",
-      "beskrivelse": "",
-      "harPayload": true,
-      "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.bboxforplan.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
-    },
-    {
-      "id": "no.ks.fiks.plan.v2.innsyn.bboxforplan.hent.resultat",
-      "beskrivelse": "",
-      "harPayload": true,
-      "payloadFilnavn": "payload.json",
-      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.bboxforplan.hent"]
-    },    
-    {
       "id": "no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn",
       "beskrivelse": "",
       "harPayload": true,
