@@ -1,11 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.schema.json",
-    "title": "SjekkMidlertidigForbud",
+    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn.schema.json",
+    "title": "FinnMidlertidigeForbudMottiltak",
     "definitions": {},
     "type": "object",
     "properties": {
-        "omraade": {
+      "omraade": {
         "type": "object",
             "properties": {
                 "type": {
