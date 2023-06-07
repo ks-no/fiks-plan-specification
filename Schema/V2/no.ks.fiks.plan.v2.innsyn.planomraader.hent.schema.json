@@ -7,9 +7,6 @@
     "properties": {
         "nasjonalArealplanId": {
             "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
-        },
-        "koordinatsystem": {
-            "type": "string"
         }
     },
     "required": [
