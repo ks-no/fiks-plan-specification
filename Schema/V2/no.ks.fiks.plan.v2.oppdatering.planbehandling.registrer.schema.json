@@ -11,6 +11,7 @@
         },
         "planstatus": {
             "type": "object",
+            "description": "Kodeliste: <url til kodeliste for planstatuser>",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

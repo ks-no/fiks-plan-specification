@@ -42,6 +42,7 @@
         },
         "pblTiltakForbudtype": {
             "type": "object",
+            "description": "Kodeliste: <url til kodeliste for forbudtyper>",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

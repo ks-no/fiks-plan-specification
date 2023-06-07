@@ -17,6 +17,7 @@
         },
         "planbehandlingtype": {
             "type": "object",
+            "description": "Kodeliste: <url til kodeliste for behandlingstyper>",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
