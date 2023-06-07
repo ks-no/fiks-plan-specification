@@ -13,14 +13,14 @@
                     "omraade": {
                         "type": "object",
                         "properties": {
-                            "ytreAvgrensninger": {
+                            "ytreAvgrensning": {
+                                "type": "string"
+                            },
+                            "indreAvgrensninger": {
                                 "type": "array",
                                 "items": {
                                     "type": "string"
                                 }
-                            },
-                            "vertikallag": {
-                                "type": "string"
                             }
                         },
                         "required": [
@@ -37,25 +37,6 @@
                             "I vannsoeylen"
                         ]
                     },
-                    "vertikallag": {
-                        "type": "object",
-                        "properties": {
-                            "lag": {
-                                "type": "string"
-                            },
-                            "referansehoeyde": {
-                                "type": "object",
-                                "properties": {
-                                    "hoeydeverdi": {
-                                        "type": "string"
-                                    },
-                                    "hoeydereferansesystem": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
