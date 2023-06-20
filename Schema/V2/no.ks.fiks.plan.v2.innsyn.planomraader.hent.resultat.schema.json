@@ -14,12 +14,12 @@
                         "type": "object",
                         "properties": {
                             "ytreAvgrensning": {
-                                "type": "string"
+                                "$ref": "no.ks.fiks.plan.v2.felles.omraade.schema.json"
                             },
                             "indreAvgrensninger": {
                                 "type": "array",
                                 "items": {
-                                    "type": "string"
+                                    "$ref": "no.ks.fiks.plan.v2.felles.omraade.schema.json"
                                 }
                             }
                         },

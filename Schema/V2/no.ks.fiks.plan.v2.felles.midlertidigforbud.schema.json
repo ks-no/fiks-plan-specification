@@ -6,32 +6,7 @@
     "type": "object",
     "properties": {
         "omraade": {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "Polygon"
-                    ]
-                },
-                "koordinater": {
-                    "type": "array",
-                    "items": {
-                        "type": "array",
-                        "minItems": 4,
-                        "items": {
-                            "type": "array",
-                            "minItems": 2,
-                            "items": {
-                                "type": "number"
-                            }
-                        }
-                    }
-                }
-            },
-            "required": [
-                "type",
-                "koordinater"
-            ]
+            "$ref": "no.ks.fiks.plan.v2.felles.omraade.schema.json"
         },
         "saksnummer": {
             "$ref": "no.ks.fiks.plan.v2.felles.saksnummer.schema.json"
