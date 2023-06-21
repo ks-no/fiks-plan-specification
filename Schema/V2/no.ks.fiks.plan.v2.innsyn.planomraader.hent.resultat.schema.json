@@ -13,18 +13,17 @@
                     "omraade": {
                         "type": "object",
                         "properties": {
-                            "koordinatsystem": {
-                                "type": "string"
-                            },
                             "ytreAvgrensning": {
-                                "type": "string"
+                                "$ref": "no.ks.fiks.plan.v2.felles.omraade.schema.json"
                             },
-                            "vertikallag": {
-                                "type": "string"
+                            "indreAvgrensninger": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "no.ks.fiks.plan.v2.felles.omraade.schema.json"
+                                }
                             }
                         },
                         "required": [
-                            "koordinatsystem",
                             "ytreAvgrensning"
                         ]
                     },
@@ -38,25 +37,6 @@
                             "I vannsoeylen"
                         ]
                     },
-                    "vertikallag": {
-                        "type": "object",
-                        "properties": {
-                            "lag": {
-                                "type": "string"
-                            },
-                            "referansehoeyde": {
-                                "type": "object",
-                                "properties": {
-                                    "hoeydeverdi": {
-                                        "type": "string"
-                                    },
-                                    "hoeydereferansesystem": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
