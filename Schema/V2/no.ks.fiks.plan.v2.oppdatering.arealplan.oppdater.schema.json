@@ -14,7 +14,7 @@
         },
         "plantype": {
             "type": "object",
-            "description": "Kodeliste: <url til kodeliste for plantyper>",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.plantyper.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -26,7 +26,7 @@
         },
         "planstatus": {
             "type": "object",
-            "description": "Kodeliste: <url til kodeliste for planstatuser>",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.planstatuser.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -38,7 +38,7 @@
         },
         "lovreferanse": {
             "type": "object",
-            "description": "Kodeliste: <url til kodeliste for lovreferanser>",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.lovreferanser.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

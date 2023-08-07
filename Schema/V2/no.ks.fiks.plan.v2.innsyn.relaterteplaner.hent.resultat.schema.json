@@ -14,7 +14,7 @@
           "properties": {
             "planforhold": {
               "type": "object",
-              "description": "Kodeliste: <url til kodeliste for planforhold>",
+              "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.planforhold.json",
               "properties": {
                 "kodeverdi": {
                   "type": "string"

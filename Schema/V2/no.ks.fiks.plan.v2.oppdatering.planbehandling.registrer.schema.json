@@ -11,7 +11,7 @@
         },
         "planstatus": {
             "type": "object",
-            "description": "Kodeliste: <url til kodeliste for planstatuser>",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.planstatuser.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

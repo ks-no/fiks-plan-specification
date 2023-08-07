@@ -17,7 +17,7 @@
         },
         "pblTiltakForbudtype": {
             "type": "object",
-            "description": "Kodeliste: <url til kodeliste for forbudtyper>",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.forbudtyper.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

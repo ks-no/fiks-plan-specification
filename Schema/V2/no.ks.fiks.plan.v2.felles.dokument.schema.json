@@ -10,7 +10,7 @@
         },
         "dokumenttype": {
             "type": "object",
-            "description": "Kodeliste: <url til kodeliste for dokumenttyper>",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.dokumenttyper.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

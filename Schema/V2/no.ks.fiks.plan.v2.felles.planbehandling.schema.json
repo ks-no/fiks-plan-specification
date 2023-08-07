@@ -17,7 +17,7 @@
         },
         "planbehandlingtype": {
             "type": "object",
-            "description": "Kodeliste: <url til kodeliste for behandlingstyper>",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.behandlingstyper.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
