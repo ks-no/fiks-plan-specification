@@ -10,7 +10,19 @@
         },
         "dispensasjonType": {
             "type": "object",
-            "description": "Kodeliste: <url til kodeliste for dispensasjonstyper>",
+            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.dispensasjonstyper.json",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "dispensasjonFra": {
+            "type": "object",
+            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.dispensasjonstyper.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

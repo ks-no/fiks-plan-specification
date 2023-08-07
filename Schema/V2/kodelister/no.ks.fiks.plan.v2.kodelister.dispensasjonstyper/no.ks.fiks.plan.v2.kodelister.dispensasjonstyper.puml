@@ -1,0 +1,72 @@
+@startjson
+{
+  "protokollnavn": "no.ks.fiks.plan",
+  "versjon": "v2",
+  "kodeliste": [
+    {
+      "kodeverdi" : "111",
+      "kodebeskrivelse" : "Forbud mot tiltak mv. langs sjø og vassdrag"
+    },
+    {
+      "kodeverdi" : "140",
+      "kodebeskrivelse" : "Arealbruk-/formål kommune(del)plan"
+    },
+    {
+      "kodeverdi" : "141",
+      "kodebeskrivelse" : "KpArealformål grønnstruktur § 11-7 nr.3"
+    },
+    {
+      "kodeverdi" : "142",
+      "kodebeskrivelse" : "KpArealformål LNFR § 11-7 nr.5"
+    },
+    {
+      "kodeverdi" : "143",
+      "kodebeskrivelse" : "KpArealformål bruk/vern sjø/vassdr/strandsone § 11-7 nr.6"
+    },
+    {
+      "kodeverdi" : "150",
+      "kodebeskrivelse" : "Bestemmelser kommune(del)plan"
+    },
+    {
+      "kodeverdi" : "160",
+      "kodebeskrivelse" : "Arealbruk-/formål regulerings-/bebyggelsesplan"
+    },
+    {
+      "kodeverdi" : "161",
+      "kodebeskrivelse" : "RpArealformål grønnstruktur § 12-5 nr.3"
+    },
+    {
+      "kodeverdi" : "162",
+      "kodebeskrivelse" : "RpArealformål LNFR § 12-5 nr.5"
+    },
+    {
+      "kodeverdi" : "163",
+      "kodebeskrivelse" : "RpArealformål bruk/vern sjø/vassdrag/strandsone § 12-5 nr.6"
+    },
+    {
+      "kodeverdi" : "165",
+      "kodebeskrivelse" : "Bestemmelser regulerings-/bebyggelsesplan"
+    },
+    {
+      "kodeverdi" : "170",
+      "kodebeskrivelse" : "Hensynssone"
+    },
+    {
+      "kodeverdi" : "171",
+      "kodebeskrivelse" : "Sikrings, støy- og faresone § 11-8 tredje ledd bokstav a"
+    },
+    {
+      "kodeverdi" : "172",
+      "kodebeskrivelse" : "Infrastruktursone § 11-8 tredje ledd bokstav b"
+    },
+    {
+      "kodeverdi" : "173",
+      "kodebeskrivelse" : "Randsone rundt verneområder § 11-8 tredje ledd bokstav c"
+    },
+    {
+      "kodeverdi" : "174",
+      "kodebeskrivelse" : "Båndleggingssone § 11-8 tredje ledd bokstav d"
+    }
+  ]
+}
+@endjson
