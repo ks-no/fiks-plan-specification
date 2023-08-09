@@ -47,6 +47,7 @@
         },
         "vertikalnivaa": {
             "type": "object",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.vertikalnivaa.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
