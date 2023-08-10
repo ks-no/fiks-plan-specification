@@ -3,8 +3,80 @@
   "versjon": "v2",
   "kodeliste": [
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "PLANBESKR",
+      "kodebeskrivelse" : "Planbeskrivelse"
+    },
+    {
+      "kodeverdi" : "PLANKART",
+      "kodebeskrivelse" : "Plankart"
+    },
+    {
+      "kodeverdi" : "BLANBEST",
+      "kodebeskrivelse" : "Planbestemmelser"
+    },
+    {
+      "kodeverdi" : "PLANPROG",
+      "kodebeskrivelse" : "Planprogram"
+    },
+    {
+      "kodeverdi" : "JURILLUST",
+      "kodebeskrivelse" : "Juridisk bindende illustrasjon"
+    },
+    {
+      "kodeverdi" : "ILLUST",
+      "kodebeskrivelse" : "Illustrasjon"
+    },
+    {
+      "kodeverdi" : "KART",
+      "kodebeskrivelse" : "Kart"
+    },
+    {
+      "kodeverdi" : "VEDTAK",
+      "kodebeskrivelse" : "Vedtak"
+    },
+    {
+      "kodeverdi" : "KONSUTR",
+      "kodebeskrivelse" : "Konsekvensutredning"
+    },
+    {
+      "kodeverdi" : "KUNNGJ",
+      "kodebeskrivelse" : "Kunngjøring"
+    },
+    {
+      "kodeverdi" : "RAPPORT",
+      "kodebeskrivelse" : "Rapport"
+    },
+    {
+      "kodeverdi" : "ROS-ANALYSE",
+      "kodebeskrivelse" : "Ros-Analyse"
+    },
+    {
+      "kodeverdi" : "UTREDNING",
+      "kodebeskrivelse" : "Utredning"
+    },
+    {
+      "kodeverdi" : "INNSIGELSE",
+      "kodebeskrivelse" : "Innsigelse"
+    },
+    {
+      "kodeverdi" : "KLAGE",
+      "kodebeskrivelse" : "Klage"
+    },
+    {
+      "kodeverdi" : "SAKSFRAMLEGG",
+      "kodebeskrivelse" : "Saksframlegg"
+    },
+    {
+      "kodeverdi" : "TEGNFKL",
+      "kodebeskrivelse" : "Tegnforklaring"
+    },
+    {
+      "kodeverdi" : "GEOREFPLAN",
+      "kodebeskrivelse" : "Georeferert planklart"
+    },
+    {
+      "kodeverdi" : "KORR",
+      "kodebeskrivelse" : "Korrespondanse"
     }
   ]
 }
