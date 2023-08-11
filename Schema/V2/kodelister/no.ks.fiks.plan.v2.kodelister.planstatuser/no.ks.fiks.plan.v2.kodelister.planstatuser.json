@@ -1,10 +1,47 @@
 {
   "protokollnavn": "no.ks.fiks.plan",
+  "navn": "planstatuser",
   "versjon": "v2",
   "kodeliste": [
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "0",
+      "kodebeskrivelse" : "Planinitiativ"
+    },
+    {
+      "kodeverdi" : "1",
+      "kodebeskrivelse" : "Planlegging igangsatt"
+    },
+    {
+      "kodeverdi" : "2",
+      "kodebeskrivelse" : "Planforslag"
+    },
+    {
+      "kodeverdi" : "3",
+      "kodebeskrivelse" : "Endelig vedtatt arealplan\"
+    },
+    {
+      "kodeverdi" : "4",
+      "kodebeskrivelse" : "Opphevet"
+    },
+    {
+      "kodeverdi" : "5",
+      "kodebeskrivelse" : "Utgått/erstattet"
+    },
+    {
+      "kodeverdi" : "6",
+      "kodebeskrivelse" : "Vedtatt plan med utsatt rettsvirkning"
+    },
+    {
+      "kodeverdi" : "8",
+      "kodebeskrivelse" : "Overstyrt"
+    },
+    {
+      "kodeverdi" : "9",
+      "kodebeskrivelse" : "Avvist"
+    },
+    {
+      "kodeverdi" : "10",
+      "kodebeskrivelse" : "Trukket/uaktuelt"
     }
   ]
 }
