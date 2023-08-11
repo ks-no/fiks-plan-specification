@@ -1,10 +1,23 @@
 {
   "protokollnavn": "no.ks.fiks.plan",
+  "navn": "forbudtyper",
   "versjon": "v2",
   "kodeliste": [
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "1",
+      "kodebeskrivelse" : "midlertidigForbudMotTiltak"
+    },
+    {
+      "kodeverdi" : "2",
+      "kodebeskrivelse" : "midlertidigForbudNødvendigSamtykke"
+    },
+    {
+      "kodeverdi" : "3",
+      "kodebeskrivelse" : "statligByggeDeleforbud"
+    },
+    {
+      "kodeverdi" : "4",
+      "kodebeskrivelse" : "byggeDeleforbud"
     }
   ]
 }
