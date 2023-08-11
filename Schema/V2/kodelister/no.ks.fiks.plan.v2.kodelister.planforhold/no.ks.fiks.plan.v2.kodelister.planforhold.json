@@ -1,10 +1,27 @@
 {
   "protokollnavn": "no.ks.fiks.plan",
+  "navn": "Planforhold",
   "versjon": "v2",
   "kodeliste": [
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "1",
+      "kodebeskrivelse" : "endrer / blir endret av"
+    },
+    {
+      "kodeverdi" : "2",
+      "kodebeskrivelse" : "overstyrer / overstyres av"
+    },
+    {
+      "kodeverdi" : "3",
+      "kodebeskrivelse" : "arver bestemmelser fra / overfører bestemmelser til"
+    },
+    {
+      "kodeverdi" : "4",
+      "kodebeskrivelse" : "erstatter / blir erstattet av"
+    },
+    {
+      "kodeverdi" : "5",
+      "kodebeskrivelse" : "erstatter delvis / blir delvis erstattet av"
     }
   ]
 }
