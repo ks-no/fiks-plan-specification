@@ -48,11 +48,16 @@
             "$ref": "no.ks.fiks.plan.v2.felles.saksnummer.schema.json"
         },
         "forslagsstillerType": {
-            "type": "string",
-            "enum": [
-                "offentlig",
-                "privat"
-            ]
+            "type": "object",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.forslagsstillertyper.json",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
         }
     },
     "required": [
