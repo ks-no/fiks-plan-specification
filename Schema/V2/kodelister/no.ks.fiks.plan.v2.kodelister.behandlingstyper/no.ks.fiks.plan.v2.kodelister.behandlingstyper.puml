@@ -1,5 +1,97 @@
 @startjson
 {
-  Kopier inn her alt fra kodeliste json filen
+    "protokollnavn": "no.ks.fiks.plan",
+    "navn": "behandlingstyper",
+    "versjon": "v2",
+    "kodeliste": [
+      {
+        "kodeverdi" : "1",
+        "kodebeskrivelse" : "Mottatt planinitiativ/Bestilling av oppstartsmøte"
+      },
+      {
+        "kodeverdi" : "2",
+        "kodebeskrivelse" : "Stoppet planinitiativ"
+      },
+      {
+        "kodeverdi" : "8",
+        "kodebeskrivelse" : "Planlegging igangsatt/Oppstartsmøte avholdt"
+      },
+      {
+        "kodeverdi" : "9",
+        "kodebeskrivelse" : "Kunngjøring og varsling av planoppstart"
+      },
+      {
+        "kodeverdi" : "10",
+        "kodebeskrivelse" : "Planforslag tatt til behandling"
+      },
+      {
+        "kodeverdi" : "11",
+        "kodebeskrivelse" : "Besluttet offentlig ettersyn"
+      },
+      {
+        "kodeverdi" : "12",
+        "kodebeskrivelse" : "Mottatt innsigelse"
+      },
+      {
+        "kodeverdi" : "13",
+        "kodebeskrivelse" : "Plan vedtatt med innsigelse"
+      },
+      {
+        "kodeverdi" : "14",
+        "kodebeskrivelse" : "Plan endelig vedtatt"
+      },
+      {
+        "kodeverdi" : "15",
+        "kodebeskrivelse" : "Ikraftsatt"
+      },
+      {
+        "kodeverdi" : "16",
+        "kodebeskrivelse" : "Kunngjøring endelig vedtatt plan"
+      },
+      {
+        "kodeverdi" : "17",
+        "kodebeskrivelse" : "Mottatt klage"
+      },
+      {
+        "kodeverdi" : "18",
+        "kodebeskrivelse" : "Vedtatt opphevelse"
+      },
+      {
+        "kodeverdi" : "19",
+        "kodebeskrivelse" : "Registrert kommentar"
+      },
+      {
+        "kodeverdi" : "20",
+        "kodebeskrivelse" : "Vedtatt forenklet endring"
+      },
+      {
+        "kodeverdi" : "21",
+        "kodebeskrivelse" : "Trukket/uaktuell"
+      },
+      {
+        "kodeverdi" : "22",
+        "kodebeskrivelse" : "Ikke fremmet"
+      },
+      {
+        "kodeverdi" : "23",
+        "kodebeskrivelse" : "Ikke vedtatt"
+      },
+      {
+        "kodeverdi" : "24",
+        "kodebeskrivelse" : "Kunngjøring av offentlig ettersyn"
+      },
+      {
+        "kodeverdi" : "25",
+        "kodebeskrivelse" : "Høringsfrist utgått"
+      },
+      {
+        "kodeverdi" : "26",
+        "kodebeskrivelse" : "Innsigelse trukket"
+      },
+      {
+        "kodeverdi" : "27",
+        "kodebeskrivelse" : "Vedtatt endring"
+      }
+    ]
 }
 @endjson

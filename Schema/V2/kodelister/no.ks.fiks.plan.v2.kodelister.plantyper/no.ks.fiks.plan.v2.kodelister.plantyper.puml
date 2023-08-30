@@ -1,5 +1,41 @@
 @startjson
 {
-  Kopier inn her alt fra kodeliste json filen
+  "protokollnavn": "no.ks.fiks.plan",
+  "navn": "plantyper",
+  "versjon": "v2",
+  "kodeliste": [
+    {
+      "kodeverdi" : "10",
+      "kodebeskrivelse" : "Fylkesplanens arealdel"
+    },
+    {
+      "kodeverdi" : "11",
+      "kodebeskrivelse" : "Fylkesdelplan"
+    },
+    {
+      "kodeverdi" : "20",
+      "kodebeskrivelse" : "Kommuneplanens arealdel"
+    },
+    {
+      "kodeverdi" : "21",
+      "kodebeskrivelse" : "Kommunedelplan"
+    },
+    {
+      "kodeverdi" : "30",
+      "kodebeskrivelse" : "Reguleringsplan"
+    },
+    {
+      "kodeverdi" : "31",
+      "kodebeskrivelse" : "Mindre vesentlig reguleringsendring"
+    },
+    {
+      "kodeverdi" : "32",
+      "kodebeskrivelse" : "Bebyggelsesplan ihht. Reguleringsplan"
+    },
+    {
+      "kodeverdi" : "33",
+      "kodebeskrivelse" : "Bebyggelsesplan ihht kommunepl. arealdel"
+    }
+  ]
 }
 @endjson

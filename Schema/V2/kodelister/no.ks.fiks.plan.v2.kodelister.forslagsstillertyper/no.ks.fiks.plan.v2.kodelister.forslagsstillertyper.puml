@@ -1,5 +1,17 @@
 @startjson
 {
-  Kopier inn her alt fra kodeliste json filen
+  "protokollnavn": "no.ks.fiks.plan",
+  "navn": "forslagsstillertyper",
+  "versjon": "v2",
+  "kodeliste": [
+    {
+      "kodeverdi" : "1",
+      "kodebeskrivelse" : "offentlig"
+    },
+    {
+      "kodeverdi" : "2",
+      "kodebeskrivelse" : "privat"
+    }
+  ]
 }
 @endjson

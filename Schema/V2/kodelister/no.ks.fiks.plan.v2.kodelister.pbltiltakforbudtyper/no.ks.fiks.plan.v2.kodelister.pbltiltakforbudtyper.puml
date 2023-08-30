@@ -1,5 +1,25 @@
 @startjson
 {
-  Kopier inn her alt fra kodeliste json filen
+  "protokollnavn": "no.ks.fiks.plan",
+  "navn": "pbltiltakforbudtyper",
+  "versjon": "v2",
+  "kodeliste": [
+    {
+      "kodeverdi" : "1",
+      "kodebeskrivelse" : "midlertidigForbudMotTiltak"
+    },
+    {
+      "kodeverdi" : "2",
+      "kodebeskrivelse" : "midlertidigForbudNødvendigSamtykke"
+    },
+    {
+      "kodeverdi" : "3",
+      "kodebeskrivelse" : "statligByggeDeleforbud"
+    },
+    {
+      "kodeverdi" : "4",
+      "kodebeskrivelse" : "byggeDeleforbud"
+    }
+  ]
 }
 @endjson
