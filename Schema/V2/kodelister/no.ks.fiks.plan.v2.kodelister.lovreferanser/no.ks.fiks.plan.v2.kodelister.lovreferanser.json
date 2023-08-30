@@ -1,10 +1,31 @@
 {
   "protokollnavn": "no.ks.fiks.plan",
+  "navn": "lovreferanser",
   "versjon": "v2",
   "kodeliste": [
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "1",
+      "kodebeskrivelse" : "Før BL 1924"
+    },
+    {
+      "kodeverdi" : "2",
+      "kodebeskrivelse" : "BL 1924"
+    },
+    {
+      "kodeverdi" : "3",
+      "kodebeskrivelse" : "BL 1965"
+    },
+    {
+      "kodeverdi" : "4",
+      "kodebeskrivelse" : "PBL 1985"
+    },
+    {
+      "kodeverdi" : "5",
+      "kodebeskrivelse" : "PBL 1985 eller før"
+    },
+    {
+      "kodeverdi" : "6",
+      "kodebeskrivelse" : "PBL 2008"
     }
   ]
 }
