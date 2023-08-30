@@ -4,8 +4,12 @@
   "versjon": "v2",
   "kodeliste": [
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "1",
+      "kodebeskrivelse" : "offentlig"
+    },
+    {
+      "kodeverdi" : "2",
+      "kodebeskrivelse" : "privat"
     }
   ]
 }
