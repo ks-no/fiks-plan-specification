@@ -3,8 +3,84 @@
   "versjon": "v2",
   "kodeliste": [
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "GEOREFPLAN",
+      "kodebeskrivelse" : "Georeferert planklart"
+    },
+    {
+      "kodeverdi" : "ILLUST",
+      "kodebeskrivelse" : "Illustrasjon"
+    },
+    {
+      "kodeverdi" : "INNSIGELSE",
+      "kodebeskrivelse" : "Innsigelse"
+    },
+    {
+      "kodeverdi" : "JURILLUST",
+      "kodebeskrivelse" : "Juridisk bindende illustrasjon"
+    },
+    {
+      "kodeverdi" : "KART",
+      "kodebeskrivelse" : "Kart"
+    },
+    {
+      "kodeverdi" : "KLAGE",
+      "kodebeskrivelse" : "Klage"
+    },
+    {
+      "kodeverdi" : "KONSUTR",
+      "kodebeskrivelse" : "Konsekvensutredning"
+    },
+    {
+      "kodeverdi" : "KORR",
+      "kodebeskrivelse" : "Korrespondanse"
+    },
+    {
+      "kodeverdi" : "KUNNGJ",
+      "kodebeskrivelse" : "Kunngjøring"
+    },
+    {
+      "kodeverdi" : "PLANBESKR",
+      "kodebeskrivelse" : "Planbeskrivelse"
+    },
+    {
+      "kodeverdi" : "PLANBEST",
+      "kodebeskrivelse" : "Planbestemmelser"
+    },
+    {
+      "kodeverdi" : "PLANKART",
+      "kodebeskrivelse" : "Plankart"
+    },
+    {
+      "kodeverdi" : "PLANPROG",
+      "kodebeskrivelse" : "Planprogram"
+    },
+    {
+      "kodeverdi" : "RAPPORT",
+      "kodebeskrivelse" : "Rapport"
+    },
+    {
+      "kodeverdi" : "ROS-ANALYSE",
+      "kodebeskrivelse" : "Ros-Analyse"
+    },
+    {
+      "kodeverdi" : "SAKSFRAMLEGG",
+      "kodebeskrivelse" : "Saksframlegg"
+    },
+    {
+      "kodeverdi" : "TEGNFKL",
+      "kodebeskrivelse" : "Tegnforklaring"
+    },
+    {
+      "kodeverdi" : "UTREDNING",
+      "kodebeskrivelse" : "Utredning"
+    },
+    {
+      "kodeverdi" : "UTTALELSE",
+      "kodebeskrivelse" : "Uttalelse"
+    },
+    {
+      "kodeverdi" : "VEDTAK",
+      "kodebeskrivelse" : "Vedtak"
     }
   ]
 }
