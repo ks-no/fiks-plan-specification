@@ -1,10 +1,27 @@
 {
   "protokollnavn": "no.ks.fiks.plan",
+  "navn": "vertikalnivaa",
   "versjon": "v2",
   "kodeliste": [
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "1",
+      "kodebeskrivelse" : "Under grunnen (tunnel)"
+    },
+    {
+      "kodeverdi" : "2",
+      "kodebeskrivelse" : "På grunnen/vannoverflate"
+    },
+    {
+      "kodeverdi" : "3",
+      "kodebeskrivelse" : "Over grunnen (bru)"
+    },
+    {
+      "kodeverdi" : "4",
+      "kodebeskrivelse" : "På bunnen (vann/sjø)"
+    },
+    {
+      "kodeverdi" : "5",
+      "kodebeskrivelse" : "I vannsøylen"
     }
   ]
 }
