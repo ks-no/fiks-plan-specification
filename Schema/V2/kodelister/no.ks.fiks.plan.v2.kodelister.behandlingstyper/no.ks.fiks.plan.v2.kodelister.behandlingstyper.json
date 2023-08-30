@@ -28,20 +28,8 @@
       "kodebeskrivelse" : "Besluttet offentlig ettersyn"
     },
     {
-      "kodeverdi" : "24",
-      "kodebeskrivelse" : "Kunngjøring av offentlig ettersyn"
-    },
-    {
-      "kodeverdi" : "25",
-      "kodebeskrivelse" : "Høringsfrist utgått"
-    },
-    {
       "kodeverdi" : "12",
       "kodebeskrivelse" : "Mottatt innsigelse"
-    },
-    {
-      "kodeverdi" : "26",
-      "kodebeskrivelse" : "Innsigelse trukket"
     },
     {
       "kodeverdi" : "13",
@@ -76,10 +64,6 @@
       "kodebeskrivelse" : "Vedtatt forenklet endring"
     },
     {
-      "kodeverdi" : "27",
-      "kodebeskrivelse" : "Vedtatt endring"
-    },
-    {
       "kodeverdi" : "21",
       "kodebeskrivelse" : "Trukket/uaktuell"
     },
@@ -89,8 +73,23 @@
     },
     {
       "kodeverdi" : "23",
-      "kodebeskrivelse" : "Ikke vedtatt\t"
+      "kodebeskrivelse" : "Ikke vedtatt"
+    },
+    {
+      "kodeverdi" : "24",
+      "kodebeskrivelse" : "Kunngjøring av offentlig ettersyn"
+    },
+    {
+      "kodeverdi" : "25",
+      "kodebeskrivelse" : "Høringsfrist utgått"
+    },
+    {
+      "kodeverdi" : "26",
+      "kodebeskrivelse" : "Innsigelse trukket"
+    },
+    {
+      "kodeverdi" : "27",
+      "kodebeskrivelse" : "Vedtatt endring"
     }
-    
   ]
 }
