@@ -18,22 +18,15 @@
                 "type": "number"
             }
         },
-        "crs": {
+        "koordinatsystem": {
             "type": "object",
+            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.koordinatsystem.json",
             "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "name"
-                    ]
+                "kodeverdi": {
+                    "type": "string"
                 },
-                "properties": {
-                    "type": "object",
-                    "properties": {
-                        "name": {
-                            "type": "string"
-                        }
-                    }
+                "kodebeskrivelse": {
+                    "type": "string"
                 }
             }
         }
@@ -41,6 +34,6 @@
     "required": [
         "type",
         "koordinater",
-        "crs"
+        "koordinatsystem"
     ]
 }

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "no.ks.fiks.plan.v2.innsyn.arealplan.finn.for.flate.schema.json",
+  "title": "FinnArealplanerForFlate",
+  "definitions": {},
+  "type": "object",
+  "properties": {
+    "flate": {
+      "$ref": "no.ks.fiks.plan.v2.felles.flate.schema.json"
+    }
+  },
+  "required": [
+    "flate"
+  ]
+}

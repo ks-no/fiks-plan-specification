@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "no.ks.fiks.plan.v2.felles.omraade.schema.json",
-    "title": "Omraade",
+    "$id": "no.ks.fiks.plan.v2.felles.flate.schema.json",
+    "title": "Flate",
     "definitions": {},
     "type": "object",
     "properties": {
@@ -22,28 +22,22 @@
                 }
             }
         },
-        "crs": {
+        "koordinatsystem": {
             "type": "object",
+            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.koordinatsystem.json",
             "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "name"
-                    ]
+                "kodeverdi": {
+                    "type": "string"
                 },
-                "properties": {
-                    "type": "object",
-                    "properties": {
-                        "name": {
-                            "type": "string"
-                        }
-                    }
+                "kodebeskrivelse": {
+                    "type": "string"
                 }
             }
         }
     },
     "required": [
         "type",
-        "koordinater"
+        "koordinater",
+        "koordinatsystem"
     ]
 }

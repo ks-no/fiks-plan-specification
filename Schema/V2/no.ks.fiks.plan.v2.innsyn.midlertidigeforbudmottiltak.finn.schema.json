@@ -5,12 +5,12 @@
     "definitions": {},
     "type": "object",
     "properties": {
-      "omraade": {
-        "$ref": "no.ks.fiks.plan.v2.felles.omraade.schema.json"
+      "flate": {
+        "$ref": "no.ks.fiks.plan.v2.felles.flate.schema.json"
       }
     },
     "required": [
-      "omraade"
+      "flate"
     ]
 }
   
