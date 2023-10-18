@@ -4,16 +4,16 @@
   "versjon": "v2",
   "kodeliste": [
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "32",
+      "kodebeskrivelse" : "EUREF89 UTM sone 32"
     },
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "33",
+      "kodebeskrivelse" : "EUREF89 UTM sone 33"
     },
     {
-      "kodeverdi" : "",
-      "kodebeskrivelse" : ""
+      "kodeverdi" : "35",
+      "kodebeskrivelse" : "EUREF89 UTM sone 35"
     }
   ]
 }
