@@ -1,0 +1,23 @@
+{
+  "protokollnavn": "no.ks.fiks.plan",
+  "navn": "koordinatsystemer",
+  "versjon": "v2",
+  "kodeliste": [
+    {
+      "kodeverdi" : "EPSG:25832",
+      "kodebeskrivelse" : "EUREF89 UTM sone 32"
+    },
+    {
+      "kodeverdi" : "EPSG:25833",
+      "kodebeskrivelse" : "EUREF89 UTM sone 33"
+    },
+    {
+      "kodeverdi" : "EPSG:25835",
+      "kodebeskrivelse" : "EUREF89 UTM sone 35"
+    },
+    {
+      "kodeverdi" : "EPSG:4258",
+      "kodebeskrivelse" : "EUREF 89 Geografisk (ETRS 89) 2d"
+    }
+  ]
+}

@@ -17,10 +17,23 @@
             "items": {
                 "type": "number"
             }
+        },
+        "koordinatsystem": {
+            "type": "object",
+            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.koordinatsystem.json",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
         }
     },
     "required": [
         "type",
-        "koordinater"
+        "koordinater",
+        "koordinatsystem"
     ]
 }

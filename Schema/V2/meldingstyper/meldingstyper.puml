@@ -53,7 +53,7 @@
       "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.omraade",
+      "id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.flate",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
@@ -64,7 +64,7 @@
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.arealplaner.finn", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.adresse", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.omraade"]
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.arealplaner.finn", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.adresse", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet", "no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.flate"]
     },   
     {
       "id": "no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn",
