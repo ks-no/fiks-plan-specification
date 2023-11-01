@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.schema.json",
+    "title": "RegistrerPlanomraaade",
+    "type": "object",
+    "properties": {
+        "nasjonalArealplanId": {
+            "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        },
+        "planomraade": {
+            "type": "object",
+            "properties": {
+                "omraade": {
+                    "type": "object",
+                    "properties": {
+                        "ytreAvgrensning": {
+                            "$ref": "no.ks.fiks.plan.v2.felles.flate.schema.json"
+                        },
+                        "indreAvgrensninger": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "no.ks.fiks.plan.v2.felles.flate.schema.json"
+                            }
+                        }
+                    },
+                    "required": [
+                        "ytreAvgrensning"
+                    ]
+                },
+                "vertikalnivaa": {
+                    "type": "string",
+                    "enum": [
+                        "Under grunnen",
+                        "På grunnen/vannoverflate",
+                        "Over grunnen (bru)",
+                        "På bunnen (vann/sjoe)",
+                        "I vannsoeylen"
+                    ]
+                }
+            },
+            "required": [
+                "omraade",
+                "vertikalnivaa"
+            ]
+        }
+    },
+    "required": [
+        "nasjonalArealplanId",
+        "planomraade"
+    ]
+}
