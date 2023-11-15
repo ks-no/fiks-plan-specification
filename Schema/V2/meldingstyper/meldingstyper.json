@@ -327,6 +327,25 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer"]
     },
     {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planomraade.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planomraade..registrer"]
+    },
+    {
       "id": "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel",
       "beskrivelse": "",
       "harPayload": true,
