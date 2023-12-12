@@ -10,7 +10,7 @@
         },
         "dispensasjonType": {
             "type": "object",
-            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.dispensasjonstyper.json",
+            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.plandispensasjonstyper.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
