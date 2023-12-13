@@ -250,7 +250,7 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.oppdatering.dipsensasjon.registrer",
+      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
