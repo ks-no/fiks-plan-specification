@@ -108,18 +108,18 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.kodeliste.hent"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk",
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.finn",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbud.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.resultat",
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.finn.resultat",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk"]
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbud.finn"]
     },
     {
       "id": "no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn",
