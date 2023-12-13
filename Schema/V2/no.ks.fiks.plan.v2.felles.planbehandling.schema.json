@@ -29,6 +29,12 @@
         },
         "navn": {
             "type": "string"
+        },
+        "plandokumenter": {
+            "type": "array",
+            "items": {
+                "$ref": "no.ks.fiks.plan.v2.felles.dokument.schema.json"
+            }
         }
     },
     "required": [
