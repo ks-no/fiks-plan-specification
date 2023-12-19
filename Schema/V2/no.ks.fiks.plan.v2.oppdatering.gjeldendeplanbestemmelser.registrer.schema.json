@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.gjeldendeplanbestemmelser.registrer.schema.json",
+    "title": "RegistrerGjeldendePlanbestemmelser",
+    "definitions": {
+    },
+    "type": "object",
+    "properties": {
+        "plandokumenter": {
+            "type": "array",
+            "items": {
+                "$ref": "no.ks.fiks.plan.v2.felles.dokument.schema.json"
+            }
+        },
+        "nasjonalArealplanId": {
+            "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        }
+    },
+    "required": [
+        "nasjonalArealplanId"
+    ]
+}
