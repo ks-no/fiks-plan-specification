@@ -343,7 +343,26 @@
       "id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.kvittering",
       "beskrivelse": "",
       "harPayload": false,
-      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planomraade..registrer"]
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planomraade.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.gjeldendeplanbestemmelser.registrer",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.gjeldendeplanbestemmelser.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.gjeldendeplanbestemmelser.registrer.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.gjeldendeplanbestemmelser.registrer.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.gjeldendeplanbestemmelser.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.gjeldendeplanbestemmelser.registrer.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.gjeldendeplanbestemmelser.registrer"]
     },
     {
       "id": "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel",
