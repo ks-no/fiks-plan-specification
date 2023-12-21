@@ -18,8 +18,8 @@
         "plandokumentType": {
             "type": "string",
             "enum": [
-                "?",
-                "??"
+                "planbeskrivelse",
+                "plankart"
             ]
         }
     },
