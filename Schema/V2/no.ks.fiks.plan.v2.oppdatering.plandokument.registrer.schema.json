@@ -14,6 +14,13 @@
         },
         "nasjonalArealplanId": {
             "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        },
+        "plandokumentType": {
+            "type": "string",
+            "enum": [
+                "?",
+                "??"
+            ]
         }
     },
     "required": [
