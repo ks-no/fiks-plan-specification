@@ -1,0 +1,17 @@
+@startjson
+{
+  "protokollnavn": "no.ks.fiks.plan",
+  "navn": "dokumentstatuser",
+  "versjon": "v2",
+  "kodeliste": [
+    {
+      "kodeverdi" : "Gjeldende",
+      "kodebeskrivelse" : "Gjeldende dokument"
+    },
+    {
+      "kodeverdi" : "Under arbeid",
+      "kodebeskrivelse" : "Dokumentet er under arbeid"
+    }
+  ]
+}
+@endjson

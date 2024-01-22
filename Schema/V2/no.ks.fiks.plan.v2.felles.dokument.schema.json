@@ -43,6 +43,18 @@
         },
         "arkivnavn": {
             "type": "string"
+        },
+        "status": {
+            "type": "object",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.dokumentstatuser.json",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
         }
     },
     "required": [
