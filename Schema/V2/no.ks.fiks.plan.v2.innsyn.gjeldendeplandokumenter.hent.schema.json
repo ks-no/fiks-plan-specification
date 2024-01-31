@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplandokumenter.hent.schema.json",
+    "title": "HentGjeldendePlandokumenter",
+    "description": "Henter gjeldende plandokumenter med dokumenttypen PLANBESKR=Planbeskrivelse, PLANKART=Arealplankart, PLANBEST=Bestemmelser, PLANPROG=Planprogram, JURILLUST=Juridisk bindende illustrasjon",
+    "definitions": {
+    },
+    "type": "object",
+    "properties": {
+        "nasjonalArealplanId": {
+            "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        }
+    },
+    "required": [
+        "nasjonalArealplanId"
+    ]
+}
