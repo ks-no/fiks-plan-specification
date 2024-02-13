@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json",
+    "$id": "no.ks.fiks.plan.v2.felles.dispensasjon.schema.json",
     "title": "Dispensasjon",
     "definitions": {},
     "type": "object",
