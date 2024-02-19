@@ -6,8 +6,7 @@ Videre arbeid med denne protokollen/standarden gjøres her.
 
 
 ## Schemas, eksempler og Nuget-pakke
-Eksempler, schemas samt genererte models basert på schemas er tilgjengelig for .net.
-Dette finner man i Github prosjektet [her](https://github.com/ks-no/fiks-plan-models-dotnet).
+Eksempler, schemas samt genererte models basert på schemas er tilgjengelig for .NET, og dette finner man i Github prosjektet [her](https://github.com/ks-no/fiks-plan-models-dotnet).
 
 ## Dokumentasjon
 
