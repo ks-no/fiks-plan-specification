@@ -1,0 +1,43 @@
+@startuml
+
+class FinnDispensasjoner {
+    +soekekriterier: soekekriterier[]
+}
+
+class soekekriterier {
+    +felt: Felt
+    +operator: Operator
+    +parameterverdier: string
+}
+
+enum Felt {
+    identifikasjon
+    dispensasjon.kodeverdi
+    nasjonalArealplanId.kommunenummer
+    nasjonalArealplanId.fylkesnummer
+    nasjonalArealplanId.landkode
+    nasjonalArealplanId.planidentifikasjon
+    begrunnelse
+    vedtaksdato
+    beskrivelse
+    innvilgetDispensasjon
+    saksnummer.saksaar
+    saksnummer.saksekvensnummer
+}
+
+enum Operator {
+    equal
+    notequal
+    between
+    lessthan
+    lessequal
+    greaterthan
+    greaterequal
+    inlist
+}
+
+FinnDispensasjoner -- soekekriterier
+soekekriterier -- Felt
+soekekriterier -- Operator
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+class HentDokumentfil {
+    +referanseDokumentfil: string
+}
+
+@enduml

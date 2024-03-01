@@ -1,0 +1,7 @@
+@startuml
+
+class HentKodeliste {
+    +kodelistenavn: string
+}
+
+@enduml

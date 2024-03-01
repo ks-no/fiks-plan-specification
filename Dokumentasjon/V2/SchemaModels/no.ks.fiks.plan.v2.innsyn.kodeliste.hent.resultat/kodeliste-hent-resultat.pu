@@ -1,0 +1,15 @@
+@startuml
+
+class HentKodelisteResultat {
+    +navn: string
+    +koder: Kode[]
+}
+
+HentKodelisteResultat -- Kode
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+@enduml
