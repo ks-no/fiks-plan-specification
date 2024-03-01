@@ -1,0 +1,25 @@
+@startuml
+class Planbehandling {
+    +posisjon: Posisjon
+    +dato: date
+    +saksnummer: Saksnummer
+    +planbehandlingstype: Kode
+    +navn: string
+    +plandokumenter: Dokument[]
+}
+
+Planbehandling -- Posisjon
+Planbehandling -- Saksnummer
+Planbehandling -- Kode
+Planbehandling -- Dokument
+
+note top of Posisjon : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.posisjon'
+note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
+note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+@enduml

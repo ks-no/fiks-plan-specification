@@ -1,0 +1,20 @@
+@startuml
+class Flate {
+    +type: Type
+    +koordinater: Koordinat[]
+    +koordinatsystem: Kode
+}
+
+Flate -- Koordinat
+Flate -- Kode
+
+class Koordinat {
+    +items: number[]
+}
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+@enduml

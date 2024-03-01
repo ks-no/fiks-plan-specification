@@ -1,0 +1,16 @@
+@startuml
+
+class HentArealplanResultat {
+    +arealplan: Arealplan
+    +planbehandlinger: Planbehandling[]
+}
+
+HentArealplanResultat -- Arealplan
+HentArealplanResultat -- Planbehandling
+
+
+note top of Arealplan : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.arealplan'
+note top of Planbehandling : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.planbehandling'
+
+
+@enduml

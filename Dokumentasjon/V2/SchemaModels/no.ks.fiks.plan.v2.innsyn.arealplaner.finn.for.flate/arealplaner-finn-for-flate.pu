@@ -1,0 +1,9 @@
+@startuml
+
+class FinnArealplanerForFlate {
+    +flate: Flate
+}
+
+FinnArealplanerForFlate -- Flate
+
+@enduml

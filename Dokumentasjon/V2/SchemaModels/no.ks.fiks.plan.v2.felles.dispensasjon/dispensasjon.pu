@@ -1,0 +1,31 @@
+@startuml
+class Dispensasjon {
+    +identifikasjon: string
+    +dispensasjonType: Kode
+    +dispensasjonFra: Kode
+    +nasjonalArealplanId: NasjonalArealplanId
+    +begrunnelse: string
+    +vedtaksdato:  date
+    +posisjon: Posisjon
+    +vertikalnivaa: Kode
+    +beskrivelse: string
+    +innvilgetDispensasjon: boolean
+    +saksnummer: Saksnummer
+    +varigDispensasjon: boolean
+    +varighetFra: date
+    +varighetTil: date
+    +plandokumenter: Dokument[]
+}
+
+Dispensasjon -- Kode
+Dispensasjon -- NasjonalArealplanId
+Dispensasjon -- Posisjon
+Dispensasjon -- Saksnummer
+Dispensasjon -- Dokument
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+@enduml

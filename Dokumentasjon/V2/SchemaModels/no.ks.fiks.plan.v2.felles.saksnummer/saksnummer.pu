@@ -1,0 +1,8 @@
+@startuml
+
+class Saksnummer {
+    +saksaar: integer
+    +sakssekvensnummer: integer 
+}
+
+@enduml

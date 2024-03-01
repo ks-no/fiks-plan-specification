@@ -1,0 +1,18 @@
+@startuml
+
+class FinnArealplanerForAdresse {
+    +adresse: Adresse
+}
+
+class Adresse {
+    +adressekode: string
+    +adressenavn: string
+    +adressenummer: integer
+    +adressebokstav: string
+    +seksjonsnummer: integer
+}
+
+FinnArealplanerForAdresse -- Adresse
+
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+class NasjonalArealplanId {
+    +administrativEnhet: AdministrativEnhet
+    +planidentifikasjon: string
+}
+
+NasjonalArealplanId -- AdministrativEnhet
+
+enum AdministrativEnhet {
+    kommunenummer
+    fylkesnummer
+    landskode
+}
+
+@enduml

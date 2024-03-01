@@ -1,0 +1,18 @@
+@startuml
+
+class FinnArealplanerForMatrikkelenhet {
+    +matrikkelnummer: Matrikkelnummer
+}
+
+class Matrikkelnummer {
+    +kommunenummer: string
+    +gaardsnummer: integer
+    +bruksnummer: integer
+    +festenummer: integer
+    +seksjonsnummer: integer
+}
+
+FinnArealplanerForMatrikkelenhet -- Matrikkelnummer
+
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+class MidlertidigForbud {
+    +omraade: Flate
+    +saksnummer: Saksnummer
+    +avgjoerelsedato: date
+    +pblTiltakForbudtype: Kode
+    +gyldigTilDato: date
+    +omraadenavn: string
+}
+
+MidlertidigForbud -- Flate
+MidlertidigForbud -- Saksnummer
+MidlertidigForbud -- Kode
+
+note top of Flate : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.flate'
+note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+@enduml

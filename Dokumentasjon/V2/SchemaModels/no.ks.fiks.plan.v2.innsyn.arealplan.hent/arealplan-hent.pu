@@ -1,0 +1,12 @@
+@startuml
+
+class HentArealplan {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +inkluderPlanbehandlinger: boolean
+}
+
+HentArealplan -- NasjonalArealplanId
+
+note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
+
+@enduml

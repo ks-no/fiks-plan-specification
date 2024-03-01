@@ -1,0 +1,24 @@
+@startuml
+class Dokument {
+    +tittel: string
+    +dokumenttype: Kode
+    +referanseDokumentfil: ReferanseDokumentfil
+    +mimetype: string
+    +dokumentsdato: date
+    +arkivnavn: string
+}
+
+Dokument -- Kode
+Dokument -- ReferanseDokumentfil
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class ReferanseDokumentfil {
+    +id: string
+    +url: string
+}
+
+@enduml

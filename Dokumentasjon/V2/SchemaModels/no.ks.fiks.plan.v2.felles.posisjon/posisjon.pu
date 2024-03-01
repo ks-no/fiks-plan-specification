@@ -1,0 +1,20 @@
+@startuml
+class Posisjon {
+    +type: Type
+    +koordinater: number[]
+    +koordinatsystem: Kode
+}
+
+Posisjon -- Kode
+Posisjon -- Type
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+enum Type {
+    Point
+}
+
+@enduml

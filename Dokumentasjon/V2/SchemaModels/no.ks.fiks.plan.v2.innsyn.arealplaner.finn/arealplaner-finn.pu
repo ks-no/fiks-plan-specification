@@ -1,0 +1,44 @@
+@startuml
+
+class FinnArealplaner {
+    +soekekriterier: soekekriterier[]
+}
+
+class soekekriterier {
+    +felt: Felt
+    +operator: Operator
+    +parameterverdier: string
+}
+
+enum Felt {
+    nasjonalArealplanId.kommunenummer
+    nasjonalArealplanId.fylkesnummer
+    nasjonalArealplanId.landkode
+    nasjonalArealplanId.planidentifikasjon
+    plantype.kodeverdi
+    plannavn
+    planstatus.kodeverdi
+    plandokumentasjonOppdatert
+    ubehandletKlage
+    ubehandletInnsigelse
+    vedtakEndeligPlandato
+    lovreferanse.kodeverdi
+    forslagstillertype
+}
+
+enum Operator {
+    equal
+    notequal
+    between
+    lessthan
+    lessequal
+    greaterthan
+    greaterequal
+    inlist
+}
+
+FinnArealplaner -- soekekriterier
+soekekriterier -- Felt
+soekekriterier -- Operator
+
+@enduml
