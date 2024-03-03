@@ -1,0 +1,33 @@
+@startuml
+
+class RegistrerPlanomraade {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +planomraade: Planomraade
+}
+
+class Planomraade {
+    +omraade: Omraade
+    +vertikalnivaa: Vertikalnivaa
+}
+
+class Omraade {
+    +ytreAvgrensning: Flate
+    +indreAvgrensninger: Flate[]
+}
+
+enum Vertikalnivaa {
+    Under grunnen
+    På grunnen/vannoverflate
+    Over grunnen (bru)
+    På bunnen (vann/sjoe)
+    I vannsoeylen
+}
+
+RegistrerPlanomraade -- Planomraade
+Planomraade -- Omraade
+Planomraade -- Vertikalnivaa
+Omraade -- Flate
+
+note top of Flate : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.flate'
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+class RegistrerMidlertidigforbudmottiltak {
+    +forbudOmraade: Midlertidigforbud
+}
+
+RegistrerMidlertidigforbudmottiltak -- Midlertidigforbud
+
+note top of Midlertidigforbud : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.midlertidigforbud'
+
+@enduml

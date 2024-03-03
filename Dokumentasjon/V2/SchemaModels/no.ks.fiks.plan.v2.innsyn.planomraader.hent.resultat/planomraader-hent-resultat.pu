@@ -1,0 +1,32 @@
+@startuml
+
+class HentPlanomraaderResultat {
+    +planomraader: Planomraader[]
+}
+
+class Planomraader {
+    +omraade: Omraade
+    +vertikalnivaa: Vertikalnivaa
+}
+
+class Omraade {
+    +ytreAvgrensning: Flate
+    +indreAvgrensninger: Flate[]
+}
+
+enum Vertikalnivaa {
+    Under grunnen
+    På grunnen/vannoverflate
+    Over grunnen (bru)
+    På bunnen (vann/sjoe)
+    I vannsoeylen
+}
+
+HentPlanomraaderResultat -- Planomraader
+Planomraader -- Omraade
+Planomraader -- Vertikalnivaa
+Omraade -- Flate
+
+note top of Flate : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.flate'
+
+@enduml

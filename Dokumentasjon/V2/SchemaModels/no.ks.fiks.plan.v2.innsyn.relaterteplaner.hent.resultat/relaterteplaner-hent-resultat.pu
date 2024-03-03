@@ -1,0 +1,26 @@
+@startuml
+
+class HentRelatertePlanerResultat {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +planrelasjoner: Planrelasjoner[]
+}
+
+class Planrelasjoner {
+    +planforhold: Kode
+    +arealplan: Arealplan
+}
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+HentRelatertePlanerResultat -- NasjonalArealplanId
+HentRelatertePlanerResultat -- Planrelasjoner
+Planrelasjoner -- Arealplan
+Planrelasjoner -- Kode
+
+note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
+note top of Arealplan : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.arealplan'
+
+@enduml

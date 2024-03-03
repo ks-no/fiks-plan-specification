@@ -1,0 +1,11 @@
+@startuml
+
+class RegistrerDispensasjon {
+    +dispensasjon: Dispensasjon
+}
+
+RegistrerDispensasjon -- Dispensasjon
+
+note top of Dispensasjon : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dispensasjon'
+
+@enduml

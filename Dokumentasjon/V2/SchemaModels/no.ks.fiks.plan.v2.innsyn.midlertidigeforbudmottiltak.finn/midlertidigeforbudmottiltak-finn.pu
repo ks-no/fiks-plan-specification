@@ -1,0 +1,11 @@
+@startuml
+
+class FinnMidlertidigeForbudMottiltak {
+    +flate: Flate
+}
+
+FinnMidlertidigeForbudMottiltak -- Flate
+
+note top of Flate : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.flate'
+
+@enduml

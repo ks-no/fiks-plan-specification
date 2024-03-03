@@ -1,0 +1,21 @@
+@startuml
+
+class RegistrerPlanbehandling {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +planstatus: Kode
+    +planbehandling: Planbehandling
+}
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+RegistrerPlanbehandling -- NasjonalArealplanId
+RegistrerPlanbehandling -- Kode
+RegistrerPlanbehandling -- Planbehandling
+
+note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
+note top of Planbehandling : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.planbehandling'
+
+@enduml

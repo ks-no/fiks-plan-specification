@@ -1,0 +1,14 @@
+@startuml
+
+class OpprettArealplanKvittering {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +saksnummer: Saksnummer
+}
+
+OpprettArealplanKvittering -- NasjonalArealplanId
+OpprettArealplanKvittering -- Saksnummer
+
+note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
+note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
+
+@enduml

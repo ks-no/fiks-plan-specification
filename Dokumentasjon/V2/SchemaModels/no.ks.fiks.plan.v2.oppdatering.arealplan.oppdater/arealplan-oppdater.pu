@@ -1,0 +1,28 @@
+@startuml
+
+class OppdaterArealplan {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +plannavn: string
+    +plantype: Kode
+    +planstatus: Kode
+    +lovreferanse: Kode
+    +saksnummer: Saksnummer
+    +forslagstillertype: Kode
+    +vedlegg: Dokument[]
+}
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+OppdaterArealplan -- NasjonalArealplanId
+OppdaterArealplan -- Kode
+OppdaterArealplan -- Saksnummer
+OppdaterArealplan -- Dokument
+
+note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
+note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
+note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
+
+@enduml

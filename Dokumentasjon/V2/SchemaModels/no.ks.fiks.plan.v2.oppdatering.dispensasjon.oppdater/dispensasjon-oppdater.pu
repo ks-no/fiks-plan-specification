@@ -1,0 +1,24 @@
+@startuml
+
+class OppdaterDispensasjon {
+    +dispensasjon: Dispensasjon
+    +opphevIdentifikasjon: string
+    +begrunnelse: string
+    +referanseKlageSaksnummer: ReferanseKlageSaksnummer
+    +plandokumenter: Dokument[]
+    +forslagstillertype: Kode
+    +vedlegg: Dokument[]
+}
+
+class ReferanseKlageSaksnummer {
+    +saksaar: integer
+    +sakssekvensnummer: integer
+}
+
+OppdaterDispensasjon -- Dispensasjon
+OppdaterDispensasjon -- Dokument
+
+note top of Dispensasjon : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dispensasjon'
+note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
+
+@enduml

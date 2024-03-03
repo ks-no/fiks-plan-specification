@@ -1,0 +1,22 @@
+@startuml
+
+class OpprettArealplan {
+    +plannavn: string
+    +plantype: Kode
+    +planstatus: Kode
+    +lovreferanse: Kode
+    +saksnummer: Saksnummer
+    +forslagstillertype: Kode
+}
+
+class Kode {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+OpprettArealplan -- Kode
+OpprettArealplan -- Saksnummer
+
+note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
+
+@enduml

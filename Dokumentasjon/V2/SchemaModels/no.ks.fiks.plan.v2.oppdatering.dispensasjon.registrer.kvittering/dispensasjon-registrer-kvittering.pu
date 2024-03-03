@@ -1,0 +1,7 @@
+@startuml
+
+class RegistrerDispensasjonKvittering {
+    +identifikasjon: string
+}
+
+@enduml

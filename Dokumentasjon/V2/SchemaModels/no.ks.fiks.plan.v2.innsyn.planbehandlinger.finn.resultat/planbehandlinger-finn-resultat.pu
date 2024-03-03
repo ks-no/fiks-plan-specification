@@ -1,0 +1,11 @@
+@startuml
+
+class FinnPlanbehandlingerResultat {
+    +planbehandlinger: Planbehandling[]
+}
+
+FinnPlanbehandlingerResultat -- Planbehandling
+
+note top of Planbehandling : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.planbehandling'
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+
+class RegistrerPlanavgrensning {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +saksnummer: Saksnummer
+    +vedlegg: Dokument[]
+}
+
+RegistrerPlanavgrensning -- NasjonalArealplanId
+RegistrerPlanavgrensning -- Saksnummer
+RegistrerPlanavgrensning -- Dokument
+
+note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
+note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
+note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
+
+@enduml
