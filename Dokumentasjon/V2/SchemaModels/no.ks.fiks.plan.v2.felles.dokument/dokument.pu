@@ -1,17 +1,17 @@
 @startuml
 class Dokument {
     +tittel: string
-    +dokumenttype: Kode
+    +dokumenttype: Dokumenttype
     +referanseDokumentfil: ReferanseDokumentfil
     +mimetype: string
     +dokumentsdato: date
     +arkivnavn: string
 }
 
-Dokument -- Kode
+Dokument -- Dokumenttype
 Dokument -- ReferanseDokumentfil
 
-class Kode {
+class Dokumenttype <<Kode>> {
     +kodeverdi: string
     +kodebeskrivelse: string
 }

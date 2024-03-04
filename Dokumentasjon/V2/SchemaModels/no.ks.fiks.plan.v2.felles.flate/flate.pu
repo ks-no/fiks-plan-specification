@@ -1,18 +1,23 @@
 @startuml
 class Flate {
-    +type: Type
+    +type: FlateType
     +koordinater: Koordinat[]
-    +koordinatsystem: Kode
+    +koordinatsystem: Koordinatsystem
 }
 
+Flate -- FlateType
 Flate -- Koordinat
-Flate -- Kode
+Flate -- Koordinatsystem
+
+enum FlateType {
+    Polygon
+}
 
 class Koordinat {
     +items: number[]
 }
 
-class Kode {
+class Koordinatsystem <<Kode>> {
     +kodeverdi: string
     +kodebeskrivelse: string
 }

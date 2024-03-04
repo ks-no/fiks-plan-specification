@@ -1,13 +1,13 @@
 @startuml
 class Dispensasjon {
     +identifikasjon: string
-    +dispensasjonType: Kode
-    +dispensasjonFra: Kode
+    +dispensasjonType: DispensasjonType
+    +dispensasjonFra: DispensasjonFra
     +nasjonalArealplanId: NasjonalArealplanId
     +begrunnelse: string
     +vedtaksdato:  date
     +posisjon: Posisjon
-    +vertikalnivaa: Kode
+    +vertikalnivaa: Vertikalnivaa
     +beskrivelse: string
     +innvilgetDispensasjon: boolean
     +saksnummer: Saksnummer
@@ -17,13 +17,25 @@ class Dispensasjon {
     +plandokumenter: Dokument[]
 }
 
-Dispensasjon -- Kode
+Dispensasjon -- DispensasjonType
+Dispensasjon -- DispensasjonFra
+Dispensasjon -- Vertikalnivaa
 Dispensasjon -- NasjonalArealplanId
 Dispensasjon -- Posisjon
 Dispensasjon -- Saksnummer
 Dispensasjon -- Dokument
 
-class Kode {
+class DispensasjonType <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class DispensasjonFra <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class Vertikalnivaa <<Kode>> {
     +kodeverdi: string
     +kodebeskrivelse: string
 }
