@@ -1,25 +1,43 @@
 @startuml
 class Arealplan {
     +nasjonalArealplanId: NasjonalArealplanId
-    +plantype: Kode
+    +plantype: Plantype
     +plannavn: string
-    +planstatus: Kode
+    +planstatus: Planstatus
     +plandokumentasjonOppdatert: boolean
     +ubehandletKlage: boolean
     +ubehandletInnsigelse: boolean
     +vedtaksdato: date
     +vedtakEndeligPlanDato: date
-    +lovreferanse: Kode
-    +forslagstillerType: Kode
+    +lovreferanse: Lovreferanse
+    +forslagstillerType: ForslagstillerType
     +alternativFinnes: boolean
 }
 
 Arealplan -- NasjonalArealplanId
-Arealplan -- Kode
+Arealplan -- Plantype
+Arealplan -- Planstatus
+Arealplan -- Lovreferanse
+Arealplan -- ForslagstillerType
 
 note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
 
-class Kode {
+class Plantype <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class Planstatus <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class Lovreferanse <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class ForslagstillerType <<Kode>>{
     +kodeverdi: string
     +kodebeskrivelse: string
 }

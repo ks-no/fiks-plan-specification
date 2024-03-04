@@ -2,19 +2,37 @@
 
 class OpprettArealplan {
     +plannavn: string
-    +plantype: Kode
-    +planstatus: Kode
-    +lovreferanse: Kode
+    +plantype: Plantype
+    +planstatus: Planstatus
+    +lovreferanse: Lovreferanse
     +saksnummer: Saksnummer
-    +forslagstillertype: Kode
+    +forslagstillertype: ForslagstillerType
 }
 
-class Kode {
+class Plantype <<Kode>> {
     +kodeverdi: string
     +kodebeskrivelse: string
 }
 
-OpprettArealplan -- Kode
+class Planstatus <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class Lovreferanse <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class ForslagstillerType <<Kode>>{
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+OpprettArealplan -- Plantype
+OpprettArealplan -- Planstatus
+OpprettArealplan -- Lovreferanse
+OpprettArealplan -- ForslagstillerType
 OpprettArealplan -- Saksnummer
 
 note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'

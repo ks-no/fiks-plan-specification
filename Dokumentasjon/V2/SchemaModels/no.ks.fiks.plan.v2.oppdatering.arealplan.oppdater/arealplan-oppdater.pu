@@ -3,21 +3,39 @@
 class OppdaterArealplan {
     +nasjonalArealplanId: NasjonalArealplanId
     +plannavn: string
-    +plantype: Kode
-    +planstatus: Kode
-    +lovreferanse: Kode
+    +plantype: Plantype
+    +planstatus: Planstatus
+    +lovreferanse: Lovreferanse
     +saksnummer: Saksnummer
-    +forslagstillertype: Kode
+    +forslagstillertype: ForslagstillerType
     +vedlegg: Dokument[]
 }
 
-class Kode {
+class Plantype <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class Planstatus <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class Lovreferanse <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+class ForslagstillerType <<Kode>>{
     +kodeverdi: string
     +kodebeskrivelse: string
 }
 
 OppdaterArealplan -- NasjonalArealplanId
-OppdaterArealplan -- Kode
+OppdaterArealplan -- Plantype
+OppdaterArealplan -- Planstatus
+OppdaterArealplan -- Lovreferanse
+OppdaterArealplan -- ForslagstillerType
 OppdaterArealplan -- Saksnummer
 OppdaterArealplan -- Dokument
 

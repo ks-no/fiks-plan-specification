@@ -6,11 +6,11 @@ class HentRelatertePlanerResultat {
 }
 
 class Planrelasjoner {
-    +planforhold: Kode
+    +planforhold: Planforhold
     +arealplan: Arealplan
 }
 
-class Kode {
+class Planforhold <<Kode>> {
     +kodeverdi: string
     +kodebeskrivelse: string
 }
@@ -18,7 +18,7 @@ class Kode {
 HentRelatertePlanerResultat -- NasjonalArealplanId
 HentRelatertePlanerResultat -- Planrelasjoner
 Planrelasjoner -- Arealplan
-Planrelasjoner -- Kode
+Planrelasjoner -- Planforhold
 
 note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
 note top of Arealplan : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.arealplan'

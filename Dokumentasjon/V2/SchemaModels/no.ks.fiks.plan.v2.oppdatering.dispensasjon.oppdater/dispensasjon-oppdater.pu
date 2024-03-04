@@ -6,7 +6,7 @@ class OppdaterDispensasjon {
     +begrunnelse: string
     +referanseKlageSaksnummer: ReferanseKlageSaksnummer
     +plandokumenter: Dokument[]
-    +forslagstillertype: Kode
+    +forslagstillertype: Forslagstillertype
     +vedlegg: Dokument[]
 }
 
@@ -15,8 +15,15 @@ class ReferanseKlageSaksnummer {
     +sakssekvensnummer: integer
 }
 
+class ForslagstillerType <<Kode>>{
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+OppdaterDispensasjon -- ForslagstillerType
 OppdaterDispensasjon -- Dispensasjon
 OppdaterDispensasjon -- Dokument
+OppdaterDispensasjon -- ReferanseKlageSaksnummer
 
 note top of Dispensasjon : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dispensasjon'
 note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
