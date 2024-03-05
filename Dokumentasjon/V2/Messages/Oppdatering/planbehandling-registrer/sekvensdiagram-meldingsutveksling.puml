@@ -5,7 +5,7 @@ participant Fagsystem as "Fagsystem"
 participant Plangregister as "Planregister"
 
 Fagsystem -> Plangregister : no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer
-Fagsystem <- Plangregister : no.ks.fiks.plan.v2.mottatt
+Fagsystem <- Plangregister : no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer.mottatt
 
 
 note left of Fagsystem

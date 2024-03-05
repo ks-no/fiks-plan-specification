@@ -1,8 +1,11 @@
-# Finn planer
+# Finn arealplaner - dokumentasjon
 
 **Meldinger**: 
-- `no.ks.fiks.plan.v2.innsyn.planer.finn`
-- `no.ks.fiks.plan.v2.innsyn.planer.resultat`
+- `no.ks.fiks.plan.v2.innsyn.arealplaner.finn`
+- `no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.adresse`
+- `no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.flate`
+- `no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet`
+- `no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat`
 
 **Feilmeldinger**:
 - `no.ks.fiks.plan.v2.feilmeldinger.ugyldigforespoersel`
@@ -33,10 +36,13 @@ Feilmeldingen bør inneholde en melding tilbake til avsender som forklarer hva s
 ![sekvensdiagram](sekvensdiagram-serverfeil.png)
 
 ### Klassediagram
-#### no.ks.fiks.plan.v2.innsyn.planer.finn
 
-![inn-melding](inn-melding.png)
+[no.ks.fiks.plan.v2.innsyn.arealplaner.finn](./../../../ClassDiagrams/no.ks.fiks.plan.v2.innsyn.arealplaner.finn/README.md)
 
-#### no.ks.fiks.plan.v2.innsyn.planer.resultat
+[no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.adresse](./../../../ClassDiagrams/no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.adresse/README.md)
 
-*kommer*
+[no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.flate](./../../../ClassDiagrams/no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.flate/README.md)
+
+[no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet](./../../../ClassDiagrams/no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet/README.md)
+
+[no.ks.fiks.plan.v2.innsyn.arealplaner.resultat](./../../../ClassDiagrams/no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat/README.md)

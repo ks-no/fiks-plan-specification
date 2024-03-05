@@ -4,14 +4,13 @@ skinparam sequenceMessageAlign center
 participant Fagsystem as "Fagsystem"
 participant Plangregister as "Planregister"
 
-Fagsystem -> Plangregister : no.ks.fiks.plan.v2.innsyn.planer.finn
-Fagsystem <- Plangregister : no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel
+Fagsystem -> Plangregister : no.ks.fiks.plan.v2.innsyn.arealplaner.finn
+Fagsystem <- Plangregister : no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat
 
 
 note left of Fagsystem
 Dette viser meldingsutveksling
-ved "Finn planer" hvor det er en 
-ugyldig forespørsel fra Fagsystem.
+ved "Finn arealplaner".
 **Merk:** diagram er forenklet uten
 Fiks-Protokoll som meldingskø
 mellom Fagsystem og Plangregister

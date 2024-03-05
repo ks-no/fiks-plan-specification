@@ -1,4 +1,4 @@
-# Modeller
+# Sekvensdiagrammer og klassediagram for meldingsutvekslinger
 
 Alle sekvensdiagrammer er forenklet med at man har utelatt Fiks-Protokoll som meldingssystem mellom avsender og mottakende system.
 Alle meldinger går via Fiks-Protokoll.
@@ -13,7 +13,7 @@ Les mer om PlantUML her: https://plantuml.com/
 
 ## Innsyn
 
-### [Finn plan](Innsyn/planer-finn)
+### [Finn arealplaner](Innsyn/arealplaner-finn)
 
 ## Oppdatering
 

@@ -24,10 +24,12 @@ enum Vertikalnivaa {
 }
 
 RegistrerPlanomraade -- Planomraade
+RegistrerPlanomraade -- NasjonalArealplanId
 Planomraade -- Omraade
 Planomraade -- Vertikalnivaa
 Omraade -- Flate
 
 note top of Flate : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.flate'
+note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
 
 @enduml

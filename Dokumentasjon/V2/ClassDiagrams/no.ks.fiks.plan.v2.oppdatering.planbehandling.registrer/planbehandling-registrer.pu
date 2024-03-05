@@ -2,17 +2,17 @@
 
 class RegistrerPlanbehandling {
     +nasjonalArealplanId: NasjonalArealplanId
-    +planstatus: Kode
+    +planstatus: Planstatus
     +planbehandling: Planbehandling
 }
 
-class Kode {
+class Planstatus {
     +kodeverdi: string
     +kodebeskrivelse: string
 }
 
 RegistrerPlanbehandling -- NasjonalArealplanId
-RegistrerPlanbehandling -- Kode
+RegistrerPlanbehandling -- Planstatus
 RegistrerPlanbehandling -- Planbehandling
 
 note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'

@@ -4,13 +4,13 @@ skinparam sequenceMessageAlign center
 participant Fagsystem as "Fagsystem"
 participant Plangregister as "Planregister"
 
-Fagsystem -> Plangregister : no.ks.fiks.plan.v2.innsyn.planer.finn
+Fagsystem -> Plangregister : no.ks.fiks.plan.v2.innsyn.arealplaner.finn
 Fagsystem <- Plangregister : no.ks.fiks.plan.v2.feilmelding.serverfeil
 
 
 note left of Fagsystem
 Dette viser meldingsutveksling
-ved "Finn planer" hvor noe gikk galt
+ved "Finn arealplaner" hvor noe gikk galt
 ved mottak hos Planregister.
 **Merk:** diagram er forenklet uten
 Fiks-Protokoll som meldingskø
