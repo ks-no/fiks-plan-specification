@@ -8,9 +8,7 @@
         "midlertidigeForbud": {
             "type": "array",
             "items": {
-                "midlertidigForbud": {
-                    "$ref": "no.ks.fiks.plan.v2.felles.midlertidigforbud.schema.json"
-                }
+                "$ref": "no.ks.fiks.plan.v2.felles.midlertidigforbud.schema.json"
             }
         }
     }
