@@ -26,7 +26,7 @@ Dokumentasjon for meldingsutveksling (f.eks. for "finn arealplaner") med sekvens
 ### [Klassediagrammer](Dokumentasjon/V2/ClassDiagrams/README.md)
 Klassediagrammer for meldingstypene/skjema.
 
-### [GI til Fiks-Plan forklaring](Dokumentasjon/V2/GI/Innsyn)
+### [Forklaring for overgang GI til Fiks-Plan](Dokumentasjon/V2/GI/Innsyn)
 
 
 
