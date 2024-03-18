@@ -71,6 +71,6 @@
         }
     },
     "required": [
-        "arealplanId"
+        "nasjonalArealplanId"
     ]
 }
