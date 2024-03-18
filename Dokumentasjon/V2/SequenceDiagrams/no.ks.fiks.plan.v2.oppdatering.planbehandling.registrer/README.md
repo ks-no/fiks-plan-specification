@@ -1,5 +1,18 @@
-# Registrer planbehandling
+# Regsitrer planbehandling - sekvensdiagram
 
-**Skjema**: `no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer.schema.json`
+**Meldinger**:
+- `no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer`
+- `no.ks.fiks.plan.v2.oppdatering.planbehandling.mottatt`
+- `no.ks.fiks.plan.v2.oppdatering.planbehandling.kvittering`
 
-### Registrer planbehandling
+**Feilmeldinger**:
+- `no.ks.fiks.plan.v2.feilmeldinger.ugyldigforespoersel`
+- `no.ks.fiks.plan.v2.feilmeldinger.serverfeil`
+
+### Sekvensdiagram
+![sekvensdiagram](sequence-diagram.svg)
+
+
+### Klassediagram
+
+[no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer](./../../ClassDiagrams/no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer/README.md)

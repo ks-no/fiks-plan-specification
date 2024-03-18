@@ -20,8 +20,8 @@ Når man gjør endringer i PlantUML koden kan man kjøre `generate-png-from-puml
 ### [Wiki](https://github.com/ks-no/fiks-plan-specification/wiki)
 Wiki for Fiks Plan spesifikasjonen
 
-### [Diagrammer for meldingsutveksling](Dokumentasjon/V2/Messages/README.md)
-Dokumentasjon for meldingsutveksling (f.eks. for "finn arealplaner") med sekvensdiagram og tilhørende klassediagrammer.
+### [Sekvensdiagrammer](Dokumentasjon/V2/SequenceDiagrams/README.md)
+Sekvensdiagram for meldingsutveksling (f.eks. for "registrer planbehandling") med lenke til tilhørende klassediagrammer.
 
 ### [Klassediagrammer](Dokumentasjon/V2/ClassDiagrams/README.md)
 Klassediagrammer for meldingstypene/skjema.
