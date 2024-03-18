@@ -1,9 +1,9 @@
-# Regsitrer planomraade - sekvensdiagram
+# Registrer planomraade - sekvensdiagram
 
 **Meldinger**:
 - `no.ks.fiks.plan.v2.oppdatering.planomraade.registrer`
-- `no.ks.fiks.plan.v2.oppdatering.planomraade.mottatt`
-- `no.ks.fiks.plan.v2.oppdatering.planomraade.kvittering`
+- `no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.mottatt`
+- `no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.kvittering`
 
 **Feilmeldinger**:
 - `no.ks.fiks.plan.v2.feilmeldinger.ugyldigforespoersel`

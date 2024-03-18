@@ -1,9 +1,9 @@
-# Regsitrer planbehandling - sekvensdiagram
+# Registrer planbehandling - sekvensdiagram
 
 **Meldinger**:
 - `no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer`
-- `no.ks.fiks.plan.v2.oppdatering.planbehandling.mottatt`
-- `no.ks.fiks.plan.v2.oppdatering.planbehandling.kvittering`
+- `no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer.mottatt`
+- `no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer.kvittering`
 
 **Feilmeldinger**:
 - `no.ks.fiks.plan.v2.feilmeldinger.ugyldigforespoersel`

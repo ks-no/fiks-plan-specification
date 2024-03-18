@@ -1,9 +1,9 @@
-# Regsitrer planavgrensning - sekvensdiagram
+# Registrer planavgrensning - sekvensdiagram
 
 **Meldinger**:
 - `no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer`
-- `no.ks.fiks.plan.v2.oppdatering.planavgrensning.mottatt`
-- `no.ks.fiks.plan.v2.oppdatering.planavgrensning.kvittering`
+- `no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer.mottatt`
+- `no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer.kvittering`
 
 **Feilmeldinger**:
 - `no.ks.fiks.plan.v2.feilmeldinger.ugyldigforespoersel`
