@@ -1,4 +1,4 @@
-# Finn dispensasjon - sekvensdiagram
+# Finn dispensasjoner - sekvensdiagram
 
 **Meldinger**:
 - `no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn`
