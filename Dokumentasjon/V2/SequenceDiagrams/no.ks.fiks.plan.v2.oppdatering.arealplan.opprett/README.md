@@ -3,7 +3,7 @@
 **Meldinger**:
 - `no.ks.fiks.plan.v2.oppdatering.arealplan.opprett`
 - `no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt`
-- `no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.kvittering`
+- `no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.resultat`
 
 **Feilmeldinger**:
 - `no.ks.fiks.plan.v2.feilmeldinger.ugyldigforespoersel`

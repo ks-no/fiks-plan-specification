@@ -3,7 +3,7 @@
 **Meldinger**:
 - `no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer`
 - `no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.mottatt`
-- `no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.kvittering`
+- `no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.resultat`
 
 **Feilmeldinger**:
 - `no.ks.fiks.plan.v2.feilmeldinger.ugyldigforespoersel`
