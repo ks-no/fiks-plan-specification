@@ -1,0 +1,21 @@
+@startuml
+
+Fagsystem -> Planregister: no.ks.fiks.plan.v2.innsyn.arealplaner.finn.for.matrikkelenhet
+
+alt Finn arealplaner ok
+...resultat-melding med innhold...
+
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.innsyn.arealplaner.finn.resultat
+
+else Feil: finn-meldingen var ikke korrekt
+...feil-melding med innhold...
+
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel
+
+else Feil: planregister fikk serverfeil
+...feil-melding med innhold...
+
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.serverfeil
+
+end
+@enduml
