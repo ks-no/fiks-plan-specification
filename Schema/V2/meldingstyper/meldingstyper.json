@@ -31,6 +31,20 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.arealplan.hent"]
     },
     {
+      "id": "no.ks.fiks.plan.v2.innsyn.dokumentfil.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.dokumentfil.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.dokumentfil.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "[dokumentfil navnet]",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.dokumentfil.hent"]
+    },
+    {
       "id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn",
       "beskrivelse": "",
       "harPayload": true,
