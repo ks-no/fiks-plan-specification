@@ -1,0 +1,26 @@
+@startuml
+
+Fagsystem -> Planregister: no.ks.fiks.plan.v2.innsyn.planomraader.hent
+
+alt Hent planomraader ok
+...resultat-melding med innhold...
+
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.innsyn.planomraader.hent.resultat
+
+else Feil: planregister fant ikke noe på id
+...feil-melding med innhold...
+
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.ikkefunnet
+
+else Feil: hent-meldingen var ikke korrekt
+...feil-melding med innhold...
+
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel
+
+else Feil: planregister fikk serverfeil
+...feil-melding med innhold...
+
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.serverfeil
+
+end
+@enduml
