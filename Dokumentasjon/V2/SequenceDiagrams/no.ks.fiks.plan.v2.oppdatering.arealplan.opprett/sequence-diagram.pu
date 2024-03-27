@@ -2,13 +2,13 @@
 
 Fagsystem -> Planregister: no.ks.fiks.plan.v2.oppdatering.arealplan.opprett
 
-alt Registrering ok
+alt Opprett ok
 ...tom mottatt-melding...
 Fagsystem <- Planregister: no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt
 ...resultat-melding med innhold...
 Fagsystem <- Planregister: no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.resultat
 
-else Feil: registreringsmeldingen var ikke korrekt
+else Feil: opprettsmeldingen var ikke korrekt
 ...feil-melding med innhold...
 
 Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel

@@ -1,19 +1,23 @@
 @startuml
 
-Fagsystem -> Planregister: no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater
+Fagsystem -> Planregister: no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater
 
 alt Oppdatering ok
-...tom mottatt-melding...
-Fagsystem <- Planregister: no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater.mottatt
-...tom kvittering-melding...
-Fagsystem <- Planregister: no.ks.fiks.plan.v2.oppdatering.arealplan.oppdater.kvittering
 
-else Feil: oppdatermeldingen var ikke korrekt
+...tom mottatt-melding...
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater.mottatt
+
+...tom kvittering-melding...
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater.kvittering
+
+else Feil: oppdateringsmeldingen var ikke korrekt
 ...feil-melding med innhold...
+
 Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel
 
 else Feil: planregister fikk serverfeil
 ...feil-melding med innhold...
+
 Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.serverfeil
 
 end
