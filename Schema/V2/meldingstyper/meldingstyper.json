@@ -229,7 +229,7 @@
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt", "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt", "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
     },
     {
       "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt",
@@ -238,7 +238,7 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.arealplan.opprett"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.resultat",
+      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.kvittering",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
@@ -268,7 +268,7 @@
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
     },
     {
       "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.mottatt",
@@ -277,7 +277,7 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.resultat",
+      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.kvittering",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
