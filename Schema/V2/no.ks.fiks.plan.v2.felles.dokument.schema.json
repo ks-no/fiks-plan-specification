@@ -8,6 +8,10 @@
         "tittel": {
             "type": "string"
         },
+        "filnavn": {
+            "description": "Det opprinnelige filnavnet som gjerne skal brukes hvis filen lastes ned. Kan inneholde alle lovlige tegn for filnavn. Egnet også for visning.",
+            "type": "string"
+        },
         "dokumenttype": {
             "type": "object",
             "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.dokumenttyper.json",
@@ -21,18 +25,8 @@
             }
         },
         "referanseDokumentfil": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "string"
-                },
-                "url": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "id"
-            ]
+            "description": "Dette er enten filnavn slik filen heter i meldingen eller URL som kan brukes for å hente filen. Vil normalt ikke inneholde tegn som komma, æøå etc. som gjerne er med i filnavn. Dette filnavnet vil kunne være forskjellig fra 'filnavn' attributtet i enkelte tilfeller, f.eks. hvor meldingen inneholder flere filer med samme navn.",
+            "type": "string"
         },
         "mimetype": {
             "type": "string"
