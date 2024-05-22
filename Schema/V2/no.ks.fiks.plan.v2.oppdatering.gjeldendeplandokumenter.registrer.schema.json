@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "no.ks.fiks.plan.v2.oppdatering.gjeldendeplandokumenter.registrer.schema.json",
     "title": "RegistrerGjeldendePlandokumenter",
-    "description": "Registrerer gjeldende plandokumenter med dokumenttypen PLANBESKR=Planbeskrivelse, PLANKART=Arealplankart, PLANBEST=Bestemmelser, PLANPROG=Planprogram, JURILLUST=Juridisk bindende illustrasjon",
+    "description": "Registrerer gjeldende plandokumenter med dokumenttypen PLANBESKR=Planbeskrivelse, PLANKART=Arealplankart, PLANBEST=Bestemmelser, JURILLUST=Juridisk bindende illustrasjon",
     "definitions": {
     },
     "type": "object",
@@ -10,24 +10,15 @@
         "nasjonalArealplanId": {
             "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
         },
-        "planstatus": {
-            "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.planstatuser.json",
-            "properties": {
-                "kodeverdi": {
-                    "type": "string"
-                },
-                "kodebeskrivelse": {
-                    "type": "string"
-                }
+        "plandokumenter": {
+            "type": "array",
+            "items": {
+                "$ref": "no.ks.fiks.plan.v2.felles.dokument.schema.json"
             }
-        },
-        "planbehandling": {
-            "$ref": "no.ks.fiks.plan.v2.felles.planbehandling.schema.json"
         }
     },
     "required": [
         "nasjonalArealplanId",
-        "planbehandling"
+        "plandokumenter"
     ]
 }
