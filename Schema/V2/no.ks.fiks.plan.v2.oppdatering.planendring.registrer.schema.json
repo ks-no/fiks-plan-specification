@@ -1,0 +1,59 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.planendring.registrer.schema.json",
+    "title": "RegistrerPlanendring",
+    "definitions": {
+    },
+    "type": "object",
+    "properties": {
+        "identifikasjon": {
+            "type": "integer"
+        },
+        "nasjonalArealplanId": {
+            "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        },
+        "navn": {
+            "type": "string"
+        },
+        "vedtaksdato": {
+            "type": "string",
+            "format": "date"
+        },
+        "behandlingstype": {
+            "type": "object",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.behandlingstype.json",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "saksnummer": {
+            "$ref": "no.ks.fiks.plan.v2.felles.saksnummer.schema.json"
+        },
+        "lovreferanse": {
+            "type": "object",
+            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.lovreferanser.json",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "omraade": {
+            "$ref": "no.ks.fiks.plan.v2.felles.flate.schema.json"
+        },
+        "posisjon": {
+            "$ref": "no.ks.fiks.plan.v2.felles.posisjon.schema.json"
+        }
+    },
+    "required": [
+        "nasjonalArealplanId"
+    ]
+}
