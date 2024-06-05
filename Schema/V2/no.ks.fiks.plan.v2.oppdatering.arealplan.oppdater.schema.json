@@ -42,6 +42,14 @@
         "ubehandletInnsigelse": {
             "type": "boolean"
         },
+        "vedtaksdato": {
+            "type": "string",
+            "format": "date"
+        },
+        "vedtakEndeligPlanDato": {
+            "type": "string",
+            "format": "date"
+        },
         "lovreferanse": {
             "type": "object",
             "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.lovreferanser.json",
@@ -71,12 +79,6 @@
         },
         "alternativFinnes": {
             "type": "boolean"
-        },
-        "vedlegg": {
-            "type": "array",
-            "items": {
-                "$ref": "no.ks.fiks.plan.v2.felles.dokument.schema.json"
-            }
         }
     },
     "required": [

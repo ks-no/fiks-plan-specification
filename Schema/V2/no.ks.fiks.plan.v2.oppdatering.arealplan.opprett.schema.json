@@ -5,9 +5,6 @@
     "definitions": {},
     "type": "object",
     "properties": {
-        "plannavn": {
-            "type": "string"
-        },
         "plantype": {
             "type": "object",
             "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.plantyper.json",
@@ -20,6 +17,9 @@
                 }
             }
         },
+        "plannavn": {
+            "type": "string"
+        },
         "planstatus": {
             "type": "object",
             "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.planstatuser.json",
@@ -31,6 +31,20 @@
                     "type": "string"
                 }
             }
+        },
+        "ubehandletKlage": {
+            "type": "boolean"
+        },
+        "ubehandletInnsigelse": {
+            "type": "boolean"
+        },
+        "vedtaksdato": {
+            "type": "string",
+            "format": "date"
+        },
+        "vedtakEndeligPlanDato": {
+            "type": "string",
+            "format": "date"
         },
         "lovreferanse": {
             "type": "object",
