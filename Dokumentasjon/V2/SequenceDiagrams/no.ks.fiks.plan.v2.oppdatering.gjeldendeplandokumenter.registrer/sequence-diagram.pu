@@ -1,0 +1,16 @@
+@startuml
+
+Fagsystem -> Planregister: no.ks.fiks.plan.v2.oppdatering.gjeldendeplandokumenter.registrer
+
+alt Registrering ok
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.oppdatering.gjeldendeplandokumenter.registrer.mottatt
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.oppdatering.gjeldendeplandokumenter.registrer.kvittering
+
+else Feil: registreringsmeldingen var ikke korrekt
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel
+
+else Feil: planregister fikk serverfeil
+Fagsystem <- Planregister: no.ks.fiks.plan.v2.feilmelding.serverfeil
+
+end
+@enduml
