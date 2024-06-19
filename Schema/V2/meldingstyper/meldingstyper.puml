@@ -32,6 +32,20 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.arealplan.hent"]
     },
     {
+      "id": "no.ks.fiks.plan.v2.innsyn.dokumentfil.hent",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.dokumentfil.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.dokumentfil.hent.resultat",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "[dokumentfil navnet]",
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.dokumentfil.hent"]
+    },
+    {
       "id": "no.ks.fiks.plan.v2.innsyn.arealplaner.finn",
       "beskrivelse": "",
       "harPayload": true,
@@ -81,18 +95,18 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.dispensasjoner.finn.resultat"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent",
+      "id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplandokumenter.hent",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.gjeldendeplandokumenter.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent.resultat",
+      "id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplandokumenter.hent.resultat",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.gjeldendeplanbestemmelser.hent"]
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.gjeldendeplandokumenter.hent"]
     },
     {
       "id": "no.ks.fiks.plan.v2.innsyn.kodeliste.hent",
@@ -109,18 +123,18 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.kodeliste.hent"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk",
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk.resultat",
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.resultat",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbud.sjekk"]
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn"]
     },
     {
       "id": "no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn",
@@ -151,18 +165,18 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.plandokumenter.finn"]
     },    
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.planfil.hent",
+      "id": "no.ks.fiks.plan.v2.innsyn.dokumentfil.hent",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.planfil.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.dokumentfil.hent.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.planfil.hent.resultat",
+      "id": "no.ks.fiks.plan.v2.innsyn.dokumentfil.hent.resultat",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.planfil.hent"]
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.dokumentfil.hent"]
     },
     {
       "id": "no.ks.fiks.plan.v2.innsyn.planomraader.hent",
@@ -216,7 +230,7 @@
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt", "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt", "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
     },
     {
       "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.mottatt",
@@ -225,7 +239,7 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.arealplan.opprett"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.resultat",
+      "id": "no.ks.fiks.plan.v2.oppdatering.arealplan.opprett.kvittering",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
@@ -251,11 +265,11 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.oppdater"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.oppdatering.dipsensasjon.registrer",
+      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
     },
     {
       "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.mottatt",
@@ -264,7 +278,7 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.resultat",
+      "id": "no.ks.fiks.plan.v2.oppdatering.dispensasjon.registrer.kvittering",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
@@ -326,6 +340,63 @@
       "beskrivelse": "",
       "harPayload": false,
       "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planbehandling.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planomraade.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planomraade.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.gjeldendeplandokumenter.registrer",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.gjeldendeplandokumenter.registrer.mottatt", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil", "no.ks.fiks.plan.v2.feilmelding.ikkefunnet"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplandokumenter.registrer.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.gjeldendeplandokumenter.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.gjeldendeplandokumenter.registrer.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.gjeldendeplandokumenter.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.plenendring.registrer",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.oppdatering.planendring.registrer.mottatt", "no.ks.fiks.plan.v2.oppdatering.planendring.registrer.kvittering", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planendring.registrer.mottatt",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planendring.registrer"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.oppdatering.planendring.registrer.kvittering",
+      "beskrivelse": "",
+      "harPayload": false,
+      "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.planendring.registrer"]
     },
     {
       "id": "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel",
