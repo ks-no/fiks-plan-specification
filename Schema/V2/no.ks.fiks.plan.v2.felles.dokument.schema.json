@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "id": {
-            "description": "En unik id innenfor planregister som kan benyttes for unik identifisering av et dokument objekt og f.eks. henting av dokument fil fra planregister. Påkrevd å returneres fra planregister når man henter dokument objekt via tjenester. Ikke gyldig når man registrerer et dokument objekt inn i planregister.",
+            "description": "En unik id innenfor planregister som kan benyttes for unik identifisering av et dokumentobjekt og f.eks. henting av dokumentfil fra planregister. Påkrevd å returneres fra planregister når man henter dokumentobjekt via tjenester. Ikke gyldig når man registrerer et dokumentobjekt inn i planregister.",
             "type": "string"
         },
         "tittel": {
