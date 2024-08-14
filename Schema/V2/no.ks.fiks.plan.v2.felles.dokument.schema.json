@@ -5,6 +5,10 @@
     "definitions": {},
     "type": "object",
     "properties": {
+        "id": {
+            "description": "En unik id innenfor planregister som kan benyttes for unik identifisering av et dokumentobjekt og f.eks. henting av dokumentfil fra planregister. Påkrevd å returneres fra planregister når man henter dokumentobjekt via tjenester. Ikke gyldig når man registrerer et dokumentobjekt inn i planregister.",
+            "type": "string"
+        },
         "tittel": {
             "type": "string"
         },
