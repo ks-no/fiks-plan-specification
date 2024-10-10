@@ -5,7 +5,7 @@ Json schemas og dokumentasjon for protokollen Fiks Plan.
 Videre arbeid med denne protokollen/standarden gjøres her.
 
 ## [Wiki for Fiks Plan spesifikasjonen](https://github.com/ks-no/fiks-plan-specification/wiki)
-Gå til wiki for å lese mer om protokollen.
+Gå til [wiki](https://github.com/ks-no/fiks-plan-specification/wiki) for å lese mer om protokollen.
 
 ## Schemas, eksempler og Nuget-pakke
 Eksempler, schemas samt genererte models basert på schemas er tilgjengelig for .NET, og dette finner man i Github prosjektet [her](https://github.com/ks-no/fiks-plan-models-dotnet).
