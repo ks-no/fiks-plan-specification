@@ -1,16 +1,19 @@
 # Kontrakter og dokumentasjon for Fiks Plan
 
-Json schemas og dokumentasjon for protokollen Fiks Plan.
+> Fiks Plan er en modernisering av GI Plan 1.1 og det nye grensesnittet som skal benyttes når kommunen skal sette opp kommunikasjonen med kommunens planregister og mellom et fagsystem og planregister.
 
-Videre arbeid med denne protokollen/standarden gjøres her.
+I dette github repositoriet finner man json schemas og dokumentasjon for Fiks Plan protokollen.
+
+### Andre steder å finne informasjon om Fiks Plan:
+
+- ### [KS.no - Fiks Plan](https://www.ks.no/fagomrader/digitalisering/felleslosninger/verktoykasse-plan--og-byggesak/verktoy/sammenhengende-tjenester---integrasjoner/fiks-plan/)
+- ### [KS Digital - developer dokumentasjon](https://developers.fiks.ks.no/tjenester/fiksprotokoll/plan/)
 
 ## [Wiki for Fiks Plan spesifikasjonen](https://github.com/ks-no/fiks-plan-specification/wiki)
 Gå til [wiki](https://github.com/ks-no/fiks-plan-specification/wiki) for å lese mer om protokollen.
 
 ## Schemas, eksempler og Nuget-pakke
 Eksempler, schemas samt genererte models basert på schemas er tilgjengelig for .NET, og dette finner man i Github prosjektet [her](https://github.com/ks-no/fiks-plan-models-dotnet).
-
-
 
 ## Diagrammer i github repository
 
