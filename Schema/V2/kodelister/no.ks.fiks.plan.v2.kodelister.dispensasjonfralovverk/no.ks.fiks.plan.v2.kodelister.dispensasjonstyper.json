@@ -1,7 +1,8 @@
 {
   "protokollnavn": "no.ks.fiks.plan",
-  "navn": "dispensasjonstyper",
+  "navn": "dispensasjonFraLovverk",
   "versjon": "v2",
+  "description": "Dispensasjon fra. Kommer fra eByggesak",
   "kodeliste": [
     {
       "kodeverdi" : "PBL",
