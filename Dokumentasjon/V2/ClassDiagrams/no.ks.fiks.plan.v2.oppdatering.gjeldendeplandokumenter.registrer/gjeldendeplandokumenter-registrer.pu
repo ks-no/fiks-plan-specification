@@ -1,4 +1,6 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
 
 class RegistrerGjeldendePlandokumenter {
     +nasjonalArealplanId: NasjonalArealplanId
@@ -7,8 +9,5 @@ class RegistrerGjeldendePlandokumenter {
 
 RegistrerGjeldendePlandokumenter -- NasjonalArealplanId
 RegistrerGjeldendePlandokumenter -- Dokument
-
-note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
-note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
 
 @enduml

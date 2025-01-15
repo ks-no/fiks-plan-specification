@@ -1,12 +1,10 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.midlertidigforbud/midlertidigforbud.pu
 
 class FinnMidlertidigeForbudMottiltakResultat {
     +midlertidigeForbud: MidlertidigForbud[]
 }
 
 FinnMidlertidigeForbudMottiltakResultat -- MidlertidigForbud
-
-note top of MidlertidigForbud : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.midlertidigforbud'
-
 
 @enduml

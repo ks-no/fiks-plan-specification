@@ -1,4 +1,9 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+!include ./../no.ks.fiks.plan.v2.felles.posisjon/posisjon.pu
+!include ./../no.ks.fiks.plan.v2.felles.saksnummer/saksnummer.pu
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
+
 class Dispensasjon {
     +identifikasjon: string
     +dispensasjonsType: DispensasjonsType
@@ -18,7 +23,18 @@ class Dispensasjon {
     +plandokumenter: Dokument[]
 }
 
-note left of Dispensasjon : dispensasjonsType er hentet fra Planregister\nDispensasjonFraLovverk: se kodelisten dispensasjonfralovverk
+note left of Dispensasjon::dispensasjonsType
+    dispensasjonsType er hentet fra Planregister
+end note 
+
+note left of Dispensasjon::DispensasjonFraLovverk 
+    dispensasajonFraLovverk: se kodelisten dispensasjonfralovverk.
+    Opprinnelig hentet fra eByggesak
+end note
+
+note left of Dispensasjon::dispFra 
+    Et tekstfelt. Nytt i issue113 og hentet fra planregister 
+end note
 
 Dispensasjon -- DispensasjonsType
 Dispensasjon -- DispensasjonFraLovverk

@@ -1,4 +1,8 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.saksnummer/saksnummer.pu
+!include ./../no.ks.fiks.plan.v2.felles.posisjon/posisjon.pu
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
+
 class Planbehandling {
     +posisjon: Posisjon
     +dato: date
@@ -12,10 +16,6 @@ Planbehandling -- Posisjon
 Planbehandling -- Saksnummer
 Planbehandling -- Planbehandlingstype
 Planbehandling -- Dokument
-
-note top of Posisjon : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.posisjon'
-note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
-note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
 
 class Planbehandlingstype <<Kode>> {
     +kodeverdi: string

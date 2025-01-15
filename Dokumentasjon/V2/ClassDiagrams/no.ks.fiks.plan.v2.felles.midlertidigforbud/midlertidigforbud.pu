@@ -1,4 +1,7 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.saksnummer/saksnummer.pu
+!include ./../no.ks.fiks.plan.v2.felles.flate/flate.pu
+
 class MidlertidigForbud {
     +omraade: Flate
     +saksnummer: Saksnummer
@@ -11,9 +14,6 @@ class MidlertidigForbud {
 MidlertidigForbud -- Flate
 MidlertidigForbud -- Saksnummer
 MidlertidigForbud -- PblTiltakForbudtype
-
-note top of Flate : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.flate'
-note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
 
 class PblTiltakForbudtype <<Kode>> {
     +kodeverdi: string
