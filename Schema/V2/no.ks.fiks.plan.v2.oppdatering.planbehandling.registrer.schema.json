@@ -11,7 +11,7 @@
         },
         "planstatus": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.planstatuser.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Planstatuser",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

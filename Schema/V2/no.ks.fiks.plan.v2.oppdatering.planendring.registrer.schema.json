@@ -21,7 +21,7 @@
         },
         "behandlingstype": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.behandlingstype.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Behandlingstyper",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -36,7 +36,7 @@
         },
         "lovreferanse": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.lovreferanser.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Lovreferanser",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
