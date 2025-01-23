@@ -1,8 +1,8 @@
+@startjson
 {
   "protokollnavn": "no.ks.fiks.plan",
   "navn": "dispensasjonFraLovverk",
   "versjon": "v2",
-  "description": "Dispensasjon fra. Kommer fra eByggesak",
   "kodeliste": [
     {
       "kodeverdi" : "PBL",
@@ -38,3 +38,4 @@
     }
   ]
 }
+@endjson

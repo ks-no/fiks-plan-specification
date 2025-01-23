@@ -6,7 +6,7 @@
 
 class Dispensasjon {
     +identifikasjon: string
-    +dispensasjonsType: DispensasjonsType
+    +dispensasjonstype: Dispensasjonstype
     +dispensasjonFraLovverk: DispensasjonFraLovverk
     +dispFra: string
     +nasjonalArealplanId: NasjonalArealplanId
@@ -29,11 +29,12 @@ end note
 
 note left of Dispensasjon::DispensasjonFraLovverk 
     dispensasajonFraLovverk: se kodelisten dispensasjonfralovverk.
-    Opprinnelig hentet fra eByggesak
+    Opprinnelig hentet fra eByggesak. Finnes ikke i SOSI 4.5
 end note
 
 note left of Dispensasjon::dispFra 
-    Et tekstfelt. Nytt i issue113 og hentet fra planregister 
+    Et tekstfelt. Nytt i issue113 og hentet fra planregister.
+    Ikke ønskelig som kodeliste 
 end note
 
 Dispensasjon -- DispensasjonsType

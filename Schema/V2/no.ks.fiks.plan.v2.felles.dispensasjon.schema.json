@@ -8,9 +8,9 @@
         "identifikasjon": {
             "type": "string"
         },
-        "dispensasjonType": {
+        "dispensasjonstype": {
             "type": "object",
-            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.plandispensasjonstyper.json",
+            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.dispensasjonstyper.json",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
