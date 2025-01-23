@@ -18,7 +18,7 @@
         },
         "dokumenttype": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.dokumenttyper.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Dokumenttyper",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

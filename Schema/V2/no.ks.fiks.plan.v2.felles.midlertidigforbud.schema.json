@@ -17,7 +17,7 @@
         },
         "pblTiltakForbudtype": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.forbudtyper.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Pbltiltakforbudtyper",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

@@ -10,7 +10,7 @@
         },
         "dispensasjonstype": {
             "type": "object",
-            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.dispensasjonstyper.json",
+            "description" : "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Dispensasjonstyper",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -22,7 +22,7 @@
         },
         "dispensasjonFra": {
             "type": "object",
-            "description" : "Kodeliste: no.ks.fiks.plan.v2.kodelister.dispensasjonstyper.json",
+            "description" : "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Dispensasjonstyper",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -47,7 +47,7 @@
         },
         "vertikalnivaa": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.vertikalnivaa.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Vertikalnivaa",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

@@ -10,7 +10,7 @@
         },
         "plantype": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.plantyper.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Plantyper",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -25,7 +25,7 @@
         },
         "planstatus": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.planstatuser.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Planstatuser",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -54,7 +54,7 @@
         },
         "lovreferanse": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.lovreferanser.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Lovreferanser",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -66,7 +66,7 @@
         },
         "forslagstillerType": {
             "type": "object",
-            "description": "Kodeliste: no.ks.fiks.plan.v2.kodelister.forslagsstillertyper.json",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Forslagsstillertyper",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
