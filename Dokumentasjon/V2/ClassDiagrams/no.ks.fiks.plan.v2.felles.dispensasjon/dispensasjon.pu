@@ -8,7 +8,7 @@ class Dispensasjon {
     +identifikasjon: string
     +dispensasjonstype: Dispensasjonstype
     +dispensasjonFraLovverk: DispensasjonFraLovverk
-    +dispFra: string
+    +dispensasjonFra: string
     +nasjonalArealplanId: NasjonalArealplanId
     +begrunnelse: string
     +vedtaksdato:  date
@@ -33,7 +33,8 @@ note left of Dispensasjon::dispensasjonFraLovverk
     Opprinnelig hentet fra eByggesak. Finnes ikke i SOSI 4.5
 end note
 
-note left of Dispensasjon::dispFra
+note top of Dispensasjon
+    dispensasjonFra:
     Hentet fra SOSI 4.5 (dispFra):
     ”dispFra” skal ha verdi dersom dispensasjonen gjelder
     ’Arealbruk kommune(del)plan=140’,

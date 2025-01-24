@@ -32,7 +32,7 @@
                 }
             }
         },
-        "dispFra": {
+        "dispensasjonFra": {
             "type": "string"
         },
         "nasjonalArealplanId": {
