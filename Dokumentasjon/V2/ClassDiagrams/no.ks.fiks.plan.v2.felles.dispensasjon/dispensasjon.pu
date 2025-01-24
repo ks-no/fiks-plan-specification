@@ -23,18 +23,22 @@ class Dispensasjon {
     +plandokumenter: Dokument[]
 }
 
-note left of Dispensasjon::dispensasjonsType
-    dispensasjonsType er hentet fra Planregister
+note left of Dispensasjon::dispensasjonstype
+    dispensasjonstype er hentet fra Planregister.
+    I SOSI 4.5 heter denne dispensasjon
 end note 
 
-note left of Dispensasjon::DispensasjonFraLovverk 
+note left of Dispensasjon::dispensasjonFraLovverk 
     dispensasajonFraLovverk: se kodelisten dispensasjonfralovverk.
     Opprinnelig hentet fra eByggesak. Finnes ikke i SOSI 4.5
 end note
 
-note left of Dispensasjon::dispFra 
-    Et tekstfelt. Nytt i issue113 og hentet fra planregister.
-    Ikke ønskelig som kodeliste 
+note left of Dispensasjon::dispFra
+    Hentet fra SOSI 4.5 (dispFra):
+    ”dispFra” skal ha verdi dersom dispensasjonen gjelder
+    ’Arealbruk kommune(del)plan=140’,
+    ’Regulerings/bebyggelsesplan=160’ eller
+    ’Hensynssone=170’
 end note
 
 Dispensasjon -- DispensasjonsType
