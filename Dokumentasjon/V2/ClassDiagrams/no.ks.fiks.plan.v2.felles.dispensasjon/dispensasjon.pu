@@ -6,7 +6,7 @@
 
 class Dispensasjon {
     +identifikasjon: string
-    +dispensasjonstype: Dispensasjonstype
+    +dispensasjontype: Dispensasjontype
     +dispensasjonFraLovverk: DispensasjonFraLovverk
     +dispensasjonFra: string
     +nasjonalArealplanId: NasjonalArealplanId
@@ -23,8 +23,9 @@ class Dispensasjon {
     +plandokumenter: Dokument[]
 }
 
-note left of Dispensasjon::dispensasjonstype
-    dispensasjonstype er hentet fra Planregister.
+note left of Dispensasjon::dispensasjontype
+    dispensasjontype er hentet fra Planregister.
+    Denne kodelisten er gyldig kun når man dispenserer fra arealplan
     I SOSI 4.5 heter denne dispensasjon
 end note 
 
@@ -42,7 +43,7 @@ note top of Dispensasjon
     ’Hensynssone=170’
 end note
 
-Dispensasjon -- DispensasjonsType
+Dispensasjon -- DispensasjonType
 Dispensasjon -- DispensasjonFraLovverk
 Dispensasjon -- Vertikalnivaa
 Dispensasjon -- NasjonalArealplanId
@@ -50,7 +51,7 @@ Dispensasjon -- Posisjon
 Dispensasjon -- Saksnummer
 Dispensasjon -- Dokument
 
-class DispensasjonsType <<Kode>> {
+class DispensasjonType <<Kode>> {
     +kodeverdi: string
     +kodebeskrivelse: string
 }
