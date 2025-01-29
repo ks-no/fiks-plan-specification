@@ -41,6 +41,8 @@ note top of Dispensasjon
     ’Arealbruk kommune(del)plan=140’,
     ’Regulerings/bebyggelsesplan=160’ eller
     ’Hensynssone=170’
+    dispensasjonFra kan inneholde en utvidet beskrivelse om hva det er dispensert fra,
+    f.eks. lovparagraf osv.
 end note
 
 Dispensasjon -- DispensasjonType
