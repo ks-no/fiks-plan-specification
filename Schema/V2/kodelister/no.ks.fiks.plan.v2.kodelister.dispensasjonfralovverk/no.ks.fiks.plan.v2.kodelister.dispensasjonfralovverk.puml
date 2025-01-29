@@ -1,0 +1,41 @@
+@startjson
+{
+  "protokollnavn": "no.ks.fiks.plan",
+  "navn": "dispensasjonFraLovverk",
+  "versjon": "v2",
+  "kodeliste": [
+    {
+      "kodeverdi" : "PBL",
+      "kodebeskrivelse" : "Plan- og bygningslov med forskrifter"
+    },
+    {
+      "kodeverdi" : "TEK",
+      "kodebeskrivelse" : "Byggteknisk forskrift med veiledning"
+    },
+    {
+      "kodeverdi" : "KOM",
+      "kodebeskrivelse" : "Kommunale vedtekter"
+    },
+    {
+      "kodeverdi" : "PLAN",
+      "kodebeskrivelse" : "Arealplaner"
+    },
+    {
+      "kodeverdi" : "VEG",
+      "kodebeskrivelse" : "Vegloven"
+    },
+    {
+      "kodeverdi" : "JORD",
+      "kodebeskrivelse" : "Jordlov"
+    },
+    {
+      "kodeverdi" : "ARB",
+      "kodebeskrivelse" : "Arbeidsmiljølov"
+    },
+    {
+      "kodeverdi" : "FORU",
+      "kodebeskrivelse" : "Forurensningslov"
+    }
+  ]
+}
+@endjson

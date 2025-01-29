@@ -1,4 +1,6 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.saksnummer/saksnummer.pu
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
 
 class HentAktoerer {
     +saksnummer: Saksnummer
@@ -7,8 +9,5 @@ class HentAktoerer {
 
 HentAktoerer -- Saksnummer
 HentAktoerer -- NasjonalArealplanId
-
-note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
-note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
 
 @enduml

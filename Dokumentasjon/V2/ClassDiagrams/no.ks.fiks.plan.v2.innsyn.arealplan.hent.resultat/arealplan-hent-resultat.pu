@@ -1,5 +1,8 @@
 @startuml
 
+!include ./../no.ks.fiks.plan.v2.felles.arealplan/arealplan.pu
+!include ./../no.ks.fiks.plan.v2.felles.planbehandling/planbehandling.pu
+
 class HentArealplanResultat {
     +arealplan: Arealplan
     +planbehandlinger: Planbehandling[]
@@ -7,10 +10,5 @@ class HentArealplanResultat {
 
 HentArealplanResultat -- Arealplan
 HentArealplanResultat -- Planbehandling
-
-
-note top of Arealplan : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.arealplan'
-note top of Planbehandling : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.planbehandling'
-
 
 @enduml

@@ -8,9 +8,21 @@
         "identifikasjon": {
             "type": "string"
         },
-        "dispensasjonType": {
+        "dispensasjontype": {
             "type": "object",
-            "description" : "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Dispensasjonstyper",
+            "description" : "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Dispensasjontyper",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "dispensasjonFraLovverk": {
+            "type": "object",
+            "description" : "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-DispensasjonFraLovverk",
             "properties": {
                 "kodeverdi": {
                     "type": "string"
@@ -21,16 +33,7 @@
             }
         },
         "dispensasjonFra": {
-            "type": "object",
-            "description" : "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Dispensasjonstyper",
-            "properties": {
-                "kodeverdi": {
-                    "type": "string"
-                },
-                "kodebeskrivelse": {
-                    "type": "string"
-                }
-            }
+            "type": "string"
         },
         "nasjonalArealplanId": {
             "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"

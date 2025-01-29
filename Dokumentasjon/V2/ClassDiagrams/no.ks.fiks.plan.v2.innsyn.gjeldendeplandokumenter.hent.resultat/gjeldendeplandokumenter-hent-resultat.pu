@@ -1,11 +1,10 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
 
 class HentGjeldendePlandokumenterResultat {
     +plandokumenter: Dokument[]
 }
 
 HentGjeldendePlandokumenterResultat -- Dokument
-
-note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
 
 @enduml

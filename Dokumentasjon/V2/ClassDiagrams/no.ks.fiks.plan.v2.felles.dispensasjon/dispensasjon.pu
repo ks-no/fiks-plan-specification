@@ -1,8 +1,14 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+!include ./../no.ks.fiks.plan.v2.felles.posisjon/posisjon.pu
+!include ./../no.ks.fiks.plan.v2.felles.saksnummer/saksnummer.pu
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
+
 class Dispensasjon {
     +identifikasjon: string
-    +dispensasjonType: DispensasjonType
-    +dispensasjonFra: DispensasjonFra
+    +dispensasjontype: Dispensasjontype
+    +dispensasjonFraLovverk: DispensasjonFraLovverk
+    +dispensasjonFra: string
     +nasjonalArealplanId: NasjonalArealplanId
     +begrunnelse: string
     +vedtaksdato:  date
@@ -17,8 +23,30 @@ class Dispensasjon {
     +plandokumenter: Dokument[]
 }
 
+note left of Dispensasjon::dispensasjontype
+    dispensasjontype er hentet fra Planregister.
+    Denne kodelisten er gyldig kun når man dispenserer fra arealplan
+    I SOSI 4.5 heter denne dispensasjon
+end note 
+
+note left of Dispensasjon::dispensasjonFraLovverk 
+    dispensasajonFraLovverk: se kodelisten dispensasjonfralovverk.
+    Opprinnelig hentet fra eByggesak. Finnes ikke i SOSI 4.5
+end note
+
+note top of Dispensasjon
+    dispensasjonFra:
+    Hentet fra SOSI 4.5 (dispFra):
+    ”dispFra” skal ha verdi dersom dispensasjonen gjelder
+    ’Arealbruk kommune(del)plan=140’,
+    ’Regulerings/bebyggelsesplan=160’ eller
+    ’Hensynssone=170’
+    dispensasjonFra kan inneholde en utvidet beskrivelse om hva det er dispensert fra,
+    f.eks. lovparagraf osv.
+end note
+
 Dispensasjon -- DispensasjonType
-Dispensasjon -- DispensasjonFra
+Dispensasjon -- DispensasjonFraLovverk
 Dispensasjon -- Vertikalnivaa
 Dispensasjon -- NasjonalArealplanId
 Dispensasjon -- Posisjon
@@ -30,7 +58,7 @@ class DispensasjonType <<Kode>> {
     +kodebeskrivelse: string
 }
 
-class DispensasjonFra <<Kode>> {
+class DispensasjonFraLovverk <<Kode>> {
     +kodeverdi: string
     +kodebeskrivelse: string
 }

@@ -1,11 +1,10 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
 
 class HentPlanomraader {
     +nasjonalArealplanId: NasjonalArealplanId
 }
 
 HentPlanomraader -- NasjonalArealplanId
-
-note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
 
 @enduml

@@ -1,11 +1,10 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.arealplan/arealplan.pu
 
 class FinnArealplanerResultat {
     +arealplaner: Arealplan[]
 }
 
 FinnArealplanerResultat -- Arealplan
-
-note top of Arealplan : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.arealplan'
 
 @enduml

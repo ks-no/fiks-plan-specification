@@ -1,4 +1,7 @@
 @startuml
+
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+
 class Arealplan {
     +nasjonalArealplanId: NasjonalArealplanId
     +plantype: Plantype
@@ -19,8 +22,6 @@ Arealplan -- Plantype
 Arealplan -- Planstatus
 Arealplan -- Lovreferanse
 Arealplan -- ForslagstillerType
-
-note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
 
 class Plantype <<Kode>> {
     +kodeverdi: string

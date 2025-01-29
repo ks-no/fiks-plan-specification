@@ -1,4 +1,6 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.saksnummer/saksnummer.pu
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
 
 class OpprettArealplanKvittering {
     +nasjonalArealplanId: NasjonalArealplanId
@@ -7,8 +9,5 @@ class OpprettArealplanKvittering {
 
 OpprettArealplanKvittering -- NasjonalArealplanId
 OpprettArealplanKvittering -- Saksnummer
-
-note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
-note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
 
 @enduml

@@ -1,4 +1,6 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.arealplan/arealplan.pu
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
 
 class HentRelatertePlanerResultat {
     +nasjonalArealplanId: NasjonalArealplanId
@@ -19,8 +21,5 @@ HentRelatertePlanerResultat -- NasjonalArealplanId
 HentRelatertePlanerResultat -- Planrelasjoner
 Planrelasjoner -- Arealplan
 Planrelasjoner -- Planforhold
-
-note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
-note top of Arealplan : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.arealplan'
 
 @enduml

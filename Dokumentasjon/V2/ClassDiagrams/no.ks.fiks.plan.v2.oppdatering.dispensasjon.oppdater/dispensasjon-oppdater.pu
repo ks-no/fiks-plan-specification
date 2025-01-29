@@ -1,4 +1,6 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.dispensasjon/dispensasjon.pu
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
 
 class OppdaterDispensasjon {
     +dispensasjon: Dispensasjon
@@ -24,8 +26,5 @@ OppdaterDispensasjon -- ForslagstillerType
 OppdaterDispensasjon -- Dispensasjon
 OppdaterDispensasjon -- Dokument
 OppdaterDispensasjon -- ReferanseKlageSaksnummer
-
-note top of Dispensasjon : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dispensasjon'
-note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
 
 @enduml

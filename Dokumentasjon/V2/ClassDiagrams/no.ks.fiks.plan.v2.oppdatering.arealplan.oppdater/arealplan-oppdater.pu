@@ -1,4 +1,7 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.saksnummer/saksnummer.pu
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
 
 class OppdaterArealplan {
     +nasjonalArealplanId: NasjonalArealplanId
@@ -38,9 +41,5 @@ OppdaterArealplan -- Lovreferanse
 OppdaterArealplan -- ForslagstillerType
 OppdaterArealplan -- Saksnummer
 OppdaterArealplan -- Dokument
-
-note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
-note top of Saksnummer : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.saksnummer'
-note top of Dokument : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.dokument'
 
 @enduml

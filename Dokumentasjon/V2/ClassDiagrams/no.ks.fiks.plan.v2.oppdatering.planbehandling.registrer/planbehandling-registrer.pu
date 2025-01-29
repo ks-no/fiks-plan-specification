@@ -1,4 +1,6 @@
 @startuml
+!include ./../no.ks.fiks.plan.v2.felles.planbehandling/planbehandling.pu
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
 
 class RegistrerPlanbehandling {
     +nasjonalArealplanId: NasjonalArealplanId
@@ -14,8 +16,5 @@ class Planstatus {
 RegistrerPlanbehandling -- NasjonalArealplanId
 RegistrerPlanbehandling -- Planstatus
 RegistrerPlanbehandling -- Planbehandling
-
-note top of NasjonalArealplanId : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.nasjonalarealplanid'
-note top of Planbehandling : Se detaljer i diagram for skjema 'no.ks.fiks.plan.v2.felles.planbehandling'
 
 @enduml
