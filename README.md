@@ -1,4 +1,4 @@
-# Kontrakter og dokumentasjon for Fiks Plan
+# ![](KSDigital25.png) Kontrakter og dokumentasjon for Fiks Plan
 
 > Fiks Plan er en modernisering av GI Plan 1.1 og det nye grensesnittet som skal benyttes når kommunen skal sette opp kommunikasjonen med kommunens planregister og mellom et fagsystem og planregister.
 
