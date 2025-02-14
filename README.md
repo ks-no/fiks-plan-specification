@@ -8,6 +8,7 @@ I dette github repositoriet finner man json schemas og dokumentasjon for Fiks Pl
 
 - ### [KS.no - Fiks Plan](https://www.ks.no/fagomrader/digitalisering/felleslosninger/verktoykasse-plan--og-byggesak/verktoy/sammenhengende-tjenester---integrasjoner/fiks-plan/)
 - ### [KS Digital - developer dokumentasjon](https://developers.fiks.ks.no/tjenester/fiksprotokoll/plan/)
+- ### [Clickup for Planprosess](https://sharing.clickup.com/4651657/l/h/4dym9-188/117ea0074d0e97c)
 
 ## [Wiki for Fiks Plan spesifikasjonen](https://github.com/ks-no/fiks-plan-specification/wiki)
 Gå til [wiki](https://github.com/ks-no/fiks-plan-specification/wiki) for å lese mer om protokollen.
