@@ -5,6 +5,12 @@ class RegistrerPlanomraade {
     +planomraade: Planomraade
 }
 
+note top of RegistrerPlanomraade
+    RegistrerPlanomraade brukes når man skal registrer Planområde
+    ved å fylle inn data i objektene.
+    Se RegistrerPlanomraadeMedFil for registrering av Planområde ved å sende inn en fil
+end note
+
 class Planomraade {
     +omraade: Omraade
     +vertikalnivaa: Vertikalnivaa

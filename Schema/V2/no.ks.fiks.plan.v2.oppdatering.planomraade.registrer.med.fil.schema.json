@@ -1,7 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.oppdatering.planavgrensning.registrer.schema.json",
-    "title": "RegistrerPlanavgrensning",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.med.fil.schema.json",
+    "title": "RegistrerPlanomraadeMedFil",
+    "description": "Registrer planområde ved å sende inn fil(er). Se RegistrerPlanomraade for å registrere ved å fylle inn objektene selv.",
     "definitions": {
     },
     "type": "object",

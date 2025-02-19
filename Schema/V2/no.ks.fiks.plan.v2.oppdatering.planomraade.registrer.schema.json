@@ -2,6 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "no.ks.fiks.plan.v2.oppdatering.planomraade.registrer.schema.json",
     "title": "RegistrerPlanomraade",
+    "description": "Registrer planområde ved å fylle inn objektene selv. Se RegistrerPlanomraadeMedFil for å registrere ved å sende inn fil(er).",
     "type": "object",
     "properties": {
         "nasjonalArealplanId": {

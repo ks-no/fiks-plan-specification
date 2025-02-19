@@ -1,0 +1,22 @@
+@startuml
+!include ./../no.ks.fiks.plan.v2.felles.saksnummer/saksnummer.pu
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
+
+class RegistrerPlanomraadeMedFil {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +saksnummer: Saksnummer
+    +vedlegg: Dokument[]
+}
+
+
+note top of RegistrerPlanomraadeMedFil
+    RegistrerPlanomraadeMedFil brukes for å registrere et Planområde ved å sende inn fil(er).
+    Se RegistrerPlanomraade for å registrere Planområde ved å fylle inn objektene selv
+end note
+
+RegistrerPlanomraadeMedFil-- NasjonalArealplanId
+RegistrerPlanomraadeMedFil -- Saksnummer
+RegistrerPlanomraadeMedFil -- Dokument
+
+@enduml
