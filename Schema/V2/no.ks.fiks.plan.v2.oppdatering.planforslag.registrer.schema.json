@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "no.ks.fiks.plan.v2.oppdatering.planforslag.registrer.schema.json",
+    "title": "RegistrerPlanforslag",
+    "description": "Registrerer planforslag med dokumenttypen #TODO Hva skal vi ha inn her? ",
+    "definitions": {
+    },
+    "type": "object",
+    "properties": {
+        "nasjonalArealplanId": {
+            "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        },
+        "plandokumenter": {
+            "type": "array",
+            "items": {
+                "$ref": "no.ks.fiks.plan.v2.felles.dokument.schema.json"
+            }
+        }
+    },
+    "required": [
+        "nasjonalArealplanId",
+        "plandokumenter"
+    ]
+}
