@@ -1,0 +1,28 @@
+@startuml
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+
+class RegistrerPlanforslag {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +plandokumenter: Dokument[]
+    +alternativ: Alternativ
+}
+
+class Alternativ {
+    navn: string
+    id: string
+    versjon: int
+}
+
+note top of Alternativ 
+    Vi har ikke Alternativ som noen entitet andre steder. 
+    Bortsett fra "alternativFinnes" som boolean for Arealplan objektet.
+    Burde det være noe man registrerer andre steder enn her? 
+    Bør det ha en id som man får tilbake fra Planregister? 
+end note
+
+RegistrerPlanforslag -- NasjonalArealplanId
+RegistrerPlanforslag -- Dokument
+RegistrerPlanforslag -- Alternativ
+
+@enduml

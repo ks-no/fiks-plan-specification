@@ -1,0 +1,10 @@
+@startuml
+!include ./../no.ks.fiks.plan.v2.felles.dokument/dokument.pu
+
+class HentPlanforslagResultat {
+    +plandokumenter: Dokument[]
+}
+
+HentPlanforslagResultat -- Dokument
+
+@enduml
