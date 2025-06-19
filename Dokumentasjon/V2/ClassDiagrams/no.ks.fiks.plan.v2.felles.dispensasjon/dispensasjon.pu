@@ -27,15 +27,21 @@ note left of Dispensasjon::dispensasjontype
     dispensasjontype er hentet fra Planregister.
     Denne kodelisten er gyldig kun når man dispenserer fra arealplan
     I SOSI 4.5 heter denne dispensasjon
+    Eksempel:
+    https://objektkatalog.geonorge.no/Objekttype/Index/EAID_5C9216D4_FC5F_46d9_86F0_6101D085264B
 end note 
 
 note left of Dispensasjon::dispensasjonFraLovverk 
     dispensasajonFraLovverk: se kodelisten dispensasjonfralovverk.
     Opprinnelig hentet fra eByggesak. Finnes ikke i SOSI 4.5
+    Eksempel:
+    https://register.geonorge.no/kodelister/byggesoknad/dispensasjonstype
+    
 end note
 
 note top of Dispensasjon
     dispensasjonFra:
+    Er en videre beskrivelse av hva det er dispensasjon fra.
     Hentet fra SOSI 4.5 (dispFra):
     ”dispFra” skal ha verdi dersom dispensasjonen gjelder
     ’Arealbruk kommune(del)plan=140’,
