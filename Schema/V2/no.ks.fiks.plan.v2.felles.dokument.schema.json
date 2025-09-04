@@ -40,6 +40,7 @@
             "format": "date"
         },
         "arkivnavn": {
+            "description": "Dette er navnet på arkivet dokumentobjektet kommer fra. Særlig nyttig der hvor man har byttet arkiv og vil få forskjellige verdier i dette feltet.",
             "type": "string"
         }
     },
