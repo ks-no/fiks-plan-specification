@@ -1,24 +1,20 @@
 @startuml
 class Dokument {
+    +id: string
     +tittel: string
+    +filnavn: string
     +dokumenttype: Dokumenttype
-    +referanseDokumentfil: ReferanseDokumentfil
+    +referanseDokumentfil: string
     +mimetype: string
     +dokumentsdato: date
     +arkivnavn: string
 }
 
 Dokument -- Dokumenttype
-Dokument -- ReferanseDokumentfil
 
 class Dokumenttype <<Kode>> {
     +kodeverdi: string
     +kodebeskrivelse: string
-}
-
-class ReferanseDokumentfil {
-    +id: string
-    +url: string
 }
 
 @enduml
