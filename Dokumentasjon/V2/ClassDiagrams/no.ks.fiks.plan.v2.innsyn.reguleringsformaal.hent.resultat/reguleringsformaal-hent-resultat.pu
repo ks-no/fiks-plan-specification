@@ -1,0 +1,18 @@
+@startuml
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+
+class HentReguleringsformaalResultat {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +reguleringsformaal: Reguleringsformaal
+    +utnyttelsesgrad: string
+}
+
+HentReguleringsformaalResultat -- NasjonalArealplanId
+HentReguleringsformaalResultat -- Reguleringsformaal
+
+class Reguleringsformaal <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+@enduml

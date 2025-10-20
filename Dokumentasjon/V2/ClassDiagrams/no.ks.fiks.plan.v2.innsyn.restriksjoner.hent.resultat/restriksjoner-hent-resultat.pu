@@ -1,0 +1,17 @@
+@startuml
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+
+class HentRestriksjonerResultat {
+    +nasjonalArealplanId: NasjonalArealplanId
+    +Restriksjoner: Restriksjoner[]
+}
+
+HentRestriksjonerResultat -- NasjonalArealplanId
+HentRestriksjonerResultat -- Restriksjoner
+
+class Restriksjoner <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+@enduml
