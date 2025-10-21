@@ -1,0 +1,113 @@
+@startuml
+
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+!include ./../no.ks.fiks.plan.v2.felles.flate/flate.pu
+!include ./../no.ks.fiks.plan.v2.felles.linje/linje.pu
+!include ./../no.ks.fiks.plan.v2.felles.posisjon/posisjon.pu
+
+class Planomraade {
+    -identifikasjon: Identifikasjon
+    -oppdateringsdato: DateTime
+    -foersteDigitaliseringsdato: DateTime [0..1]
+    -kvalitet: Posisjonskvalitet [0..1]
+    -opphav: string [0..1]
+    -nasjonalArealplanId: NasjonalArealplanId [0..1]
+    -vertikalnivaa: Vertikalnivaa [0..1]
+    -vertikallag: Vertikallag [0..1]
+}
+
+Planomraade <|-- ArealformaalOmraade
+Planomraade -- "[0..1]" NasjonalArealplanId
+
+class ArealformaalOmraade {
+    -omraade: Flate
+    -avgrensesAv: FormaalGrense [0..*]
+    -handlingsOmraade: HandlingsOmraade [0..*]
+    -aralformaal: Arealformaal
+    -feltnavn: string
+    -beskrivelse: string [0..1]
+    -eierform: Eierform
+    -utnytting: Utnytting [0..*]
+    -uteoppholdsareal: int [0..1]
+    -avkjoerselsbestemmelse: Avkjoerselsbestemmelse [0..1]
+    -byggverksbestemmelse: Byggverksbestemmelse [0..1]
+    ===
+    //constraints//
+    {Beskrivelse påkrevd for visse formål}
+    {Forutsetninger for flere utnyttingsgrader}
+    {Utnyttingstype BRA for forretningsformål}
+}
+
+ArealformaalOmraade -- Arealformaal
+ArealformaalOmraade -- Eierform
+ArealformaalOmraade -- Utnytting
+ArealformaalOmraade -- Avkjoerselsbestemmelse
+ArealformaalOmraade -- "0..1" Byggverksbestemmelse
+ArealformaalOmraade -- "0..*" Handlingsomraade
+ArealformaalOmraade -- "0..*" FormaalGrense
+ArealformaalOmraade -- Flate
+
+
+class Arealformaal <<Kode>> {
+    -kodeverdi: string
+    -kodebeskrivelse: string
+}
+
+note bottom of Arealformaal : Kodeliste: \nhttps://register.geonorge.no/sosi-kodelister/plan/reguleringsplanforslag/rparealform%C3%A5l
+
+class FormaalGrense {
+    -grense: Linje
+}
+
+FormaalGrense -- Linje
+
+class Utnytting {
+    -utnyttingstype: Utnyttingstype
+    -utnyttingstall: int [0..1]
+    -utnyttingstallMinimum: int [0..1]
+}
+
+class Handlingsomraade {
+    -omraade: Flate 
+    -rom: Posisjon [0..1]
+}
+
+Handlingsomraade -- Flate
+Handlingsomraade -- Posisjon
+Utnytting -- Utnyttingstype
+
+note left of Utnyttingstype : Definert som Enum, \nmen bør dette være Kode \nog basert på en kodeliste?
+
+enum Utnyttingstype {
+    Ikke tillatt å bebygge = 10
+    Ikke tillatt med ytterligere bebyggelse = 11
+    BYA = 15
+    %-BYA = 16
+    BRA = 17
+    %-BRA = 18
+}
+
+enum Eierform {
+    Offentlig formaal
+    Felles
+    Annen eierform
+}
+
+enum Avkjoerselsbestemmelse {
+    Avkjoersel tillatt
+    Avkjoersel ikke tillatt
+}
+
+note top : Bør det defineres som en Kode\nog basert på en kodeliste i stedet for Enum? 
+
+enum Byggverksbestemmelse {
+    Fastsatt plassering
+    Fastsatt høyde
+    Fastsatt plassering/høyde
+    Fastsatt møneretning
+    Fastsatt plassering/møneretning
+    Fastsatt plassering/høyde/møneretning
+    Fastsatt utforming
+}
+
+@enduml

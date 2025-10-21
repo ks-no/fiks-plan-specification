@@ -1,18 +1,11 @@
 @startuml
-!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+!include ./../no.ks.fiks.plan.v2.felles.arealformaalomraade/arealformaalomraade.pu
 
 class HentReguleringsformaalResultat {
-    +nasjonalArealplanId: NasjonalArealplanId
-    +reguleringsformaal: Reguleringsformaal
-    +utnyttelsesgrad: string
+    +arealformaalOmraade: ArealformaalOmraade [0..1]
 }
 
-HentReguleringsformaalResultat -- NasjonalArealplanId
-HentReguleringsformaalResultat -- Reguleringsformaal
+HentReguleringsformaalResultat -- "[0..1]" ArealformaalOmraade
 
-class Reguleringsformaal <<Kode>> {
-    +kodeverdi: string
-    +kodebeskrivelse: string
-}
 
 @enduml

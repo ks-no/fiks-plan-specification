@@ -1,0 +1,27 @@
+@startuml
+class Linje {
+    +linjetype: Linjetype
+    +koordinater: Koordinat[]
+    +koordinatsystem: Koordinatsystem
+}
+
+Linje -- Koordinat
+Linje -- Koordinatsystem
+Linje -- Linjetype
+
+
+class Koordinat {
+    +items: number[]
+}
+
+class Koordinatsystem <<Kode>> {
+    +kodeverdi: string
+    +kodebeskrivelse: string
+}
+
+enum Linjetype {
+    Line
+    Curve
+}
+
+@enduml
