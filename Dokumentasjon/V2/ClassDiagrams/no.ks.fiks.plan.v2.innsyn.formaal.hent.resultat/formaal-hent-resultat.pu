@@ -1,11 +1,11 @@
 @startuml
 !include ./../no.ks.fiks.plan.v2.felles.arealformaalomraade/arealformaalomraade.pu
 
-class HentReguleringsformaalResultat {
+class HentFormaalResultat {
     +arealformaalOmraade: ArealformaalOmraade [0..1]
 }
 
-HentReguleringsformaalResultat -- "[0..1]" ArealformaalOmraade
+HentFormaalResultat -- "[0..1]" ArealformaalOmraade
 
 
 @enduml

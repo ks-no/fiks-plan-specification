@@ -1,10 +1,10 @@
 @startuml
 !include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
 
-class HentReguleringsformaal {
+class HentFormaal {
     +nasjonalArealplanId: NasjonalArealplanId
 }
 
-HentReguleringsformaal -- NasjonalArealplanId
+HentFormaal -- NasjonalArealplanId
 
 @enduml
