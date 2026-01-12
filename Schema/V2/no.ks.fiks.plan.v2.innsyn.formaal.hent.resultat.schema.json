@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.reguleringsformaal.hent.resultat.schema.json",
-    "title": "HentReguleringsformaalResultat",
+    "$id": "no.ks.fiks.plan.v2.innsyn.formaal.hent.resultat.schema.json",
+    "title": "HentFormaalResultat",
     "definitions": {
     },
     "type": "object",
@@ -11,7 +11,7 @@
         },
         "reguleringformaal": {
             "type": "object",
-            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Reguleringsformaal",
+            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Formaal",
             "properties": {
                 "kodeverdi": {
                     "type": "string"

@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.reguleringsformaal.hent.schema.json",
-    "title": "HentReguleringsformaal",
+    "$id": "no.ks.fiks.plan.v2.innsyn.formaal.hent.schema.json",
+    "title": "HentFormaal",
     "definitions": {
     },
     "type": "object",
