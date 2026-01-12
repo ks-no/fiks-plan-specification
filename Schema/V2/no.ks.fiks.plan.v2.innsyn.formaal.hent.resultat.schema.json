@@ -6,27 +6,10 @@
     },
     "type": "object",
     "properties": {
-        "nasjonalArealplanId": {
-            "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
-        },
-        "reguleringformaal": {
-            "type": "object",
-            "description": "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Formaal",
-            "properties": {
-                "kodeverdi": {
-                    "type": "string"
-                },
-                "kodebeskrivelse": {
-                    "type": "string"
-                }
-            }
-        },
-        "utnyttelsesgrad": {
-            "type": "string"
+        "arealformaalOmraade": {
+            "$ref": "no.ks.fiks.plan.v2.felles.arealformaalomraade.schema.json"
         }
     },
     "required": [
-        "nasjonalArealplanId",
-        "reguleringformaal"
     ]
 }

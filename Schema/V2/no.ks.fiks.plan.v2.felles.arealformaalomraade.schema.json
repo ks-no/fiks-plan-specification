@@ -1,8 +1,14 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "no.ks.fiks.plan.v2.felles.arealformaalomraade.schema.json",
+    "description": "ArealformaalOmraade extends Planomraade",
     "title": "ArealformaalOmraade",
     "type": "object",
+    "allOf": [
+        {
+            "$ref": "no.ks.fiks.plan.v2.felles.planomraade.schema.json"
+        }
+    ],
     "properties": {
         "omraade": {
             "$ref": "no.ks.fiks.plan.v2.felles.flate.schema.json"
