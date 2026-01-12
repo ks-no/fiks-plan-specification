@@ -1,0 +1,62 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.planomraade.schema.json",
+    "title": "Planomraade",
+    "type": "object",
+    "properties": {
+        "identifikasjon": {
+            "type": "Identifikasjon"
+        },
+        "oppdateringsdato": {
+            "type": "string",
+            "format": "date"
+        },
+        "foersteDigitaliseringsdato": {
+            "type": "string",
+            "format": "date"
+        },
+        "kvalitet": {
+            "type": "object",
+            "description": "Kodeliste: ?",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "opphav": {
+            "type": "string"
+        },
+        "nasjonalArealplanId": {
+            "$ref": "no.ks.fiks.plan.v2.felles.nasjonalarealplanid.schema.json"
+        },
+        "vertikalnivaa": {
+            "type": "string",
+            "enum": [
+                "Under grunnen",
+                "På grunnen/vannoverflate",
+                "Over grunnen (bru)",
+                "På bunnen (vann/sjoe)",
+                "I vannsoeylen"
+            ]
+        },
+        "vertikallag": {
+            "type": "object",
+            "properties": {
+                "lag": {
+                    "type": "string"
+                },
+                "referansehoeyde": {
+                    "type": "number"
+                }
+            }
+        }
+    },
+    "required": [
+        "identifikasjon",
+        "nasjonalArealplanId"
+    ]
+}

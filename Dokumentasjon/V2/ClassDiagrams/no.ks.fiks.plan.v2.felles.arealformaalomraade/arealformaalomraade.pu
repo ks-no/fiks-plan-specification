@@ -18,11 +18,26 @@ class Planomraade {
 
 Planomraade <|-- ArealformaalOmraade
 Planomraade -- "[0..1]" NasjonalArealplanId
+Planomraade -- "[0..1]" Vertikalnivaa
+Planomraade -- "[0..1]" Vertikallag
+
+enum Vertikalnivaa {
+    Under grunnen = 1
+    Pa grunnen/vannoverflate = 2
+    Over grunnen (bru) = 3
+    Pa bunnen (vann/sjoe) = 4
+    I vannsoeylen = 5
+}
+
+class Vertikallag {
+    -lag: string
+    -referanseHoeyde: number
+}
 
 class ArealformaalOmraade {
     -omraade: Flate
     -avgrensesAv: FormaalGrense [0..*]
-    -handlingsOmraade: HandlingsOmraade [0..*]
+    -handlingsomraade: Handlingsomraade [0..*]
     -aralformaal: Arealformaal
     -feltnavn: string
     -beskrivelse: string [0..1]

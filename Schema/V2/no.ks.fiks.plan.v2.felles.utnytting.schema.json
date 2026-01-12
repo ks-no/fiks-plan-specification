@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.utnytting.schema.json",
+    "title": "Utnytting",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "utnyttingstype": {
+            "type": "object",
+            "description" : "Kodeliste: ?",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "utnyttingstall": {
+            "type": "integer"
+        },
+        "utnyttingstallMinimum": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "utnyttingstype"
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.arealformaalomraade.schema.json",
+    "title": "ArealformaalOmraade",
+    "type": "object",
+    "properties": {
+        "omraade": {
+            "$ref": "no.ks.fiks.plan.v2.felles.flate.schema.json"
+        },
+        "avgrensesAv": {
+            "type": "object",
+            "title": "FormaalGrense",
+            "properties": {
+                "grense": {
+                    "$ref": "no.ks.fiks.plan.v2.felles.linje.schema.json"
+                }
+            } 
+        },
+        "handlingsomraade": {
+            "$ref": "no.ks.fiks.plan.v2.felles.handlingsomraade.schema.json"
+        },
+        "arealformaal": {
+            "type": "object",
+            "description": "Kodeliste: ?",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "feltnavn": {
+            "type": "string"
+        },
+        "beskrivelse": {
+            "type": "string"
+        },
+        "eierform": {
+            "type": "string",
+            "enum": [
+                "Offentlig formaal",
+                "Felles",
+                "Annen eierform"
+            ]
+        },
+        "utnytting": {
+            "$ref": "no.ks.fiks.plan.v2.felles.utnytting.schema.json"
+        },
+        "uteoppholdsareal": {
+            "type": "integer"
+        },
+        "avkjoerselbestemmelse": {
+            "type": "string",
+            "enum": [
+                "Avkjoersel tillatt",
+                "Avkjoersel ikke tillatt"
+            ]
+        },
+        "byggverksbestemmelse": {
+            "type": "string",
+            "enum": [
+                "Fastsatt plassering",
+                "Fastsatt høyde",
+                "Fastsatt plassering/høyde",
+                "Fastsatt møneretning",
+                "Fastsatt plassering/møneretning",
+                "Fastsatt plassering/høyde/møneretning",
+                "Fastsatt utforming"
+            ]
+        }
+    },
+    "required": [
+        "omraade",
+        "arealformaal",
+        "feltnavn",
+        "eierform"
+    ]
+}

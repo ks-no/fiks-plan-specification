@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.linje.schema.json",
+    "title": "Linje",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "linjetype": {
+            "type": "object",
+            "description" : "Kodeliste: ?",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        },
+        "koordinater": {
+            "type": "array",
+            "minItems": 4,
+            "items": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                    "type": "number"
+                }
+            }
+        },
+        "koordinatsystem": {
+            "type": "object",
+            "description" : "Kodeliste: https://github.com/ks-no/fiks-plan-specification/wiki/Kodeliste-Koordinatsystemer",
+            "properties": {
+                "kodeverdi": {
+                    "type": "string"
+                },
+                "kodebeskrivelse": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "linjetype",
+        "koordinater",
+        "koordinatsystem"
+    ]
+}
