@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "identifikasjon": {
-            "type": "Identifikasjon"
+            "type": "string"
         },
         "oppdateringsdato": {
             "type": "string",
