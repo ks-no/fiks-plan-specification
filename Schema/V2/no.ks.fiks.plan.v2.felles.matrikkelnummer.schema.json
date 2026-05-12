@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.matrikkelnummer.schema.json",
+    "title": "Matrikkelnummer",
+    "description": "Matrikkelnummer",
+    "type": "object",
+    "properties": {
+        "kommunenummer": {
+            "type": "string"
+        },
+        "gaardsnummer": {
+            "type": "integer"
+        },
+        "bruksnummer": {
+            "type": "integer"
+        },
+        "festenummer": {
+            "type": "integer"
+        },
+        "seksjonsnummer": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "kommunenummer",
+        "gaardsnummer",
+        "bruksnummer"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn.for.adresse.schema.json",
+    "title": "FinnMidlertidigeForbudMottiltakForAdresse",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+      "adresse": {
+        "$ref": "no.ks.fiks.plan.v2.felles.adresse.schema.json"
+      }
+    },
+    "required": [
+      "adresse"
+    ]
+}
+  

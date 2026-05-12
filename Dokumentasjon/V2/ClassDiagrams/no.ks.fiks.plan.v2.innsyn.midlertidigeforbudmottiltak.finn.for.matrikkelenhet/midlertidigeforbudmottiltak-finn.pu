@@ -1,12 +1,10 @@
 @startuml
 !include ./../no.ks.fiks.plan.v2.felles.matrikkelnummer/matrikkelnummer.pu
 
-
-class FinnArealplanerForMatrikkelenhet {
+class FinnMidlertidigeForbudMottiltakForMatrikkelenhet {
     +matrikkelnummer: Matrikkelnummer
 }
 
-FinnArealplanerForMatrikkelenhet -- Matrikkelnummer
-
+FinnMidlertidigeForbudMottiltakForMatrikkelenhet -- Matrikkelnummer
 
 @enduml
