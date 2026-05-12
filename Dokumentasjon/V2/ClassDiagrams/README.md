@@ -26,7 +26,7 @@ Les mer om PlantUML her: https://plantuml.com/
 ### [no.ks.fiks.plan.v2.innsyn.gjeldendeplandokumenter.hent.resultat](no.ks.fiks.plan.v2.innsyn.gjeldendeplandokumenter.hent.resultat/README.md)
 ### [no.ks.fiks.plan.v2.innsyn.kodeliste.hent](no.ks.fiks.plan.v2.innsyn.kodeliste.hent/README.md)
 ### [no.ks.fiks.plan.v2.innsyn.kodeliste.hent.resultat](no.ks.fiks.plan.v2.innsyn.kodeliste.hent.resultat/README.md)
-### [no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn](no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn/README.md)
+### [no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn.for.flate](no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn.for.flate/README.md)
 ### [no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn.resultat](no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn.resultat/README.md)
 ### [no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn](no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn/README.md)
 ### [no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn.resultat](no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn.resultat/README.md)

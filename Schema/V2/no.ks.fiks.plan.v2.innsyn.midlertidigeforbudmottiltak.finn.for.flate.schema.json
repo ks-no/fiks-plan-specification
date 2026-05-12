@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn.schema.json",
-    "title": "FinnMidlertidigeForbudMottiltak",
+    "$id": "no.ks.fiks.plan.v2.innsyn.midlertidigeforbudmottiltak.finn.for.flate.schema.json",
+    "title": "FinnMidlertidigeForbudMottiltakForFlate",
     "definitions": {},
     "type": "object",
     "properties": {

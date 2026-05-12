@@ -122,7 +122,7 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.kodeliste.hent"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn",
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.for.flate",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
@@ -133,7 +133,7 @@
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
-      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn"]
+      "erSvarPaa": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.for.flate"]
     },
     {
       "id": "no.ks.fiks.plan.v2.innsyn.planbehandlinger.finn",
