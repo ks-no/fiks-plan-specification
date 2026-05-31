@@ -8,28 +8,7 @@
     "type": "object",
     "properties": {
         "adresse": {
-            "type": "object",
-            "properties": {
-                "adressekode": {
-                    "type": "string"
-                },
-                "adressenavn": {
-                    "type": "string"
-                },
-                "adressenummer": {
-                    "type": "integer"
-                },
-                "adressebokstav": {
-                    "type": "string"
-                },
-                "seksjonsnummer": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "adressenavn",
-                "adressenummer"
-            ]
+            $ref: "no.ks.fiks.plan.v2.felles.adresse.schema.json"
         }
     },
     "required": [

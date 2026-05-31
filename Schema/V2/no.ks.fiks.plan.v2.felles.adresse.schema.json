@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "no.ks.fiks.plan.v2.felles.adresse.schema.json",
+    "title": "Adresse",
+    "description": "Adresse",
+    "type": "object",
+    "properties": {
+        "adressekode": {
+            "type": "string"
+        },
+        "adressenavn": {
+            "type": "string"
+        },
+        "adressenummer": {
+            "type": "integer"
+        },
+        "adressebokstav": {
+            "type": "string"
+        },
+        "seksjonsnummer": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "adressenavn",
+        "adressenummer"
+    ]
+}

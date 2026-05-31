@@ -1,0 +1,11 @@
+@startuml
+
+class Matrikkelnummer {
+    +kommunenummer: string
+    +gaardsnummer: integer
+    +bruksnummer: integer
+    +festenummer: integer
+    +seksjonsnummer: integer
+}
+
+@enduml

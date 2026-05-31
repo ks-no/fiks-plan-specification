@@ -129,6 +129,27 @@
       "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
     },
     {
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.for.adresse",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.for.plan",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
+      "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.for.matrikkelenhet",
+      "beskrivelse": "",
+      "harPayload": true,
+      "payloadFilnavn": "payload.json",
+      "kanSvareMed": ["no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.resultat", "no.ks.fiks.plan.v2.feilmelding.ugyldigforespoersel", "no.ks.fiks.plan.v2.feilmelding.serverfeil"]
+    },
+    {
       "id": "no.ks.fiks.plan.v2.innsyn.midlertidigforbudmottiltak.finn.resultat",
       "beskrivelse": "",
       "harPayload": true,
