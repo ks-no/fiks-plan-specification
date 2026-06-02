@@ -1,0 +1,10 @@
+@startuml
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+
+class FinnDispensasjonerForPlan {
+    +nasjonalArealplanId: NasjonalArealplanId
+}
+
+FinnDispensasjonerForPlan -- NasjonalArealplanId
+
+@enduml
