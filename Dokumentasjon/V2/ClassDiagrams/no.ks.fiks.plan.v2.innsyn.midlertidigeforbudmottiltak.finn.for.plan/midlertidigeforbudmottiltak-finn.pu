@@ -1,0 +1,10 @@
+@startuml
+!include ./../no.ks.fiks.plan.v2.felles.nasjonalarealplanid/nasjonalarealplanid.pu
+
+class FinnMidlertidigeForbudMottiltakForPlan {
+    +nasjonalArealplanId: NasjonalArealplanId
+}
+
+FinnMidlertidigeForbudMottiltakForPlan -- NasjonalArealplanId
+
+@enduml
