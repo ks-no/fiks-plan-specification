@@ -2,6 +2,8 @@ name: Build models-dotnet project
 
 on:
   push:
+    branches:
+      - main
 
 permissions:
   id-token: write
@@ -9,7 +11,6 @@ permissions:
   checks: write
 
 # Serializes across all branches (not just per-ref) because every push dispatches
-# against the same shared fiks-plan-models-dotnet/github-actions ref downstream.
 # Without this, two dispatches in flight at once would make run identification ambiguous.
 concurrency:
   group: trigger-fiks-plan-models-dotnet-build
@@ -41,8 +42,7 @@ jobs:
             const targetOwner = 'ks-no';
             const targetRepo  = 'fiks-plan-models-dotnet';
             const workflowId  = 'ci.yml';
-            // ci.yml only exists on the github-actions branch until that repo's migration PR merges to main
-            const dispatchRef = 'github-actions';
+            const dispatchRef = 'main';
             const clientOwner = context.repo.owner;
             const clientRepo  = context.repo.repo;
             const clientSha   = context.sha;
