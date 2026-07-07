@@ -71,6 +71,7 @@ jobs:
               repo:  targetRepo,
               workflow_id: workflowId,
               branch: dispatchRef,
+              event: 'workflow_dispatch',
               per_page: 100
             });
             const knownRunIds = new Set(before.workflow_runs.map(r => r.id));
@@ -95,6 +96,7 @@ jobs:
                 repo:  targetRepo,
                 workflow_id: workflowId,
                 branch: dispatchRef,
+                event: 'workflow_dispatch',
                 per_page: 100
               });
               for (const r of data.workflow_runs) {
