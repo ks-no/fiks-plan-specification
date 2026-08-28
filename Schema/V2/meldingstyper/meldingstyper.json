@@ -400,7 +400,7 @@
       "erSvarPaa": ["no.ks.fiks.plan.v2.oppdatering.gjeldendeplandokumenter.registrer"]
     },
     {
-      "id": "no.ks.fiks.plan.v2.oppdatering.plenendring.registrer",
+      "id": "no.ks.fiks.plan.v2.oppdatering.planendring.registrer",
       "beskrivelse": "",
       "harPayload": true,
       "payloadFilnavn": "payload.json",
